@@ -1,0 +1,81 @@
+Array
+(
+    [response_code_pol] => 1
+    [phone] => 
+    [additional_value] => 0.00
+    [test] => 0
+    [transaction_date] => 2016-09-21 16:55:18
+    [cc_number] => ************2970
+    [cc_holder] => JOSE ERNESTO CARDENAS
+    [error_code_bank] => 00
+    [billing_country] => CO
+    [bank_referenced_name] => 
+    [description] => ADQUISICION SERVICIOS SIGMIN
+    [administrative_fee_tax] => 0.00
+    [value] => 20000.00
+    [administrative_fee] => 0.00
+    [payment_method_type] => 2
+    [office_phone] => 
+    [email_buyer] => colombiamineria@gmail.com
+    [response_message_pol] => APPROVED
+    [error_message_bank] => 
+    [shipping_city] => 
+    [transaction_id] => efbdf1d9-6ba1-475a-9803-ec1d9e498904
+    [sign] => c888e736d5b6f4dc5c4f4c12b8abaab6
+    [tax] => 2758.62
+    [transaction_bank_id] => 165517
+    [payment_method] => 10
+    [billing_address] => CALLE 7 SUR # 37A -25
+    [payment_method_name] => VISA
+    [pse_bank] => 
+    [state_pol] => 4
+    [date] => 2016.09.21 04:55:18
+    [nickname_buyer] => 
+    [reference_pol] => 850745144
+    [currency] => COP
+    [risk] => 0.0
+    [shipping_address] => 
+    [bank_id] => 10
+    [payment_request_state] => A
+    [customer_number] => 
+    [administrative_fee_base] => 0.00
+    [attempts] => 1
+    [merchant_id] => 544477
+    [exchange_rate] => 1.00
+    [shipping_country] => CO
+    [installments_number] => 1
+    [franchise] => VISA
+    [payment_method_id] => 2
+    [extra1] => 
+    [extra2] => 
+    [antifraudMerchantId] => 
+    [extra3] => 
+    [commision_pol_currency] => COP
+    [nickname_seller] => 
+    [ip] => 201.184.252.14
+    [commision_pol] => 3364.00
+    [airline_code] => 
+    [billing_city] => MEDELLIN
+    [pse_reference1] => 
+    [cus] => 356616007
+    [reference_sale] => 1474494804
+    [authorization_code] => 165517
+    [pse_reference3] => 
+    [pse_reference2] => 
+)
+OK
+Habilita Consignacion. 
+OK
+Creditos: 
+Array
+(
+    [id_usuario] => 9
+    [precio] => 20000
+)
+
+ estado transaccion: OK 
+ 
+Envia datos a email. 
+
+ infoPago: Array 
+ 

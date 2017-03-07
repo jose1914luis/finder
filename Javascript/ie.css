@@ -1,0 +1,199 @@
+.blue {background: url(../Imagenes/blue.png) no-repeat top right; height:33px; width:94px; margin-left:0px;}
+.red {background: url(../Imagenes/red.png) no-repeat top right; height:33px; width:94px; margin-left:0px;}
+.green {background: url(../Imagenes/green.png) no-repeat top right; height:33px; width:90px; margin-left:0px;}
+.orange {background: url(../Imagenes/orange.png) no-repeat top center; height:33px; width:220px; margin-left:-22px;}
+.yellow {background: url(../Imagenes/yellow.png) no-repeat top center; height:33px; width:200px; margin-left:-12px;}
+.purple {background: url(../Imagenes/purple.png) no-repeat top right; height:33px; width:90px; margin-left:0px;}
+.dock-item span { display: none; text-align:center; padding-top:2px; font-family:Tahoma; font-weight:bold; color:#fff; font-size:10pt; z-index:9999999;}
+
+.qtip-cream .qtip-content{width:154px; height:46px; border:0; color:#fff; font-family:Tahoma; font-weight:bold; font-size:12px;}
+.qtip-cream {width:154px; border:0; margin-top:5px; background:url(images/lineas.png) top center no-repeat; margin-left:-12px;}
+.qtip-cream .qtip-title{border:0;}
+
+.qtip-light .qtip-content{ width:154px; height:46px; border:0; color:#fff; font-family:Tahoma; font-weight:bold; font-size:12px;}
+.qtip-light {width:154px; border:0;  margin-top:5px; background:url(images/cuadros.png) top center no-repeat; margin-left:-27px;}
+.qtip-light .qtip-title{border:0;}
+
+.qtip-dark .qtip-content{border:0; color:#fff; font-family:Tahoma; font-weight:bold; font-size:12px;}
+.qtip-dark {width:154px; border:0; ; margin-top:5px; background:url(images/limpiar.png) top center no-repeat; margin-left:-47px;}
+.qtip-dark .qtip-title{border:0;}
+
+
+.qtip-red .qtip-content{ width:154px; height:46px; border:0; color:#fff; font-family:Tahoma; font-weight:bold; font-size:12px;}
+.qtip-red {width:154px; border:0;  margin-top:-35px; background:url(images/red.png) center 9px no-repeat; margin-left:47px;}
+.qtip-red .qtip-title{border:0;}
+
+.qtip-green .qtip-content{ width:154px; height:46px; border:0; color:#fff; font-family:Tahoma; font-weight:bold; font-size:12px;}
+.qtip-green {width:154px; border:0;  margin-top:-35px; background:url(images/red2.png) center 9px no-repeat; margin-left:13px;}
+.qtip-green .qtip-title{border:0;}
+
+.qtip-blue .qtip-content{ width:154px; height:46px; border:0; color:#fff; font-family:Tahoma; font-weight:bold; font-size:12px;}
+.qtip-blue {width:154px; border:0;  margin-top:-35px; background:url(images/red3.png) center 9px no-repeat; margin-left:55px;}
+.qtip-blue .qtip-title{border:0;}
+
+.qtip-brown .qtip-content{ width:154px; height:46px; border:0; color:#fff; font-family:Tahoma; font-weight:bold; font-size:12px;}
+.qtip-brown {width:154px; border:0; margin-top:-35px; background:url(images/red4.png) center 9px no-repeat; margin-left:55px;}
+.qtip-brown .qtip-title{border:0;}
+
+.qtip-magenta .qtip-content{ width:154px; height:46px; border:0; color:#fff; font-family:Tahoma; font-weight:bold; font-size:12px;}
+.qtip-magenta {width:154px; border:0;  margin-top:-35px; background:url(images/red5.png) center 9px no-repeat; margin-left:55px;}
+.qtip-magenta .qtip-title{border:0;}
+
+
+
+.qtip-pro1 .qtip-content{ width:154px; height:46px; border:0; color:#fff; font-family:Tahoma; font-weight:bold; font-size:12px;}
+.qtip-pro1 {width:154px; border:0;  margin-top:-32px; background:url(images/red_pro.png) center 9px no-repeat; margin-left:-45px;}
+.qtip-pro1 .qtip-title{border:0;}
+
+.qtip-pro2 .qtip-content{ width:154px; height:46px; border:0; color:#fff; font-family:Tahoma; font-weight:bold; font-size:12px;}
+.qtip-pro2 {width:154px; border:0;  margin-top:-32px; background:url(images/red_pro.png) center 9px no-repeat; margin-left:-80px;}
+.qtip-pro2 .qtip-title{border:0;}
+
+.qtip-pro3 .qtip-content{ width:154px; height:46px; border:0; color:#fff; font-family:Tahoma; font-weight:bold; font-size:12px;}
+.qtip-pro3 { width:154px; border:0;  margin-top:-32px; background:url(images/red_pro.png) center 9px no-repeat; margin-left:-115px;}
+.qtip-pro3 .qtip-title{border:0;}
+
+.qtip-pro4 .qtip-content{ width:154px; height:46px; border:0; color:#fff; font-family:Tahoma; font-weight:bold; font-size:12px;}
+.qtip-pro4 {width:154px;  border:0; margin-top:-32px; background:url(images/red_pro.png) center 9px no-repeat; margin-left:180px;}
+.qtip-pro4 .qtip-title{border:0;}
+
+
+#capas{
+display:block;
+width:327px;
+height:41px;
+background: transparent url('images/capas.png') no-repeat center;
+top:50px;
+right:-277px;
+position:absolute;
+padding-left:45px;
+z-index:999999;
+cursor:pointer;
+}
+#tools{
+display:block;
+width:251px;
+height:41px;
+background: transparent url('images/tools.png') no-repeat center;
+top:100px;
+right:-201px;
+position:absolute;
+padding-left:45px;
+padding-top:10px;
+z-index:999999;
+cursor:pointer;
+}
+.point2{
+width: 35px;
+}
+.point2:hover{
+background: url('images/point_.png') center no-repeat;
+}
+.line2{
+width: 35px;
+}
+.polygon2{
+width: 35px;
+}
+.box2{
+width: 35px;
+}
+.clean{
+width: 35px;
+}
+input.Google.Physicaltrue{
+text-indent:0px;
+}
+input.Google.Physicalfalse{
+text-indent:0px;
+}
+input.Google.Streetstrue{
+text-indent:0px;
+}
+input.Google.Streetsfalse{
+text-indent:0px;
+}
+.Aplications{
+display: inline-block;
+width: 37px;
+height: 33px;
+background: url('images/request.png') center no-repeat;
+cursor: pointer;
+text-indent:0px;
+}
+.Aplicationstrue{
+display:none;
+}
+.Aplicationsfalse{
+display:none;
+}
+.Titles{
+display: inline-block;
+width: 37px;
+height: 33px;
+background: url('images/titles.png') center no-repeat;
+text-indent: 0px;
+line-height:1px;
+cursor: pointer;
+}
+.Titlestrue{
+display: none;
+}
+.Titlesfalse{
+display: none;
+}
+.Excludable.Areas{
+display: inline-block;
+width: 37px;
+height: 33px;
+background: url('images/zone.png') center no-repeat;
+text-indent: -0px;
+line-height:1px;
+cursor: pointer;
+}
+.Excludable.Areasfalse{
+display: none;
+}
+.Excludable.Areastrue{
+display: none;
+}
+.Record{
+display: inline-block;
+width: 37px;
+height: 33px;
+background: url('images/record.png') center no-repeat;
+text-indent: 0px;
+line-height:1px;
+cursor: pointer;
+}
+.Recordfalse{
+display: none;
+}
+.Recordtrue{
+display: none;
+}
+.Point.Layertrue{
+	display: none;
+}
+.Line.Layertrue{
+	display: none;
+}
+.Polygon.Layertrue{
+	display: none;
+}
+.Box.Layertrue{
+	display: none;
+}
+.dataLayersDiv{width:150px; float:left;}
+.fzg{
+border-bottom:0px;
+}
+.nna{
+border-bottom:0px;
+}
+#prospect{
+	height: 251px; 
+}
+#ly_acount{
+	height: 251px; 
+}

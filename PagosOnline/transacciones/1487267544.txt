@@ -1,0 +1,161 @@
+Array
+(
+    [response_code_pol] => 1
+    [phone] => 
+    [additional_value] => 0.00
+    [test] => 0
+    [transaction_date] => 2017-02-16 12:56:37
+    [cc_number] => ************8758
+    [cc_holder] => MARIA JOSE SOLANO RAMIREZ
+    [error_code_bank] => 00
+    [billing_country] => CO
+    [bank_referenced_name] => 
+    [description] => ADQUISICION SERVICIOS SIGMIN
+    [administrative_fee_tax] => 0.00
+    [value] => 200000.00
+    [administrative_fee] => 0.00
+    [payment_method_type] => 2
+    [office_phone] => 
+    [email_buyer] => albertolopezmineria@gmail.com
+    [response_message_pol] => APPROVED
+    [error_message_bank] => 
+    [shipping_city] => 
+    [transaction_id] => 03acf78a-bb9b-4e0d-9b2a-467664868ba5
+    [sign] => eeef17336e8baf902b6cbfbb1157bd7e
+    [tax] => 31932.77
+    [transaction_bank_id] => R08945
+    [payment_method] => 28
+    [billing_address] => CALLE 17 # 46 - 80
+    [payment_method_name] => MASTERCARD
+    [pse_bank] => 
+    [state_pol] => 4
+    [date] => 2017.02.16 12:56:37
+    [nickname_buyer] => 
+    [reference_pol] => 926110832
+    [currency] => COP
+    [risk] => 0.0
+    [shipping_address] => 
+    [bank_id] => 28
+    [payment_request_state] => A
+    [customer_number] => 
+    [administrative_fee_base] => 0.00
+    [attempts] => 1
+    [merchant_id] => 544477
+    [exchange_rate] => 1.00
+    [shipping_country] => CO
+    [installments_number] => 12
+    [franchise] => MASTERCARD
+    [payment_method_id] => 2
+    [extra1] => 
+    [extra2] => 
+    [antifraudMerchantId] => 
+    [extra3] => 
+    [commision_pol_currency] => COP
+    [nickname_seller] => 
+    [ip] => 181.56.243.185
+    [commision_pol] => 8051.03
+    [airline_code] => 
+    [billing_city] => NEIVA
+    [pse_reference1] => 
+    [cus] => 903934320
+    [reference_sale] => 1487267544
+    [authorization_code] => R08945
+    [pse_reference3] => 
+    [pse_reference2] => 
+)
+OK
+Habilita Consignacion. 
+OK
+Creditos: 
+Array
+(
+    [id_usuario] => 73
+    [precio] => 200000
+)
+
+ estado transaccion: OK 
+ 
+Envia datos a email. 
+
+ infoPago: Array 
+ Array
+(
+    [response_code_pol] => 1
+    [phone] => 
+    [additional_value] => 0.00
+    [test] => 0
+    [transaction_date] => 2017-02-16 12:56:37
+    [cc_number] => ************8758
+    [cc_holder] => MARIA JOSE SOLANO RAMIREZ
+    [error_code_bank] => 00
+    [billing_country] => CO
+    [bank_referenced_name] => 
+    [description] => ADQUISICION SERVICIOS SIGMIN
+    [administrative_fee_tax] => 0.00
+    [value] => 200000.00
+    [administrative_fee] => 0.00
+    [payment_method_type] => 2
+    [office_phone] => 
+    [email_buyer] => albertolopezmineria@gmail.com
+    [response_message_pol] => APPROVED
+    [error_message_bank] => 
+    [shipping_city] => 
+    [transaction_id] => 03acf78a-bb9b-4e0d-9b2a-467664868ba5
+    [sign] => eeef17336e8baf902b6cbfbb1157bd7e
+    [tax] => 31932.77
+    [transaction_bank_id] => R08945
+    [payment_method] => 28
+    [billing_address] => CALLE 17 # 46 - 80
+    [payment_method_name] => MASTERCARD
+    [pse_bank] => 
+    [state_pol] => 4
+    [date] => 2017.02.16 12:56:37
+    [nickname_buyer] => 
+    [reference_pol] => 926110832
+    [currency] => COP
+    [risk] => 0.0
+    [shipping_address] => 
+    [bank_id] => 28
+    [payment_request_state] => A
+    [customer_number] => 
+    [administrative_fee_base] => 0.00
+    [attempts] => 1
+    [merchant_id] => 544477
+    [exchange_rate] => 1.00
+    [shipping_country] => CO
+    [installments_number] => 12
+    [franchise] => MASTERCARD
+    [payment_method_id] => 2
+    [extra1] => 
+    [extra2] => 
+    [antifraudMerchantId] => 
+    [extra3] => 
+    [commision_pol_currency] => COP
+    [nickname_seller] => 
+    [ip] => 181.56.243.185
+    [commision_pol] => 8051.03
+    [airline_code] => 
+    [billing_city] => NEIVA
+    [pse_reference1] => 
+    [cus] => 903934320
+    [reference_sale] => 1487267544
+    [authorization_code] => R08945
+    [pse_reference3] => 
+    [pse_reference2] => 
+)
+OK
+Habilita Consignacion. 
+OK
+Creditos: 
+Array
+(
+    [id_usuario] => 73
+    [precio] => 200000
+)
+
+ estado transaccion: OK 
+ 
+Envia datos a email. 
+
+ infoPago: Array 
+ 

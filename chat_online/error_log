@@ -1,0 +1,1023 @@
+[17-Jan-2015 18:28:45 America/Bogota] PHP Warning:  session_start() [<a href='function.session-start'>function.session-start</a>]: Cannot send session cookie - headers already sent by (output started at /home/zudokooc/public_html/sigmin.com.co/chat_online/index.php:13) in /home/zudokooc/public_html/sigmin.com.co/chat_online/index.php on line 14
+[17-Jan-2015 18:28:45 America/Bogota] PHP Warning:  session_start() [<a href='function.session-start'>function.session-start</a>]: Cannot send session cache limiter - headers already sent (output started at /home/zudokooc/public_html/sigmin.com.co/chat_online/index.php:13) in /home/zudokooc/public_html/sigmin.com.co/chat_online/index.php on line 14
+[17-Jan-2015 18:28:54 America/Bogota] PHP Warning:  session_start() [<a href='function.session-start'>function.session-start</a>]: Cannot send session cookie - headers already sent by (output started at /home/zudokooc/public_html/sigmin.com.co/chat_online/index.php:13) in /home/zudokooc/public_html/sigmin.com.co/chat_online/index.php on line 14
+[17-Jan-2015 18:28:54 America/Bogota] PHP Warning:  session_start() [<a href='function.session-start'>function.session-start</a>]: Cannot send session cache limiter - headers already sent (output started at /home/zudokooc/public_html/sigmin.com.co/chat_online/index.php:13) in /home/zudokooc/public_html/sigmin.com.co/chat_online/index.php on line 14
+[17-Jan-2015 18:33:44 America/Bogota] PHP Warning:  session_start() [<a href='function.session-start'>function.session-start</a>]: Cannot send session cache limiter - headers already sent (output started at /home/zudokooc/public_html/sigmin.com.co/chat_online/index.php:13) in /home/zudokooc/public_html/sigmin.com.co/chat_online/index.php on line 14
+[17-Jan-2015 18:34:41 America/Bogota] PHP Warning:  session_start() [<a href='function.session-start'>function.session-start</a>]: Cannot send session cache limiter - headers already sent (output started at /home/zudokooc/public_html/sigmin.com.co/chat_online/index.php:13) in /home/zudokooc/public_html/sigmin.com.co/chat_online/index.php on line 14
+[17-Jan-2015 18:34:49 America/Bogota] PHP Warning:  session_start() [<a href='function.session-start'>function.session-start</a>]: Cannot send session cache limiter - headers already sent (output started at /home/zudokooc/public_html/sigmin.com.co/chat_online/index.php:13) in /home/zudokooc/public_html/sigmin.com.co/chat_online/index.php on line 14
+[17-Jan-2015 19:27:11 America/Bogota] PHP Warning:  session_start() [<a href='function.session-start'>function.session-start</a>]: Cannot send session cookie - headers already sent by (output started at /home/zudokooc/public_html/sigmin.com.co/chat_online/index.php:13) in /home/zudokooc/public_html/sigmin.com.co/chat_online/index.php on line 14
+[17-Jan-2015 19:27:11 America/Bogota] PHP Warning:  session_start() [<a href='function.session-start'>function.session-start</a>]: Cannot send session cache limiter - headers already sent (output started at /home/zudokooc/public_html/sigmin.com.co/chat_online/index.php:13) in /home/zudokooc/public_html/sigmin.com.co/chat_online/index.php on line 14
+[17-Jan-2015 19:27:31 America/Bogota] PHP Warning:  session_start() [<a href='function.session-start'>function.session-start</a>]: Cannot send session cookie - headers already sent by (output started at /home/zudokooc/public_html/sigmin.com.co/chat_online/index.php:13) in /home/zudokooc/public_html/sigmin.com.co/chat_online/index.php on line 14
+[17-Jan-2015 19:27:31 America/Bogota] PHP Warning:  session_start() [<a href='function.session-start'>function.session-start</a>]: Cannot send session cache limiter - headers already sent (output started at /home/zudokooc/public_html/sigmin.com.co/chat_online/index.php:13) in /home/zudokooc/public_html/sigmin.com.co/chat_online/index.php on line 14
+[22-Jan-2015 22:21:24 America/Bogota] PHP Warning:  pg_query_params() [<a href='function.pg-query-params'>function.pg-query-params</a>]: Query failed: ERROR:  permission denied for sequence bitacora_chats_seq in /home/zudokooc/public_html/sigmin.com.co/Modelos/Bitacora_Chats.php on line 27
+[22-Jan-2015 22:47:53 America/Bogota] PHP Warning:  pg_query_params() [<a href='function.pg-query-params'>function.pg-query-params</a>]: Query failed: ERROR:  permission denied for sequence bitacora_chats_seq in /home/zudokooc/public_html/sigmin.com.co/Modelos/Bitacora_Chats.php on line 27
+[22-Jan-2015 23:00:45 America/Bogota] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/zudokooc/public_html/sigmin.com.co/Acceso/Config.php:18) in /home/zudokooc/public_html/sigmin.com.co/chat_online/index.php on line 64
+[22-Jan-2015 23:11:54 America/Bogota] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/zudokooc/public_html/sigmin.com.co/Acceso/Config.php:18) in /home/zudokooc/public_html/sigmin.com.co/chat_online/index.php on line 64
+[22-Jan-2015 23:17:52 America/Bogota] PHP Warning:  fopen() [<a href='function.fopen'>function.fopen</a>]: Filename cannot be empty in /home/zudokooc/public_html/sigmin.com.co/chat_online/index.php on line 60
+[22-Jan-2015 23:17:52 America/Bogota] PHP Warning:  fwrite() expects parameter 1 to be resource, boolean given in /home/zudokooc/public_html/sigmin.com.co/chat_online/index.php on line 61
+[22-Jan-2015 23:17:52 America/Bogota] PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /home/zudokooc/public_html/sigmin.com.co/chat_online/index.php on line 62
+[22-Jan-2015 23:17:52 America/Bogota] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/zudokooc/public_html/sigmin.com.co/Acceso/Config.php:18) in /home/zudokooc/public_html/sigmin.com.co/chat_online/index.php on line 64
+[29-Jul-2015 21:31:46 America/Bogota] PHP Parse error:  syntax error, unexpected $end in /home/zudokooc/public_html/sigmin.com.co/chat_online/index.php on line 53
+[29-Jul-2015 21:32:02 America/Bogota] PHP Parse error:  syntax error, unexpected $end in /home/zudokooc/public_html/sigmin.com.co/chat_online/index.php on line 53
+[29-Jul-2015 21:33:57 America/Bogota] PHP Parse error:  syntax error, unexpected $end in /home/zudokooc/public_html/sigmin.com.co/chat_online/index.php on line 22
+[29-Jul-2015 21:35:37 America/Bogota] PHP Parse error:  syntax error, unexpected $end in /home/zudokooc/public_html/sigmin.com.co/chat_online/index.php on line 22
+[29-Jul-2015 21:37:09 America/Bogota] PHP Parse error:  syntax error, unexpected $end in /home/zudokooc/public_html/sigmin.com.co/chat_online/index.php on line 22
+[29-Jul-2015 21:37:28 America/Bogota] PHP Parse error:  syntax error, unexpected $end in /home/zudokooc/public_html/sigmin.com.co/chat_online/index.php on line 22
+[29-Jul-2015 21:37:32 America/Bogota] PHP Parse error:  syntax error, unexpected $end in /home/zudokooc/public_html/sigmin.com.co/chat_online/index.php on line 22
+[29-Jul-2015 21:38:41 America/Bogota] PHP Parse error:  syntax error, unexpected $end in /home/zudokooc/public_html/sigmin.com.co/chat_online/index.php on line 22
+[29-Jul-2015 21:38:44 America/Bogota] PHP Parse error:  syntax error, unexpected $end in /home/zudokooc/public_html/sigmin.com.co/chat_online/index.php on line 22
+[29-Jul-2015 21:40:00 America/Bogota] PHP Parse error:  syntax error, unexpected $end in /home/zudokooc/public_html/sigmin.com.co/chat_online/index.php on line 21
+[29-Jul-2015 21:40:10 America/Bogota] PHP Parse error:  syntax error, unexpected $end in /home/zudokooc/public_html/sigmin.com.co/chat_online/index.php on line 21
+[29-Jul-2015 21:41:53 America/Bogota] PHP Parse error:  syntax error, unexpected $end in /home/zudokooc/public_html/sigmin.com.co/chat_online/index.php on line 21
+[29-Jul-2015 21:43:49 America/Bogota] PHP Parse error:  syntax error, unexpected $end in /home/zudokooc/public_html/sigmin.com.co/chat_online/index.php on line 21
+[31-Aug-2015 20:36:06 America/Bogota] PHP Parse error:  syntax error, unexpected T_CLASS in /home/zudokooc/public_html/sigmin.com.co/Modelos/Bitacora_Chats.php on line 2
+[31-Aug-2015 20:40:28 America/Bogota] PHP Parse error:  syntax error, unexpected T_CLASS in /home/zudokooc/public_html/sigmin.com.co/Modelos/Bitacora_Chats.php on line 2
+[31-Aug-2015 20:40:33 America/Bogota] PHP Parse error:  syntax error, unexpected T_CLASS in /home/zudokooc/public_html/sigmin.com.co/Modelos/Bitacora_Chats.php on line 2
+[31-Aug-2015 20:44:12 America/Bogota] PHP Parse error:  syntax error, unexpected T_CLASS in /home/zudokooc/public_html/sigmin.com.co/Modelos/Bitacora_Chats.php on line 2
+[31-Aug-2015 20:47:37 America/Bogota] PHP Parse error:  syntax error, unexpected T_CLASS in /home/zudokooc/public_html/sigmin.com.co/Modelos/Bitacora_Chats.php on line 2
+[31-Aug-2015 20:47:48 America/Bogota] PHP Parse error:  syntax error, unexpected T_CLASS in /home/zudokooc/public_html/sigmin.com.co/Modelos/Bitacora_Chats.php on line 2
+[31-Aug-2015 20:49:57 America/Bogota] PHP Parse error:  syntax error, unexpected T_CLASS in /home/zudokooc/public_html/sigmin.com.co/Modelos/Bitacora_Chats.php on line 2
+[31-Aug-2015 20:57:54 America/Bogota] PHP Parse error:  syntax error, unexpected T_CLASS in /home/zudokooc/public_html/sigmin.com.co/Modelos/Bitacora_Chats.php on line 2
+[31-Aug-2015 20:58:31 America/Bogota] PHP Parse error:  syntax error, unexpected T_CLASS in /home/zudokooc/public_html/sigmin.com.co/Modelos/Bitacora_Chats.php on line 2
+[31-Aug-2015 20:59:15 America/Bogota] PHP Parse error:  syntax error, unexpected T_CLASS in /home/zudokooc/public_html/sigmin.com.co/Modelos/Bitacora_Chats.php on line 2
+[31-Aug-2015 20:59:34 America/Bogota] PHP Parse error:  syntax error, unexpected T_CLASS in /home/zudokooc/public_html/sigmin.com.co/Modelos/Bitacora_Chats.php on line 2
+[31-Aug-2015 21:00:16 America/Bogota] PHP Parse error:  syntax error, unexpected T_CLASS in /home/zudokooc/public_html/sigmin.com.co/Modelos/Bitacora_Chats.php on line 2
+[31-Aug-2015 21:07:22 America/Bogota] PHP Parse error:  syntax error, unexpected T_CLASS in /home/zudokooc/public_html/sigmin.com.co/Modelos/Bitacora_Chats.php on line 2
+[31-Aug-2015 21:07:25 America/Bogota] PHP Parse error:  syntax error, unexpected T_CLASS in /home/zudokooc/public_html/sigmin.com.co/Modelos/Bitacora_Chats.php on line 2
+[31-Aug-2015 21:07:33 America/Bogota] PHP Parse error:  syntax error, unexpected T_CLASS in /home/zudokooc/public_html/sigmin.com.co/Modelos/Bitacora_Chats.php on line 2
+[31-Aug-2015 21:09:09 America/Bogota] PHP Notice:  Undefined index: session_id in /home/zudokooc/public_html/sigmin.com.co/Modelos/Bitacora_Chats.php on line 18
+[31-Aug-2015 21:09:09 America/Bogota] PHP Warning:  pg_query_params() [<a href='function.pg-query-params'>function.pg-query-params</a>]: Query failed: ERROR:  permission denied for schema control_chat in /home/zudokooc/public_html/sigmin.com.co/Modelos/Bitacora_Chats.php on line 19
+[31-Aug-2015 21:27:07 America/Bogota] PHP Fatal error:  Call to undefined method Bitacora_Chats::selectArchivosByFecha() in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 70
+[31-Aug-2015 21:27:39 America/Bogota] PHP Fatal error:  Call to undefined method Bitacora_Chats::selectArchivosByFecha() in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 72
+[31-Aug-2015 21:32:41 America/Bogota] PHP Fatal error:  Call to undefined method Bitacora_Chats::selectArchivosByFecha() in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 72
+[31-Aug-2015 22:00:42 America/Bogota] PHP Warning:  pg_query_params() [<a href='function.pg-query-params'>function.pg-query-params</a>]: Query failed: ERROR:  permission denied for schema control_chat in /home/zudokooc/public_html/sigmin.com.co/Modelos/Bitacora_Chats.php on line 22
+[01-Sep-2015 18:48:55 America/Bogota] PHP Notice:  Undefined variable: text in /home/zudokooc/public_html/sigmin.com.co/chat_online/index.php on line 94
+[01-Sep-2015 19:37:52 America/Bogota] PHP Notice:  Undefined offset: 10 in /home/zudokooc/public_html/sigmin.com.co/chat_online/index.php on line 103
+[01-Sep-2015 20:23:58 America/Bogota] PHP Parse error:  syntax error, unexpected ';' in /home/zudokooc/public_html/sigmin.com.co/chat_online/index.php on line 103
+[07-Sep-2015 21:34:10 America/Bogota] PHP Notice:  Undefined index: nombre_usuario in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 121
+[07-Sep-2015 21:34:10 America/Bogota] PHP Notice:  Undefined index: nombre_usuario in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 121
+[07-Sep-2015 21:34:10 America/Bogota] PHP Notice:  Undefined index: nombre_usuario in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 121
+[07-Sep-2015 21:34:10 America/Bogota] PHP Notice:  Undefined index: nombre_usuario in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 121
+[07-Sep-2015 21:34:10 America/Bogota] PHP Notice:  Undefined index: nombre_usuario in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 121
+[07-Sep-2015 21:35:16 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:16 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:16 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:16 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:16 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:20 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:20 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:20 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:20 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:20 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:20 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:20 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:20 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:20 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:20 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:20 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:20 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:20 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:20 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:20 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:20 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:20 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:20 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:20 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:20 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:20 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:20 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:20 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:20 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:20 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:22 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:22 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:22 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:22 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:22 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:22 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:22 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:22 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:22 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:22 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:22 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:22 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:22 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:22 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:22 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:22 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:22 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:22 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:22 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:22 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:22 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:22 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:22 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:22 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:22 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:24 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:24 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:24 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:24 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:24 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:24 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:24 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:24 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:24 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:24 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:24 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:24 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:24 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:24 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:24 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:24 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:24 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:24 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:24 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:24 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:24 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:24 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:24 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:24 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:24 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:24 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:24 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:24 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:24 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:24 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:24 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:24 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:24 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:24 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:24 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:24 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:24 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:24 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:24 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:24 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:24 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:24 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:24 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:24 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:24 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:24 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:24 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:24 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:24 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:24 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:28 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:28 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:28 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:28 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:28 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:28 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:28 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:28 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:28 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:28 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:28 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:28 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:28 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:28 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:28 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:28 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:28 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:28 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:28 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:28 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:28 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:28 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:28 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:28 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:28 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:28 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:28 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:28 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:28 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:28 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:28 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:28 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:28 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:28 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:28 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:28 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:28 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:28 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:28 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:28 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:28 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:28 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:28 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:28 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:28 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:28 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:28 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:28 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:28 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:28 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:28 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:28 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:28 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:28 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:28 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:28 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:28 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:28 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:28 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:28 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:28 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:28 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:28 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:28 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:28 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:28 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:28 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:28 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:28 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:28 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:28 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:28 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:28 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:28 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:28 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:28 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:28 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:28 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:28 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:28 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:28 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:28 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:28 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:28 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:28 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:29 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:29 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:29 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:29 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:29 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:29 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:29 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:29 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:29 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:29 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:29 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:29 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:29 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:29 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:29 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:29 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:29 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:29 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:29 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:29 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:29 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:29 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:29 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:29 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:29 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:29 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:29 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:29 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:29 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:29 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:29 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:29 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:29 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:29 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:29 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:29 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:29 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:29 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:29 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:29 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:29 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:29 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:29 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:29 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:29 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:29 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:29 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:29 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:29 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:29 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:29 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:29 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:29 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:29 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:29 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:29 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:29 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:29 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:29 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:29 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:29 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:29 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:29 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:29 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:29 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:29 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:29 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:29 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:29 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:29 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:29 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:29 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:29 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:29 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:29 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:29 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:29 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:29 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:29 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:29 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:29 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:29 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:29 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:29 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:29 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:29 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:29 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:29 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:29 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:29 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:30 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:30 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:30 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:30 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:30 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:30 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:30 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:30 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:30 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:30 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:30 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:30 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:30 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:30 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:30 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:30 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:30 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:30 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:30 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:30 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:30 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:30 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:30 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:30 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:30 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:30 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:30 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:30 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:30 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:30 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:30 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:30 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:30 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:30 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:30 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:30 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:30 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:30 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:30 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:30 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:30 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:30 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:30 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:30 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:30 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:30 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:30 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:30 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:30 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:30 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:30 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:30 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:30 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:30 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:30 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:30 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:30 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:30 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:30 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:30 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:30 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:30 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:30 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:30 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:30 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:30 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:30 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:30 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:30 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:30 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:30 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:30 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:30 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:30 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:30 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:30 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:30 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:30 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:30 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:30 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:30 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:30 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:30 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:30 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:30 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:30 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:30 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:30 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:30 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:30 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:30 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:30 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:30 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:30 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:30 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:30 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:30 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:30 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:30 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:30 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:31 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:31 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:31 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:31 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:31 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:31 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:31 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:31 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:31 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:31 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:31 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:31 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:31 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:31 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:31 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:31 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:31 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:31 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:31 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:31 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:31 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:31 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:31 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:31 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:31 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:31 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:31 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:31 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:31 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:31 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:31 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:31 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:31 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:31 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:31 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:31 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:31 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:31 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:31 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:31 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:31 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:31 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:31 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:31 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:31 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:31 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:31 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:31 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:31 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:35:31 America/Bogota] PHP Notice:  Undefined index: nombre_archivo in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:46:56 America/Bogota] PHP Notice:  Undefined offset: 5 in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:46:56 America/Bogota] PHP Notice:  Undefined offset: 5 in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 121
+[07-Sep-2015 21:47:01 America/Bogota] PHP Notice:  Undefined offset: 5 in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:47:01 America/Bogota] PHP Notice:  Undefined offset: 5 in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 121
+[07-Sep-2015 21:47:04 America/Bogota] PHP Notice:  Undefined offset: 5 in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:47:04 America/Bogota] PHP Notice:  Undefined offset: 5 in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 121
+[07-Sep-2015 21:47:05 America/Bogota] PHP Notice:  Undefined offset: 5 in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:47:05 America/Bogota] PHP Notice:  Undefined offset: 5 in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 121
+[07-Sep-2015 21:47:06 America/Bogota] PHP Notice:  Undefined offset: 5 in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:47:06 America/Bogota] PHP Notice:  Undefined offset: 5 in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 121
+[07-Sep-2015 21:47:07 America/Bogota] PHP Notice:  Undefined offset: 5 in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:47:07 America/Bogota] PHP Notice:  Undefined offset: 5 in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 121
+[07-Sep-2015 21:47:07 America/Bogota] PHP Notice:  Undefined offset: 5 in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:47:07 America/Bogota] PHP Notice:  Undefined offset: 5 in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 121
+[07-Sep-2015 21:47:09 America/Bogota] PHP Notice:  Undefined offset: 5 in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:47:09 America/Bogota] PHP Notice:  Undefined offset: 5 in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 121
+[07-Sep-2015 21:47:09 America/Bogota] PHP Notice:  Undefined offset: 5 in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:47:09 America/Bogota] PHP Notice:  Undefined offset: 5 in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 121
+[07-Sep-2015 21:47:09 America/Bogota] PHP Notice:  Undefined offset: 5 in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:47:09 America/Bogota] PHP Notice:  Undefined offset: 5 in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 121
+[07-Sep-2015 21:47:11 America/Bogota] PHP Notice:  Undefined offset: 5 in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:47:11 America/Bogota] PHP Notice:  Undefined offset: 5 in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 121
+[07-Sep-2015 21:47:11 America/Bogota] PHP Notice:  Undefined offset: 5 in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:47:11 America/Bogota] PHP Notice:  Undefined offset: 5 in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 121
+[07-Sep-2015 21:47:12 America/Bogota] PHP Notice:  Undefined offset: 5 in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:47:12 America/Bogota] PHP Notice:  Undefined offset: 5 in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 121
+[07-Sep-2015 21:47:13 America/Bogota] PHP Notice:  Undefined offset: 5 in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:47:13 America/Bogota] PHP Notice:  Undefined offset: 5 in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 121
+[07-Sep-2015 21:47:13 America/Bogota] PHP Notice:  Undefined offset: 5 in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:47:13 America/Bogota] PHP Notice:  Undefined offset: 5 in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 121
+[07-Sep-2015 21:47:13 America/Bogota] PHP Notice:  Undefined offset: 5 in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:47:13 America/Bogota] PHP Notice:  Undefined offset: 5 in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 121
+[07-Sep-2015 21:47:13 America/Bogota] PHP Notice:  Undefined offset: 5 in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:47:13 America/Bogota] PHP Notice:  Undefined offset: 5 in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 121
+[07-Sep-2015 21:47:13 America/Bogota] PHP Notice:  Undefined offset: 5 in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:47:13 America/Bogota] PHP Notice:  Undefined offset: 5 in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 121
+[07-Sep-2015 21:47:15 America/Bogota] PHP Notice:  Undefined offset: 5 in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:47:15 America/Bogota] PHP Notice:  Undefined offset: 5 in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 121
+[07-Sep-2015 21:47:15 America/Bogota] PHP Notice:  Undefined offset: 5 in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:47:15 America/Bogota] PHP Notice:  Undefined offset: 5 in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 121
+[07-Sep-2015 21:47:15 America/Bogota] PHP Notice:  Undefined offset: 5 in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:47:15 America/Bogota] PHP Notice:  Undefined offset: 5 in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 121
+[07-Sep-2015 21:47:16 America/Bogota] PHP Notice:  Undefined offset: 5 in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:47:16 America/Bogota] PHP Notice:  Undefined offset: 5 in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 121
+[07-Sep-2015 21:47:16 America/Bogota] PHP Notice:  Undefined offset: 5 in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:47:16 America/Bogota] PHP Notice:  Undefined offset: 5 in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 121
+[07-Sep-2015 21:47:16 America/Bogota] PHP Notice:  Undefined offset: 5 in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:47:16 America/Bogota] PHP Notice:  Undefined offset: 5 in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 121
+[07-Sep-2015 21:47:16 America/Bogota] PHP Notice:  Undefined offset: 5 in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:47:16 America/Bogota] PHP Notice:  Undefined offset: 5 in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 121
+[07-Sep-2015 21:47:16 America/Bogota] PHP Notice:  Undefined offset: 5 in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:47:16 America/Bogota] PHP Notice:  Undefined offset: 5 in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 121
+[07-Sep-2015 21:47:16 America/Bogota] PHP Notice:  Undefined offset: 5 in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:47:16 America/Bogota] PHP Notice:  Undefined offset: 5 in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 121
+[07-Sep-2015 21:47:17 America/Bogota] PHP Notice:  Undefined offset: 5 in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:47:17 America/Bogota] PHP Notice:  Undefined offset: 5 in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 121
+[07-Sep-2015 21:47:17 America/Bogota] PHP Notice:  Undefined offset: 5 in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:47:17 America/Bogota] PHP Notice:  Undefined offset: 5 in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 121
+[07-Sep-2015 21:47:17 America/Bogota] PHP Notice:  Undefined offset: 5 in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 116
+[07-Sep-2015 21:47:17 America/Bogota] PHP Notice:  Undefined offset: 5 in /home/zudokooc/public_html/sigmin.com.co/chat_online/admin_chat_sm.php on line 121
+[15-Sep-2015 13:33:36 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/suhosin.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/suhosin.so: undefined symbol: output_globals in Unknown on line 0
+[15-Sep-2015 13:33:36 America/Bogota] PHP Warning:  PHP Startup: homeloader: Unable to initialize module
+Module compiled with module API=20090626
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[15-Sep-2015 13:33:36 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo.so: undefined symbol: zval_property_ctor in Unknown on line 0
+[15-Sep-2015 13:33:36 America/Bogota] PHP Warning:  PHP Startup: pdo_sqlite: Unable to initialize module
+Module compiled with module API=20090626
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[15-Sep-2015 13:33:36 America/Bogota] PHP Warning:  PHP Startup: pdo_mysql: Unable to initialize module
+Module compiled with module API=20090626
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[15-Sep-2015 13:33:36 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[15-Sep-2015 13:33:36 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[15-Sep-2015 13:33:36 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/sqlite.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/sqlite.so: undefined symbol: zval_property_ctor in Unknown on line 0
+[15-Sep-2015 13:34:01 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/suhosin.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/suhosin.so: undefined symbol: output_globals in Unknown on line 0
+[15-Sep-2015 13:34:01 America/Bogota] PHP Warning:  PHP Startup: homeloader: Unable to initialize module
+Module compiled with module API=20090626
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[15-Sep-2015 13:34:01 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo.so: undefined symbol: zval_property_ctor in Unknown on line 0
+[15-Sep-2015 13:34:01 America/Bogota] PHP Warning:  PHP Startup: pdo_sqlite: Unable to initialize module
+Module compiled with module API=20090626
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[15-Sep-2015 13:34:01 America/Bogota] PHP Warning:  PHP Startup: pdo_mysql: Unable to initialize module
+Module compiled with module API=20090626
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[15-Sep-2015 13:34:01 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[15-Sep-2015 13:34:01 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[15-Sep-2015 13:34:01 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/sqlite.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/sqlite.so: undefined symbol: zval_property_ctor in Unknown on line 0
+[15-Sep-2015 13:34:06 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/suhosin.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/suhosin.so: undefined symbol: output_globals in Unknown on line 0
+[15-Sep-2015 13:34:06 America/Bogota] PHP Warning:  PHP Startup: homeloader: Unable to initialize module
+Module compiled with module API=20090626
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[15-Sep-2015 13:34:06 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo.so: undefined symbol: zval_property_ctor in Unknown on line 0
+[15-Sep-2015 13:34:06 America/Bogota] PHP Warning:  PHP Startup: pdo_sqlite: Unable to initialize module
+Module compiled with module API=20090626
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[15-Sep-2015 13:34:06 America/Bogota] PHP Warning:  PHP Startup: pdo_mysql: Unable to initialize module
+Module compiled with module API=20090626
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[15-Sep-2015 13:34:06 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[15-Sep-2015 13:34:06 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[15-Sep-2015 13:34:06 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/sqlite.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/sqlite.so: undefined symbol: zval_property_ctor in Unknown on line 0
+[15-Sep-2015 19:24:18 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/suhosin.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/suhosin.so: undefined symbol: output_globals in Unknown on line 0
+[15-Sep-2015 19:24:18 America/Bogota] PHP Warning:  PHP Startup: homeloader: Unable to initialize module
+Module compiled with module API=20090626
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[15-Sep-2015 19:24:18 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo.so: undefined symbol: zval_property_ctor in Unknown on line 0
+[15-Sep-2015 19:24:18 America/Bogota] PHP Warning:  PHP Startup: pdo_sqlite: Unable to initialize module
+Module compiled with module API=20090626
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[15-Sep-2015 19:24:18 America/Bogota] PHP Warning:  PHP Startup: pdo_mysql: Unable to initialize module
+Module compiled with module API=20090626
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[15-Sep-2015 19:24:18 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[15-Sep-2015 19:24:18 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[15-Sep-2015 19:24:18 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/sqlite.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/sqlite.so: undefined symbol: zval_property_ctor in Unknown on line 0
+[16-Sep-2015 06:33:59 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/suhosin.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/suhosin.so: undefined symbol: output_globals in Unknown on line 0
+[16-Sep-2015 06:33:59 America/Bogota] PHP Warning:  PHP Startup: homeloader: Unable to initialize module
+Module compiled with module API=20090626
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[16-Sep-2015 06:33:59 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo.so: undefined symbol: zval_property_ctor in Unknown on line 0
+[16-Sep-2015 06:33:59 America/Bogota] PHP Warning:  PHP Startup: pdo_sqlite: Unable to initialize module
+Module compiled with module API=20090626
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[16-Sep-2015 06:33:59 America/Bogota] PHP Warning:  PHP Startup: pdo_mysql: Unable to initialize module
+Module compiled with module API=20090626
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[16-Sep-2015 06:33:59 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[16-Sep-2015 06:33:59 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[16-Sep-2015 06:33:59 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/sqlite.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/sqlite.so: undefined symbol: zval_property_ctor in Unknown on line 0
+[16-Sep-2015 06:34:02 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/suhosin.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/suhosin.so: undefined symbol: output_globals in Unknown on line 0
+[16-Sep-2015 06:34:02 America/Bogota] PHP Warning:  PHP Startup: homeloader: Unable to initialize module
+Module compiled with module API=20090626
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[16-Sep-2015 06:34:02 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo.so: undefined symbol: zval_property_ctor in Unknown on line 0
+[16-Sep-2015 06:34:02 America/Bogota] PHP Warning:  PHP Startup: pdo_sqlite: Unable to initialize module
+Module compiled with module API=20090626
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[16-Sep-2015 06:34:02 America/Bogota] PHP Warning:  PHP Startup: pdo_mysql: Unable to initialize module
+Module compiled with module API=20090626
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[16-Sep-2015 06:34:02 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[16-Sep-2015 06:34:02 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[16-Sep-2015 06:34:02 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/sqlite.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/sqlite.so: undefined symbol: zval_property_ctor in Unknown on line 0
+[16-Sep-2015 21:17:17 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/suhosin.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/suhosin.so: undefined symbol: output_globals in Unknown on line 0
+[16-Sep-2015 21:17:17 America/Bogota] PHP Warning:  PHP Startup: homeloader: Unable to initialize module
+Module compiled with module API=20090626
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[16-Sep-2015 21:17:17 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo.so: undefined symbol: zval_property_ctor in Unknown on line 0
+[16-Sep-2015 21:17:17 America/Bogota] PHP Warning:  PHP Startup: pdo_sqlite: Unable to initialize module
+Module compiled with module API=20090626
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[16-Sep-2015 21:17:17 America/Bogota] PHP Warning:  PHP Startup: pdo_mysql: Unable to initialize module
+Module compiled with module API=20090626
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[16-Sep-2015 21:17:17 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[16-Sep-2015 21:17:17 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[16-Sep-2015 21:17:17 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/sqlite.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/sqlite.so: undefined symbol: zval_property_ctor in Unknown on line 0
+[17-Sep-2015 21:57:09 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/suhosin.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/suhosin.so: undefined symbol: output_globals in Unknown on line 0
+[17-Sep-2015 21:57:09 America/Bogota] PHP Warning:  PHP Startup: homeloader: Unable to initialize module
+Module compiled with module API=20090626
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[17-Sep-2015 21:57:09 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo.so: undefined symbol: zval_property_ctor in Unknown on line 0
+[17-Sep-2015 21:57:09 America/Bogota] PHP Warning:  PHP Startup: pdo_sqlite: Unable to initialize module
+Module compiled with module API=20090626
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[17-Sep-2015 21:57:09 America/Bogota] PHP Warning:  PHP Startup: pdo_mysql: Unable to initialize module
+Module compiled with module API=20090626
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[17-Sep-2015 21:57:09 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[17-Sep-2015 21:57:09 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[17-Sep-2015 21:57:09 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/sqlite.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/sqlite.so: undefined symbol: zval_property_ctor in Unknown on line 0
+[19-Sep-2015 19:24:10 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/suhosin.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/suhosin.so: undefined symbol: output_globals in Unknown on line 0
+[19-Sep-2015 19:24:10 America/Bogota] PHP Warning:  PHP Startup: homeloader: Unable to initialize module
+Module compiled with module API=20090626
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[19-Sep-2015 19:24:10 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo.so: undefined symbol: zval_property_ctor in Unknown on line 0
+[19-Sep-2015 19:24:10 America/Bogota] PHP Warning:  PHP Startup: pdo_sqlite: Unable to initialize module
+Module compiled with module API=20090626
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[19-Sep-2015 19:24:10 America/Bogota] PHP Warning:  PHP Startup: pdo_mysql: Unable to initialize module
+Module compiled with module API=20090626
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[19-Sep-2015 19:24:10 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[19-Sep-2015 19:24:10 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[19-Sep-2015 19:24:10 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/sqlite.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/sqlite.so: undefined symbol: zval_property_ctor in Unknown on line 0
+[20-Sep-2015 13:13:29 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/suhosin.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/suhosin.so: undefined symbol: output_globals in Unknown on line 0
+[20-Sep-2015 13:13:29 America/Bogota] PHP Warning:  PHP Startup: homeloader: Unable to initialize module
+Module compiled with module API=20090626
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[20-Sep-2015 13:13:29 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo.so: undefined symbol: zval_property_ctor in Unknown on line 0
+[20-Sep-2015 13:13:29 America/Bogota] PHP Warning:  PHP Startup: pdo_sqlite: Unable to initialize module
+Module compiled with module API=20090626
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[20-Sep-2015 13:13:29 America/Bogota] PHP Warning:  PHP Startup: pdo_mysql: Unable to initialize module
+Module compiled with module API=20090626
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[20-Sep-2015 13:13:29 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[20-Sep-2015 13:13:29 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[20-Sep-2015 13:13:29 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/sqlite.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/sqlite.so: undefined symbol: zval_property_ctor in Unknown on line 0
+[20-Sep-2015 13:17:25 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/suhosin.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/suhosin.so: undefined symbol: output_globals in Unknown on line 0
+[20-Sep-2015 13:17:25 America/Bogota] PHP Warning:  PHP Startup: homeloader: Unable to initialize module
+Module compiled with module API=20090626
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[20-Sep-2015 13:17:25 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo.so: undefined symbol: zval_property_ctor in Unknown on line 0
+[20-Sep-2015 13:17:25 America/Bogota] PHP Warning:  PHP Startup: pdo_sqlite: Unable to initialize module
+Module compiled with module API=20090626
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[20-Sep-2015 13:17:25 America/Bogota] PHP Warning:  PHP Startup: pdo_mysql: Unable to initialize module
+Module compiled with module API=20090626
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[20-Sep-2015 13:17:25 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[20-Sep-2015 13:17:25 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[20-Sep-2015 13:17:25 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/sqlite.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/sqlite.so: undefined symbol: zval_property_ctor in Unknown on line 0
+[21-Sep-2015 22:49:38 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/suhosin.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/suhosin.so: undefined symbol: output_globals in Unknown on line 0
+[21-Sep-2015 22:49:38 America/Bogota] PHP Warning:  PHP Startup: homeloader: Unable to initialize module
+Module compiled with module API=20090626
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[21-Sep-2015 22:49:38 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo.so: undefined symbol: zval_property_ctor in Unknown on line 0
+[21-Sep-2015 22:49:38 America/Bogota] PHP Warning:  PHP Startup: pdo_sqlite: Unable to initialize module
+Module compiled with module API=20090626
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[21-Sep-2015 22:49:38 America/Bogota] PHP Warning:  PHP Startup: pdo_mysql: Unable to initialize module
+Module compiled with module API=20090626
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[21-Sep-2015 22:49:38 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[21-Sep-2015 22:49:38 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[21-Sep-2015 22:49:38 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/sqlite.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/sqlite.so: undefined symbol: zval_property_ctor in Unknown on line 0
+[21-Sep-2015 23:44:13 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/suhosin.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/suhosin.so: undefined symbol: output_globals in Unknown on line 0
+[21-Sep-2015 23:44:13 America/Bogota] PHP Warning:  PHP Startup: homeloader: Unable to initialize module
+Module compiled with module API=20090626
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[21-Sep-2015 23:44:13 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo.so: undefined symbol: zval_property_ctor in Unknown on line 0
+[21-Sep-2015 23:44:13 America/Bogota] PHP Warning:  PHP Startup: pdo_sqlite: Unable to initialize module
+Module compiled with module API=20090626
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[21-Sep-2015 23:44:13 America/Bogota] PHP Warning:  PHP Startup: pdo_mysql: Unable to initialize module
+Module compiled with module API=20090626
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[21-Sep-2015 23:44:13 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[21-Sep-2015 23:44:13 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[21-Sep-2015 23:44:13 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/sqlite.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/sqlite.so: undefined symbol: zval_property_ctor in Unknown on line 0
+[23-Sep-2015 16:46:16 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[23-Sep-2015 16:46:16 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[23-Sep-2015 19:52:43 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[23-Sep-2015 19:52:43 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[24-Sep-2015 19:57:46 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[24-Sep-2015 19:57:47 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[24-Sep-2015 20:37:29 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[24-Sep-2015 20:37:29 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[26-Sep-2015 23:01:16 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[26-Sep-2015 23:01:16 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[27-Sep-2015 17:22:36 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[27-Sep-2015 17:22:36 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[01-Oct-2015 08:31:42 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[01-Oct-2015 08:31:42 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[01-Oct-2015 10:58:07 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[01-Oct-2015 10:58:07 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[06-Oct-2015 08:22:26 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[06-Oct-2015 08:22:26 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[06-Oct-2015 08:27:29 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[06-Oct-2015 08:27:30 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[06-Oct-2015 20:44:45 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[06-Oct-2015 20:44:45 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[06-Oct-2015 22:34:54 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[06-Oct-2015 22:34:54 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[07-Oct-2015 07:28:32 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[07-Oct-2015 07:28:32 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[07-Oct-2015 07:28:49 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[07-Oct-2015 07:28:49 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[07-Oct-2015 07:28:49 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[07-Oct-2015 07:28:49 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[07-Oct-2015 07:30:03 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[07-Oct-2015 07:30:03 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[07-Oct-2015 14:46:21 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[07-Oct-2015 14:46:21 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[07-Oct-2015 14:46:26 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[07-Oct-2015 14:46:26 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[07-Oct-2015 14:51:31 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[07-Oct-2015 14:51:31 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[08-Oct-2015 17:12:37 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[08-Oct-2015 17:12:37 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[09-Oct-2015 09:44:48 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[09-Oct-2015 09:44:49 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[09-Oct-2015 19:12:15 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[09-Oct-2015 19:12:15 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[11-Oct-2015 02:58:46 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[11-Oct-2015 02:58:46 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[13-Oct-2015 17:53:04 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[13-Oct-2015 17:53:04 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[14-Oct-2015 04:05:36 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[14-Oct-2015 04:05:36 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[14-Oct-2015 09:02:43 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[14-Oct-2015 09:02:43 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[14-Oct-2015 10:47:27 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[14-Oct-2015 10:47:27 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[14-Oct-2015 15:40:30 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[14-Oct-2015 15:40:30 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[14-Oct-2015 22:11:40 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[14-Oct-2015 22:11:40 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[15-Oct-2015 03:36:31 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[15-Oct-2015 03:36:31 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[15-Oct-2015 08:40:43 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[15-Oct-2015 08:40:43 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[15-Oct-2015 23:24:15 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[15-Oct-2015 23:24:15 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[16-Oct-2015 20:50:14 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[16-Oct-2015 20:50:14 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[17-Oct-2015 04:05:29 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[17-Oct-2015 04:05:29 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[08-Nov-2015 00:08:13 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[08-Nov-2015 00:08:13 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[07-Dec-2015 14:15:45 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[07-Dec-2015 14:15:45 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[23-Dec-2015 22:54:54 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[23-Dec-2015 22:54:54 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[03-Feb-2016 16:12:05 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[03-Feb-2016 16:12:05 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[05-Feb-2016 15:31:44 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[05-Feb-2016 15:31:44 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[06-Feb-2016 03:10:40 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[06-Feb-2016 03:10:40 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[09-Feb-2016 20:06:01 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[09-Feb-2016 20:06:01 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[13-Feb-2016 17:04:40 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[13-Feb-2016 17:04:40 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[18-Feb-2016 06:55:47 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[18-Feb-2016 06:55:47 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[22-Feb-2016 22:26:07 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[22-Feb-2016 22:26:07 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[28-Feb-2016 06:23:45 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[28-Feb-2016 06:23:46 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[02-Mar-2016 13:57:32 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[02-Mar-2016 13:57:32 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[03-Mar-2016 18:37:47 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[03-Mar-2016 18:37:47 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[06-Mar-2016 22:07:25 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[06-Mar-2016 22:07:25 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[10-Mar-2016 05:47:25 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[10-Mar-2016 05:47:25 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[11-Mar-2016 09:40:42 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[11-Mar-2016 09:40:42 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[13-Mar-2016 15:12:11 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[13-Mar-2016 15:12:11 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[23-Mar-2016 23:54:35 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[23-Mar-2016 23:54:35 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[28-Mar-2016 05:19:17 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[28-Mar-2016 05:19:17 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[29-Mar-2016 23:59:32 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[29-Mar-2016 23:59:32 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[01-Apr-2016 11:45:53 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[01-Apr-2016 11:45:53 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[02-Apr-2016 10:00:58 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[02-Apr-2016 10:00:58 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[04-Apr-2016 21:01:27 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[04-Apr-2016 21:01:27 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[07-Apr-2016 19:01:12 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[07-Apr-2016 19:01:12 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[02-Jul-2016 17:45:39 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[02-Jul-2016 17:45:39 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[24-Jul-2016 13:04:52 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[24-Jul-2016 13:04:52 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[26-Jul-2016 15:40:34 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[26-Jul-2016 15:40:34 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[26-Jul-2016 15:40:49 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[26-Jul-2016 15:40:49 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[26-Jul-2016 15:40:57 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[26-Jul-2016 15:40:57 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[26-Jul-2016 15:41:14 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[26-Jul-2016 15:41:14 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[26-Jul-2016 15:44:04 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[26-Jul-2016 15:44:04 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[26-Jul-2016 15:44:26 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[26-Jul-2016 15:44:26 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[26-Jul-2016 15:45:00 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[26-Jul-2016 15:45:00 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[26-Jul-2016 15:46:54 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[26-Jul-2016 15:46:54 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[26-Jul-2016 15:47:02 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[26-Jul-2016 15:47:02 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[26-Jul-2016 15:48:08 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[26-Jul-2016 15:48:08 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[26-Jul-2016 15:49:29 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[26-Jul-2016 15:49:29 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[26-Jul-2016 15:50:37 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[26-Jul-2016 15:50:37 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[26-Jul-2016 15:51:24 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[26-Jul-2016 15:51:24 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[26-Jul-2016 15:52:42 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[26-Jul-2016 15:52:42 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[26-Jul-2016 15:52:50 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[26-Jul-2016 15:52:50 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[26-Jul-2016 15:53:25 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[26-Jul-2016 15:53:25 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[26-Jul-2016 15:53:32 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[26-Jul-2016 15:53:32 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[26-Jul-2016 15:53:44 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[26-Jul-2016 15:53:44 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[26-Jul-2016 15:54:32 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[26-Jul-2016 15:54:32 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[26-Jul-2016 15:56:13 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[26-Jul-2016 15:56:13 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[26-Jul-2016 15:56:25 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[26-Jul-2016 15:56:25 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[26-Jul-2016 15:56:36 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[26-Jul-2016 15:56:36 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[26-Jul-2016 15:57:09 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[26-Jul-2016 15:57:09 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[26-Jul-2016 15:57:27 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[26-Jul-2016 15:57:27 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[26-Jul-2016 15:58:54 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[26-Jul-2016 15:58:54 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[26-Jul-2016 15:59:38 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[26-Jul-2016 15:59:38 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[26-Jul-2016 15:59:43 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[26-Jul-2016 15:59:43 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[26-Jul-2016 15:59:53 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[26-Jul-2016 15:59:53 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[26-Jul-2016 16:00:33 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[26-Jul-2016 16:00:33 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[26-Jul-2016 16:00:33 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[26-Jul-2016 16:00:33 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[26-Jul-2016 16:00:43 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[26-Jul-2016 16:00:43 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[26-Jul-2016 16:01:14 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[26-Jul-2016 16:01:14 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[26-Jul-2016 16:02:40 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[26-Jul-2016 16:02:40 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[26-Jul-2016 16:04:02 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[26-Jul-2016 16:04:02 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[26-Jul-2016 16:04:42 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[26-Jul-2016 16:04:42 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[26-Jul-2016 16:05:00 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[26-Jul-2016 16:05:00 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[26-Jul-2016 16:05:04 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[26-Jul-2016 16:05:04 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[26-Jul-2016 16:09:31 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[26-Jul-2016 16:09:31 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[26-Jul-2016 16:15:28 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[26-Jul-2016 16:15:28 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[26-Jul-2016 16:18:45 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[26-Jul-2016 16:18:45 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[26-Jul-2016 20:08:51 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[26-Jul-2016 20:08:51 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[26-Jul-2016 20:17:28 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[26-Jul-2016 20:17:28 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[27-Jul-2016 12:26:07 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[27-Jul-2016 12:26:08 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[27-Jul-2016 12:26:20 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[27-Jul-2016 12:26:20 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[12-Sep-2016 23:18:33 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[12-Sep-2016 23:18:33 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[12-Sep-2016 23:18:51 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_pgsql.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[12-Sep-2016 23:18:51 America/Bogota] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/timezonedb.so: cannot open shared object file: No such file or directory in Unknown on line 0

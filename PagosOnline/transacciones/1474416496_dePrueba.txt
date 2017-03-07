@@ -1,0 +1,31 @@
+Array
+(
+    [merchant_id] => 544477
+    [referenceCode] => 1474416496
+    [state_pol] => 4
+    [sign] => 3cd22ff8cabafb051cd149d174f682a3
+    [reference_sale] => 1474416496
+    [currency] => COP
+)
+Array
+(
+    [merchant_id] => 544477
+    [referenceCode] => 1474416496
+    [state_pol] => 4
+    [sign] => 3cd22ff8cabafb051cd149d174f682a3
+    [reference_sale] => 1474416496
+    [currency] => COP
+    [value] => 10000
+)
+
+Habilita Consignacion. 
+OK
+Envia datos a email. 
+Array
+(
+    [id_usuario] => 8
+    [precio] => 10000
+)
+
+ infoPago: -------- 
+ 

@@ -1,0 +1,221 @@
+Array
+(
+    [response_code_pol] => 4
+    [phone] => 
+    [additional_value] => 0.00
+    [test] => 0
+    [transaction_date] => 2017-01-17 09:05:32
+    [cc_number] => ************9701
+    [cc_holder] => Horacio Antonio Estrada Jaramillo
+    [error_code_bank] => 05
+    [billing_country] => CO
+    [bank_referenced_name] => 
+    [description] => ADQUISICION SERVICIOS SIGMIN
+    [administrative_fee_tax] => 0.00
+    [value] => 20000.00
+    [administrative_fee] => 0.00
+    [payment_method_type] => 2
+    [office_phone] => 
+    [email_buyer] => hestrajar@yahoo.com
+    [response_message_pol] => PAYMENT_NETWORK_REJECTED
+    [error_message_bank] => Rechazo General
+    [shipping_city] => 
+    [transaction_id] => 377b677c-b30e-49ac-a05d-8f2f4903208f
+    [sign] => b60a35018f322bf1147ec2bfe5f93088
+    [tax] => 2758.62
+    [payment_method] => 10
+    [billing_address] => Calle 125A; 56A-80
+    [payment_method_name] => VISA
+    [pse_bank] => 
+    [state_pol] => 6
+    [date] => 2017.01.17 09:05:32
+    [nickname_buyer] => 
+    [reference_pol] => 920861124
+    [currency] => COP
+    [risk] => 0.0
+    [shipping_address] => 
+    [bank_id] => 10
+    [payment_request_state] => R
+    [customer_number] => 
+    [administrative_fee_base] => 0.00
+    [attempts] => 1
+    [merchant_id] => 544477
+    [exchange_rate] => 1.00
+    [shipping_country] => CO
+    [installments_number] => 1
+    [franchise] => VISA
+    [payment_method_id] => 2
+    [extra1] => 
+    [extra2] => 
+    [antifraudMerchantId] => 
+    [extra3] => 
+    [nickname_seller] => 
+    [ip] => 181.49.65.2
+    [airline_code] => 
+    [billing_city] => Bogotá
+    [pse_reference1] => 
+    [reference_sale] => 1484661717
+    [pse_reference3] => 
+    [pse_reference2] => 
+)
+OKArray
+(
+    [response_code_pol] => 1
+    [phone] => 
+    [additional_value] => 0.00
+    [test] => 0
+    [transaction_date] => 2017-01-17 09:07:49
+    [cc_number] => ************2693
+    [cc_holder] => Horacio Antonio Estrada Jaramillo
+    [error_code_bank] => 00
+    [billing_country] => CO
+    [bank_referenced_name] => 
+    [description] => ADQUISICION SERVICIOS SIGMIN
+    [administrative_fee_tax] => 0.00
+    [value] => 20000.00
+    [administrative_fee] => 0.00
+    [payment_method_type] => 2
+    [office_phone] => 
+    [email_buyer] => hestrajar@yahoo.com
+    [response_message_pol] => APPROVED
+    [error_message_bank] => 
+    [shipping_city] => 
+    [transaction_id] => 6c14d540-831d-4278-8b9b-1760a245327a
+    [sign] => dd5177af5e4b2f785d4ff51869f6a508
+    [tax] => 2758.62
+    [transaction_bank_id] => 703002
+    [payment_method] => 28
+    [billing_address] => Calle 125A; 56A-80
+    [payment_method_name] => MASTERCARD
+    [pse_bank] => 
+    [state_pol] => 4
+    [date] => 2017.01.17 09:07:49
+    [nickname_buyer] => 
+    [reference_pol] => 920861124
+    [currency] => COP
+    [risk] => 0.0
+    [shipping_address] => 
+    [bank_id] => 28
+    [payment_request_state] => A
+    [customer_number] => 
+    [administrative_fee_base] => 0.00
+    [attempts] => 1
+    [merchant_id] => 544477
+    [exchange_rate] => 1.00
+    [shipping_country] => CO
+    [installments_number] => 1
+    [franchise] => MASTERCARD
+    [payment_method_id] => 2
+    [extra1] => 
+    [extra2] => 
+    [antifraudMerchantId] => 
+    [extra3] => 
+    [commision_pol_currency] => COP
+    [nickname_seller] => 
+    [ip] => 181.49.65.2
+    [commision_pol] => 3364.00
+    [airline_code] => 
+    [billing_city] => Bogotá
+    [pse_reference1] => 
+    [cus] => 901738594
+    [reference_sale] => 1484661717
+    [authorization_code] => 703002
+    [pse_reference3] => 
+    [pse_reference2] => 
+)
+OK
+Habilita Consignacion. 
+OK
+Creditos: 
+Array
+(
+    [id_usuario] => 162
+    [precio] => 20000
+)
+
+ estado transaccion: OK 
+ 
+Envia datos a email. 
+
+ infoPago: Array 
+ Array
+(
+    [response_code_pol] => 1
+    [phone] => 
+    [additional_value] => 0.00
+    [test] => 0
+    [transaction_date] => 2017-01-17 09:07:49
+    [cc_number] => ************2693
+    [cc_holder] => Horacio Antonio Estrada Jaramillo
+    [error_code_bank] => 00
+    [billing_country] => CO
+    [bank_referenced_name] => 
+    [description] => ADQUISICION SERVICIOS SIGMIN
+    [administrative_fee_tax] => 0.00
+    [value] => 20000.00
+    [administrative_fee] => 0.00
+    [payment_method_type] => 2
+    [office_phone] => 
+    [email_buyer] => hestrajar@yahoo.com
+    [response_message_pol] => APPROVED
+    [error_message_bank] => 
+    [shipping_city] => 
+    [transaction_id] => 6c14d540-831d-4278-8b9b-1760a245327a
+    [sign] => dd5177af5e4b2f785d4ff51869f6a508
+    [tax] => 2758.62
+    [transaction_bank_id] => 703002
+    [payment_method] => 28
+    [billing_address] => Calle 125A; 56A-80
+    [payment_method_name] => MASTERCARD
+    [pse_bank] => 
+    [state_pol] => 4
+    [date] => 2017.01.17 09:07:49
+    [nickname_buyer] => 
+    [reference_pol] => 920861124
+    [currency] => COP
+    [risk] => 0.0
+    [shipping_address] => 
+    [bank_id] => 28
+    [payment_request_state] => A
+    [customer_number] => 
+    [administrative_fee_base] => 0.00
+    [attempts] => 1
+    [merchant_id] => 544477
+    [exchange_rate] => 1.00
+    [shipping_country] => CO
+    [installments_number] => 1
+    [franchise] => MASTERCARD
+    [payment_method_id] => 2
+    [extra1] => 
+    [extra2] => 
+    [antifraudMerchantId] => 
+    [extra3] => 
+    [commision_pol_currency] => COP
+    [nickname_seller] => 
+    [ip] => 181.49.65.2
+    [commision_pol] => 3364.00
+    [airline_code] => 
+    [billing_city] => Bogotá
+    [pse_reference1] => 
+    [cus] => 901738594
+    [reference_sale] => 1484661717
+    [authorization_code] => 703002
+    [pse_reference3] => 
+    [pse_reference2] => 
+)
+OK
+Habilita Consignacion. 
+OK
+Creditos: 
+Array
+(
+    [id_usuario] => 162
+    [precio] => 20000
+)
+
+ estado transaccion: OK 
+ 
+Envia datos a email. 
+
+ infoPago: Array 
+ 

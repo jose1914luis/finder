@@ -1,0 +1,81 @@
+Array
+(
+    [response_code_pol] => 1
+    [phone] => 
+    [additional_value] => 0.00
+    [test] => 0
+    [transaction_date] => 2016-10-03 21:36:24
+    [cc_number] => ************5705
+    [cc_holder] => DAVIVIENDA
+    [error_code_bank] => 00
+    [billing_country] => CO
+    [bank_referenced_name] => 
+    [description] => ADQUISICION SERVICIOS SIGMIN
+    [administrative_fee_tax] => 0.00
+    [value] => 10000.00
+    [administrative_fee] => 0.00
+    [payment_method_type] => 2
+    [office_phone] => 
+    [email_buyer] => carollopez4@gmail.com
+    [response_message_pol] => APPROVED
+    [error_message_bank] => 
+    [shipping_city] => 
+    [transaction_id] => c82267c2-38d5-4ca2-9a79-6ce2a61e94a7
+    [sign] => 68b4765e078205f31b71e032dc584db6
+    [tax] => 1379.31
+    [transaction_bank_id] => 213624
+    [payment_method] => 28
+    [billing_address] => CALLE 7 SUR # 37A - 25
+    [payment_method_name] => MASTERCARD
+    [pse_bank] => 
+    [state_pol] => 4
+    [date] => 2016.10.03 09:36:24
+    [nickname_buyer] => 
+    [reference_pol] => 852403928
+    [currency] => COP
+    [risk] => 0.0
+    [shipping_address] => 
+    [bank_id] => 28
+    [payment_request_state] => A
+    [customer_number] => 
+    [administrative_fee_base] => 0.00
+    [attempts] => 1
+    [merchant_id] => 544477
+    [exchange_rate] => 1.00
+    [shipping_country] => CO
+    [installments_number] => 1
+    [franchise] => MASTERCARD
+    [payment_method_id] => 2
+    [extra1] => 
+    [extra2] => 
+    [antifraudMerchantId] => 
+    [extra3] => 
+    [commision_pol_currency] => COP
+    [nickname_seller] => 
+    [ip] => 181.137.65.12
+    [commision_pol] => 3364.00
+    [airline_code] => 
+    [billing_city] => MEDELLIN
+    [pse_reference1] => 
+    [cus] => 357508187
+    [reference_sale] => 1475548399
+    [authorization_code] => 213624
+    [pse_reference3] => 
+    [pse_reference2] => 
+)
+OK
+Habilita Consignacion. 
+OK
+Creditos: 
+Array
+(
+    [id_usuario] => 3
+    [precio] => 10000
+)
+
+ estado transaccion: OK 
+ 
+Envia datos a email. 
+
+ infoPago: Array 
+ 

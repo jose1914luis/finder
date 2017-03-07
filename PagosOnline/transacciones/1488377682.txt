@@ -1,0 +1,155 @@
+Array
+(
+    [response_code_pol] => 1
+    [phone] => 
+    [additional_value] => 0.00
+    [test] => 0
+    [transaction_date] => 2017-03-01 09:20:30
+    [error_code_bank] => SUCCESS
+    [billing_country] => CO
+    [bank_referenced_name] => 
+    [description] => ADQUISICION SERVICIOS SIGMIN
+    [administrative_fee_tax] => 0.00
+    [value] => 100000.00
+    [administrative_fee] => 0.00
+    [payment_method_type] => 4
+    [office_phone] => 
+    [email_buyer] => tatyce@hotmail.com
+    [response_message_pol] => APPROVED
+    [error_message_bank] => 
+    [shipping_city] => 
+    [transaction_id] => 87001de2-cbf2-48c5-8ff7-b7a9a9351e54
+    [sign] => 135fbc7f9420a0d19ffc71c8e6a3b5f8
+    [tax] => 15966.39
+    [transaction_bank_id] => 
+    [payment_method] => 25
+    [billing_address] => 
+    [payment_method_name] => PSE
+    [pse_bank] => BANCOLOMBIA
+    [state_pol] => 4
+    [date] => 2017.03.01 09:20:30
+    [nickname_buyer] => 
+    [reference_pol] => 928584354
+    [currency] => COP
+    [risk] => 0.0
+    [shipping_address] => 
+    [bank_id] => 25
+    [payment_request_state] => A
+    [customer_number] => 
+    [administrative_fee_base] => 0.00
+    [attempts] => 1
+    [merchant_id] => 544477
+    [exchange_rate] => 1.00
+    [shipping_country] => CO
+    [installments_number] => 
+    [payment_method_id] => 4
+    [extra1] => 
+    [extra2] => 
+    [antifraudMerchantId] => 
+    [extra3] => 
+    [commision_pol_currency] => COP
+    [nickname_seller] => 
+    [ip] => 181.143.2.130
+    [commision_pol] => 5224.10
+    [airline_code] => 
+    [billing_city] => 
+    [pse_reference1] => 181.143.2.130
+    [cus] => 244496872
+    [reference_sale] => 1488377682
+    [authorization_code] => 
+    [pse_reference3] => 43012608
+    [pse_reference2] => CC
+)
+OK
+Habilita Consignacion. 
+OK
+Creditos: 
+Array
+(
+    [id_usuario] => 179
+    [precio] => 100000
+)
+
+ estado transaccion: OK 
+ 
+Envia datos a email. 
+
+ infoPago: Array 
+ Array
+(
+    [response_code_pol] => 1
+    [phone] => 
+    [additional_value] => 0.00
+    [test] => 0
+    [transaction_date] => 2017-03-01 09:20:30
+    [error_code_bank] => SUCCESS
+    [billing_country] => CO
+    [bank_referenced_name] => 
+    [description] => ADQUISICION SERVICIOS SIGMIN
+    [administrative_fee_tax] => 0.00
+    [value] => 100000.00
+    [administrative_fee] => 0.00
+    [payment_method_type] => 4
+    [office_phone] => 
+    [email_buyer] => tatyce@hotmail.com
+    [response_message_pol] => APPROVED
+    [error_message_bank] => 
+    [shipping_city] => 
+    [transaction_id] => 87001de2-cbf2-48c5-8ff7-b7a9a9351e54
+    [sign] => 135fbc7f9420a0d19ffc71c8e6a3b5f8
+    [tax] => 15966.39
+    [transaction_bank_id] => 
+    [payment_method] => 25
+    [billing_address] => 
+    [payment_method_name] => PSE
+    [pse_bank] => BANCOLOMBIA
+    [state_pol] => 4
+    [date] => 2017.03.01 09:20:30
+    [nickname_buyer] => 
+    [reference_pol] => 928584354
+    [currency] => COP
+    [risk] => 0.0
+    [shipping_address] => 
+    [bank_id] => 25
+    [payment_request_state] => A
+    [customer_number] => 
+    [administrative_fee_base] => 0.00
+    [attempts] => 1
+    [merchant_id] => 544477
+    [exchange_rate] => 1.00
+    [shipping_country] => CO
+    [installments_number] => 
+    [payment_method_id] => 4
+    [extra1] => 
+    [extra2] => 
+    [antifraudMerchantId] => 
+    [extra3] => 
+    [commision_pol_currency] => COP
+    [nickname_seller] => 
+    [ip] => 181.143.2.130
+    [commision_pol] => 5224.10
+    [airline_code] => 
+    [billing_city] => 
+    [pse_reference1] => 181.143.2.130
+    [cus] => 244496872
+    [reference_sale] => 1488377682
+    [authorization_code] => 
+    [pse_reference3] => 43012608
+    [pse_reference2] => CC
+)
+OK
+Habilita Consignacion. 
+OK
+Creditos: 
+Array
+(
+    [id_usuario] => 179
+    [precio] => 100000
+)
+
+ estado transaccion: OK 
+ 
+Envia datos a email. 
+
+ infoPago: Array 
+ 
