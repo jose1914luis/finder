@@ -9,13 +9,22 @@
 		<link rel="stylesheet" href="//code.jquery.com/ui/1.12.0/themes/base/jquery-ui.css">
 		<link rel="stylesheet" href="Javascript/sigmin_account.css">
 		<script>
-			var controlConfig = 1, divAnterior = "creditos";			
+			var controlConfig = 1, divAnterior = "creditos";	
+
+			function confirmaCreditoMapa(url) {
+				if(confirm("Visualizar el Mapa equivale a 1 Cr\u00E9dito, Desea consumir Cr\u00E9ditos?"))
+					document.location.href='?pagina=map';
+				else	
+					document.location.href='?pagina=account';
+			}
 		</script>
 <!--
 		<link rel="stylesheet" href="/resources/demos/style.css">
 		<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
 		<script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>		
--->		
+-->	
+
+	
 	<title>SIGMIN :: Mining Properties</title>
 </head>
 <body onunload='$("#loadingImage").hide();'>
@@ -60,7 +69,7 @@
 					<div class="cfgTitle" style="margin-left:10px; text-align:left">OPCIONES:</div>
 					<hr size="0"/>
 					<ul class="csConfigLi" style="width: 250px;">
-						<li class="csConfigLi"><a href="?pagina=map" class="csConfigLi">Propiedades Mineras</a>
+						<li class="csConfigLi"><a href="javascript:confirmaCreditoMapa('?pagina=map')" class="csConfigLi">Mapa de Propiedades Mineras</a>
 						<li class="csConfigLi"><a href="?mnu=liberaciones" class="csConfigLi">Liberaciones</a>
 						<li class="csConfigLi"><a href="?mnu=expedientes" class="csConfigLi">Mis Expedientes</a>
 						<li class="csConfigLi"><a href="?mnu=prospectos" class="csConfigLi">Mis Prospectos</a>

@@ -6,7 +6,7 @@
 
 		// Para paginación del resultado
 		$max_por_pagina 							= $GLOBALS ["max_por_pagina"];	
-		$_SESSION["lista_credito"]["paginas"] 		= array_chunk($listaCreditosHistorial, $max_por_pagina); 
+		$_SESSION["lista_credito"]["paginas"] 		= (!empty($listaCreditosHistorial)) ? array_chunk($listaCreditosHistorial, $max_por_pagina) : null; 
 		$_SESSION["lista_credito"]["caption"] 		= "Reporte de Cr&eacute;ditos Consumidos";	
 	}			
 

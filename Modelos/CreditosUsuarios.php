@@ -1,6 +1,6 @@
 <?php
 /*
-	Clase encargada de la administración y gestión de los creditos de los usuarios SGM o SIGMIN
+	Clase encargada de la administraciï¿½n y gestiï¿½n de los creditos de los usuarios SGM o SIGMIN
 */
 
 	class CreditosUsuarios {
@@ -9,7 +9,7 @@
 		function __construct() {
 			$this->conn = pg_connect($GLOBALS ["db1"]);			
 			if (!$this->conn) {
-				echo "Error de Conexión en la clase Usuario.\n";
+				echo "Error de Conexiï¿½n en la clase Usuario.\n";
 				return 0;
 			}
 		}
@@ -191,6 +191,18 @@
 				return  $lista[0]["result"];
 			}			
 		}
+		
+		function compraCreditosViewMap($idUsuario, $idProducto) {
+			$queryStr =  "select  servicios.usar_creditos_viewmap($1, $2) 	as result"; 
+			
+			$result = pg_query_params($this->conn, $queryStr, array($idUsuario, $idProducto));
+			if (pg_last_error($this->conn)) {
+				return pg_last_error($this->conn);	// proceso con errores de almacenamiento
+			} else {
+				$lista = pg_fetch_all($result);	
+				return  $lista[0]["result"];
+			}			
+		}		
 	}	
-?>
+
 

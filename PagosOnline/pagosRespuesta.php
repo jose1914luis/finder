@@ -91,10 +91,10 @@
 		<table align="center" width="700" border="0" cellspacing=5 cellpadding=5>
 		<tr>
 		<td colspan="2" align="left">
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="Imgs/sigmin_sas.png" width="227" height="69" /></td>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="../Imgs/SIGMIN_Respuesta.jpg" width="303" height="78" /></td>
 		</tr>		
 		<tr>
-		  <td colspan="2" bgcolor="#4C82B8"><span class="style1">Detalles de la Orden</span> </td>
+		  <td colspan="2" bgcolor="#004030"><span class="style1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Detalles de la Orden</span> </td>
 		  </tr>
 		<tr  bgcolor="#F2F2F2">
 		<td class="style3">Estado de la transaccion</td>

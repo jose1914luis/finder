@@ -16,8 +16,7 @@
 	
 	if(@$_GET["mnu"]=="propiedades_mineras") 	$paginaCargue = "v_propiedades_mineras.php";	
 	else if(@$_GET["mnu"]=="expedientes") 		{
-		require_once("Modelos/ExpedientesUsuarios.php");
-		
+		require_once("Modelos/ExpedientesUsuarios.php");		
 		$expediente_por_usr = new ExpedientesUsuarios();
 		
 		//$_POST 				= val_input($_POST);

@@ -68,7 +68,7 @@
 				$_SESSION["idEmpresa"] 					= $Id_Empresa;
 				$_SESSION["pagina"]						= "account";
 				$_SESSION['rango_inferior']				= 0;
-				$_SESSION['rango_superior']				= 150000;	
+				$_SESSION['rango_superior']				= 500000;	
 				// variables del controlador	
 				$msgError 	= "";			
 				include("indexAccount.php"); 	
@@ -150,7 +150,8 @@
 				$url	= "http://www.sigmin.com.co/EmailServices/sendEmailChangePwd.php";
 				$params = 	array(
 				'login_tmp'  =>  			$usuario["login"],
-				'passwd_tmp' =>  			$usuario["claveNew"]
+				'passwd_tmp' =>  			$usuario["claveNew"],
+				'email_pwd' =>  			$_POST["txtEmail"]
 				);
 				
 				$connCurl	= new LibCurl;

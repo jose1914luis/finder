@@ -106,7 +106,7 @@
 		if(confirm("Desea consumir Cr\u00E9ditos?"))
 			window.open(url,'_blank');
 		else	
-			return false;
+			document.location.href="";
 	}
 	
 	function loadCreditosProspectos(prospecto) {		

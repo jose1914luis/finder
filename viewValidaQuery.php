@@ -37,6 +37,7 @@ if (!empty($_GET["term"])) {
     $i = 0;
     $arrayElementos = array();
 
+	if(!empty($registrosIdx))
     foreach ($registrosIdx as $fila)
     //creo el array de los elementos sugeridos
         array_push($arrayElementos, new ElementoAutocompletar(AjustarAcentos($fila["valor_campo"]), AjustarAcentos($fila["valor_campo"])));

@@ -35,7 +35,7 @@
 	
 	// Variables asociadas al uso de creditos en Account:	
 	$GLOBALS ["SIGCoin_pesos"]			= 1000;	
-	$GLOBALS ["SIGCoin_minimo"]			= 10000;
+	$GLOBALS ["SIGCoin_minimo"]			= 50000;
 	$GLOBALS ["IdTipoServicio"]			= 8;
 	$GLOBALS ["DescripcionServicio"]	= "ADQUISICION SERVICIOS SIGMIN";
 

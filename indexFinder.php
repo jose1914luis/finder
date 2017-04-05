@@ -1,3 +1,18 @@
+<?php
+
+$productoVerMapa	= 13;
+$verMapa 			= $cred->compraCreditosViewMap($_SESSION['id_usuario'], $productoVerMapa);
+
+if($verMapa!= "OK")
+	echo "
+		<script>
+			alert('$verMapa');
+			document.location.href='?pagina=account';
+		</script>
+	";
+
+?>
+
 <html>
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
