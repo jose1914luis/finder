@@ -1,0 +1,69 @@
+#verticalmenu {
+	width: 200px;
+	margin: 10px;
+	padding:0;
+	font-size:11px;
+	font-weight:bold;
+	color:#001C4D;
+        list-style-type: none;
+        margin: 45px 0 0 10px ;
+        padding: 0;	
+	}
+ 
+.glossymenu, .glossymenu li ul{
+list-style-type: none;
+}
+.glossymenu li ul{
+margin:0px;
+padding:0px;
+}
+.glossymenu li{
+position: relative;
+}
+
+.glossymenu li a{
+
+display: block;
+width: auto;
+text-decoration: none;
+display: block;
+background:  url(../images/menu12.gif) no-repeat ;
+padding: 10px 0 0 30px;
+height: 22px;
+}
+
+.glossymenu li ul{ /*SUB MENU STYLE*/
+position: absolute;
+width: 190px; /*WIDTH OF SUB MENU ITEMS*/
+left: 0;
+top: 0;
+display: none;
+}
+
+.glossymenu li ul li{
+float: left;
+}
+
+.glossymenu li ul a{
+width: 200px; /*WIDTH OF SUB MENU ITEMS - 10px padding-left for A elements */
+height: 22px;
+}
+
+.glossymenu .arrowdiv{
+position: absolute;
+right: 2px;
+background: transparent url(../images/arrow.gif) no-repeat center right;
+}
+
+.glossymenu li a:visited, .glossymenu li a:active{
+color: #666;
+}
+
+.glossymenu li a:hover{
+	background:  url(../images/menu12.gif) no-repeat 0 -32px;
+}
+#verticalmenu a.active{color:#FF0033}
+/* Holly Hack for IE \*/
+* html .glossymenu li { float: left; height: 1%; }
+* html .glossymenu li a { height: 1%; }
+/* End */
