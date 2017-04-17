@@ -16,10 +16,7 @@
 	$msgError 	= "";
 	//$reporte 	= new ReportGenerator();
 	$tabla		= "";
-
-
-	//$accionPage = new SeguimientosUsuarios;
-	//$validate->validaAccesoPagina($_SESSION["usuario_cmq"], $_SESSION["passwd_cmq"]);
+	
 
 	if(@trim($_GET["multicriterio"])!="") {	
 		$res = new IndexacionesQueries(); 
@@ -35,5 +32,3 @@
 		$listaExpedientesResults["msg_error"] = "No hay datos para consultar";
 	
 	echo json_encode($listaExpedientesResults);
-
-?>	

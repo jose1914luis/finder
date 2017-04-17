@@ -1,5 +1,4 @@
 <?php
-
 header('Access-Control-Allow-Origin: *');
 require '../Acceso/Config.php';
 require_once("../Modelos/CreditosUsuarios.php");

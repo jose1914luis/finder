@@ -7,7 +7,7 @@
 		<script type="text/javascript" src="Javascript/jquery.tinyscrollbar.min.js"></script>	
 		<script type="text/javascript" src="Javascript/validarFinder.js"></script>
 		<link rel="stylesheet" href="//code.jquery.com/ui/1.12.0/themes/base/jquery-ui.css">
-		<link rel="stylesheet" href="Javascript/sigmin_account.css">
+		<link rel="stylesheet" href="Javascript/sigmin_account.css?v=1">
 		<script>
 			var controlConfig = 1, divAnterior = "creditos";	
 

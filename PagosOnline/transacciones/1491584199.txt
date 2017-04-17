@@ -1,0 +1,78 @@
+Array
+(
+    [response_code_pol] => 1
+    [phone] => 
+    [additional_value] => 0.00
+    [test] => 0
+    [transaction_date] => 2017-04-07 11:58:18
+    [error_code_bank] => SUCCESS
+    [billing_country] => CO
+    [bank_referenced_name] => 
+    [description] => ADQUISICION SERVICIOS SIGMIN
+    [administrative_fee_tax] => 0.00
+    [value] => 50000.00
+    [administrative_fee] => 0.00
+    [payment_method_type] => 4
+    [office_phone] => 
+    [email_buyer] => judasstt@gmail.com
+    [response_message_pol] => APPROVED
+    [error_message_bank] => 
+    [shipping_city] => 
+    [transaction_id] => 73d9a72b-cc96-4fc8-88c1-817c9da0a6b9
+    [sign] => 4b624966e219c39bac5f7869f36f7f78
+    [tax] => 7983.19
+    [transaction_bank_id] => 
+    [payment_method] => 25
+    [billing_address] => 
+    [payment_method_name] => PSE
+    [pse_bank] => BANCO DAVIVIENDA
+    [state_pol] => 4
+    [date] => 2017.04.07 11:58:18
+    [nickname_buyer] => 
+    [reference_pol] => 935734545
+    [currency] => COP
+    [risk] => 0.0
+    [shipping_address] => 
+    [bank_id] => 25
+    [payment_request_state] => A
+    [customer_number] => 
+    [administrative_fee_base] => 0.00
+    [attempts] => 1
+    [merchant_id] => 544477
+    [exchange_rate] => 1.00
+    [shipping_country] => CO
+    [installments_number] => 
+    [payment_method_id] => 4
+    [extra1] => 
+    [extra2] => 
+    [antifraudMerchantId] => 
+    [extra3] => 
+    [commision_pol_currency] => COP
+    [nickname_seller] => 
+    [ip] => 181.143.44.178
+    [commision_pol] => 3451.00
+    [airline_code] => 
+    [billing_city] => 
+    [pse_reference1] => 181.143.44.178
+    [cus] => 251806359
+    [reference_sale] => 1491584199
+    [authorization_code] => 
+    [pse_reference3] => 71788115
+    [pse_reference2] => CC
+)
+OK
+Habilita Consignacion. 
+OK
+Creditos: 
+Array
+(
+    [id_usuario] => 76
+    [precio] => 50000
+)
+
+ estado transaccion: OK 
+ 
+Envia datos a email. 
+
+ infoPago: Array 
+ 

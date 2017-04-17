@@ -15,7 +15,7 @@
 	if (@$_GET["login_user"]!="" && @$_GET["verification_code"]!="") { 
 		$validate = new Usuarios_SGM();
 		$respuestaValidacion["estado_acceso"] = $validate->validaPasswdMobile($_GET["login_user"], $_GET["verification_code"]);
-	}  
+	}        
+        
 	echo json_encode($respuestaValidacion);
-
-?>	
+        

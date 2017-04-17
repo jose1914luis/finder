@@ -30,5 +30,3 @@ header('Access-Control-Allow-Origin: *');
 		$listadoSuperposiciones["msg_error"] = "No fue remitida coordenada de consulta";
 	
 	echo json_encode($listadoSuperposiciones);
-
-?>	

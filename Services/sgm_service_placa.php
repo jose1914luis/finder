@@ -32,5 +32,3 @@
 		$listadoSuperposiciones["msg_error"] = "No fue remitida placa";
 	
 	echo json_encode($listadoSuperposiciones);
-
-?>	
