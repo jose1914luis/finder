@@ -125,9 +125,9 @@ var vectorLayer = new OpenLayers.Layer.Vector("Area Consultada");
 vectorLayer.addFeatures(
 [polygonFeature]);
 
-
+map.addLayers([ ghyb, gmap, gphy, osm, cmqLayerSol, cmqLayerTit, cmqRestricciones, vectorLayer]); 
 //map.addLayers([ ghyb, gmap, gphy, osm, cmqLayerSol, cmqLayerTit, cmqLayer3, cmqRestricciones, vectorLayer]); 
-map.addLayers([ ghyb, gmap, gphy, osm, vectorLayer]); 
+//map.addLayers([ ghyb, gmap, gphy, osm, vectorLayer]); 
 
 bounds = vectorLayer.getDataExtent();
 map.zoomToExtent(bounds);

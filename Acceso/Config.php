@@ -1,19 +1,20 @@
 <?php
 	/*
-		Variables de configuración de CMQ
+		Variables de configuraciï¿½n de CMQ
 	*/	
 	
 	$GLOBALS ["my_server"] 		= "localhost";		// Servidor donde se encuentra instalada la base de datos
 	$GLOBALS ["my_database"] 	= "cmqpru";   		// Esquema de la base de datos
 	$GLOBALS ["my_user"] 		= "cmqpru";			// Usuario de la base de datos
-	$GLOBALS ["my_password"] 	= "2012zygMin";		// Contraseña de la base de datos
+	$GLOBALS ["my_password"] 	= "2012zygMin";		// Contraseï¿½a de la base de datos
 	$GLOBALS ["my_port"]		= "5432";			// puerto de la base de datos a utilizar
 	
 													// url de pagina de error
 	$GLOBALS ["url_error"]		= "http://www.sigmin.co/finderaccount/";				
 	
 	$GLOBALS ["db1"]  			= "host=".$GLOBALS ["my_server"]." port=".$GLOBALS ["my_port"]." dbname=".$GLOBALS ["my_database"]." user=".$GLOBALS ["my_user"]." password=".$GLOBALS ["my_password"]."";	
-	
+	// Variables globales para Document Management
+	$GLOBALS ["docDigital"]		= "DigitalDocs/";	
 
 	
 	// funcion para evitar injeccion de codigo		
@@ -39,7 +40,7 @@
 	$GLOBALS ["IdTipoServicio"]			= 8;
 	$GLOBALS ["DescripcionServicio"]	= "ADQUISICION SERVICIOS SIGMIN";
 
-	// Producción - Pagos por internet:
+	// Producciï¿½n - Pagos por internet:
 	
 	$GLOBALS ["POST"]			= "https://gateway.payulatam.com/ppp-web-gateway/";	
 	
@@ -63,9 +64,9 @@
 	$GLOBALS ["nit_empresa"]	= "900574173"; // pruebas: 900306824		De SIGMIN es: 900574173   
 	$GLOBALS ["ebill_iva"]		= "19"; //  2016<=:16% 2017:19% 
 	$GLOBALS ["ebill_control"]	= "1"; // 1: control de no repeticion de factura  OJO=> Produccion --> Cambiar a 1
-	$GLOBALS ["ebill_enviomail"]= "1"; // 1: envío de factura de parte de ebill 
+	$GLOBALS ["ebill_enviomail"]= "1"; // 1: envï¿½o de factura de parte de ebill 
 
-	// variables de paginación	
+	// variables de paginaciï¿½n	
 	$GLOBALS ["max_por_pagina"]	= 10;
 	$GLOBALS ["pags_pantalla"]	= 5;
 	

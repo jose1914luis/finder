@@ -107,6 +107,10 @@ if (!empty($expediente))
 $info = $consulta->generarViewMap($placa, $clasificacion);
 $coordenadas = $info["coordenadas"];
 $areaPoly = $info["area_has"];
+
+
+$codigoExp = $expediente["placa"];
+
 ?>
 
 
@@ -160,6 +164,7 @@ $areaPoly = $info["area_has"];
     <ul class="nav nav-tabs">
         <li class="active"><a data-toggle="tab" href="#home">Reporte</a></li>
         <li><a data-toggle="tab" href="#menu1">Indexar Documento</a></li>
+        <li><a data-toggle="tab" href="#menu2">Documentos y Alertas</a></li>
     </ul>
     <div class="tab-content">
 
@@ -171,7 +176,7 @@ $areaPoly = $info["area_has"];
             <!--  VISUALIZACI�N DEL REPORTE DE DATOS DE ACUERDO AL TIPO DE EXPEDIENTE -->	
 
             <?php
-            if ($tipoExpediente == 'SOLICITUD') {
+            if ($tipoExpediente == 'SOLICITUD') {                
                 ?>
                 <table width="900" border="0" align="center" cellpadding="0" cellspacing="5">
 
@@ -365,7 +370,7 @@ $areaPoly = $info["area_has"];
                     </tr>
                     <tr>
                         <td><strong>Placa:</strong></td>
-                        <td><?php echo $expediente["placa"]; ?></td>
+                        <td><?php echo $expediente["placa"]; ?></td>                    
                         <td><strong>C&oacute;digo RMN: </strong></td>
                         <td><?php echo $expediente["codigo_rmn"]; ?></td>
                         <td><strong>C&oacute;digo Anterior: </strong></td>
@@ -911,87 +916,78 @@ $areaPoly = $info["area_has"];
             }
             ?>
 
-            <h4>INDEXAR   DOCUMENTO</h4>
-
             <script type="text/javascript" src="Utilidades/jqueryUpload/jquery.js"></script> 
             <script type="text/javascript" src="Utilidades/jqueryUpload/ajaxfileupload.js"></script>			
             <script>
-            // variables globales
-            nroImagen = 1;  // Para anexo de imagenes
-            nroPagina = 0;  // Paginaci�n de im�genes, cada p�gina contiene 5 im�genes
-            listaImagenes = [];
+                // variables globales
+                nroImagen = 1;  // Para anexo de imagenes
+                nroPagina = 0;  // Paginaci�n de im�genes, cada p�gina contiene 5 im�genes
+                listaImagenes = [];
 
-            function obtenerAncho() {
-                return ($(document).width() - 420);
-            }
+                function obtenerAncho() {
+                    return ($(document).width() - 420);
+                }
 
-            function ajaxFileUpload()
-            {
-                //starting setting some animation when the ajax starts and completes
-                $("#loading")
-                        .ajaxStart(function () {
-                            $(this).show();
-                        })
-                        .ajaxComplete(function () {
-                            $(this).hide();
-                        });
+                function ajaxFileUpload()
+                {
+                    //starting setting some animation when the ajax starts and completes
+                    $("#loading")
+                            .ajaxStart(function () {
+                                $(this).show();
+                            })
+                            .ajaxComplete(function () {
+                                $(this).hide();
+                            });
 
-                /*
-                 prepareing ajax file upload
-                 url: the url of script file handling the uploaded files
-                 fileElementId: the file type of input element id and it will be the index of  $_FILES Array()
-                 dataType: it support json, xml
-                 secureuri:use secure protocol
-                 success: call back function when the ajax complete
-                 error: callback function when the ajax failed
+                    /*
+                     prepareing ajax file upload
+                     url: the url of script file handling the uploaded files
+                     fileElementId: the file type of input element id and it will be the index of  $_FILES Array()
+                     dataType: it support json, xml
+                     secureuri:use secure protocol
+                     success: call back function when the ajax complete
+                     error: callback function when the ajax failed
                      
-                 */
-                $.ajaxFileUpload
-                        (
-                                {
-                                    url: 'loadDigitalPage.php',
-                                    secureuri: false,
-                                    fileElementId: 'fileToUpload',
-                                    dataType: 'json',
-                                    success: function (data, status)
+                     */
+                    $.ajaxFileUpload
+                            (
                                     {
-                                        if (typeof (data.error) != 'undefined')
+                                        url: 'loadDigitalPage.php',
+                                        secureuri: false,
+                                        fileElementId: 'fileToUpload',
+                                        dataType: 'json',
+                                        success: function (data, status)
                                         {
-                                            if (data.error != '')
+                                            if (typeof (data.error) != 'undefined')
                                             {
-                                                alert(data.error);
-                                            } else
-                                            {
-                                                //alert(data.msg);
-                                                //$("#respuesta").html(data.msg);
-                                                newImagen(data.urlImagen);
+                                                if (data.error != '')
+                                                {
+                                                    alert(data.error);
+                                                } else
+                                                {
+                                                    //alert(data.msg);
+                                                    //$("#respuesta").html(data.msg);
+                                                    newImagen(data.urlImagen);
+                                                }
                                             }
+                                        },
+                                        error: function (data, status, e)
+                                        {
+                                            alert(e);
                                         }
-                                    },
-                                    error: function (data, status, e)
-                                    {
-                                        alert(e);
                                     }
-                                }
-                        )
+                            )
 
-                return false;
+                    return false;
 
-            }
+                }
             </script>
             <title>:: SIGMIN :: Document Management</title>
 
             <table align="center" border="0" >
-                <tr>
-                    <td colspan="2" align="center">
-                        <?php include("Vistas/document.header.v.php"); ?>
-                    </td>
-                </tr>
-                <tr>
-                    <!-- Area asignada para la definici�n del menu de seleccion -->
-                    <td width="260" valign="top"> 
-                        <?php include("Vistas/document.menu.v.php"); ?>					
-                    </td>
+
+
+
                 <script>document.write("<td valign='top' width='" + obtenerAncho() + "'>");</script>				
                 <!-- Inicio Contenido de indexamiento de documentos -->					
                 <table align='center' border='0' width='95%' cellspacing='5'>
@@ -1012,6 +1008,12 @@ $areaPoly = $info["area_has"];
             if (!empty($msgError))
                 echo $msgError;
             ?>	
+        </div>
+        
+        <div id="menu2" class="tab-pane fade">
+            <?php 
+                        include './management.expediente.report.c.php';
+            ?>
         </div>
     </div>
 </div>
