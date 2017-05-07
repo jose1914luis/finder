@@ -165,6 +165,7 @@ $codigoExp = $expediente["placa"];
         <li class="active"><a data-toggle="tab" href="#home">Reporte</a></li>
         <li><a data-toggle="tab" href="#menu1">Indexar Documento</a></li>
         <li><a data-toggle="tab" href="#menu2">Documentos y Alertas</a></li>
+        <li><a data-toggle="tab" href="#menu3">Anotaciones</a></li>
     </ul>
     <div class="tab-content">
 
@@ -1013,6 +1014,12 @@ $codigoExp = $expediente["placa"];
         <div id="menu2" class="tab-pane fade">
             <?php 
                         include './management.expediente.report.c.php';
+            ?>
+        </div>
+        
+         <div id="menu3" class="tab-pane fade">
+            <?php 
+                        include './viewAnotacionesRMN.php';
             ?>
         </div>
     </div>

@@ -10,10 +10,10 @@
 		$_SESSION["lista_credito"]["caption"] 		= "Reporte de Cr&eacute;ditos Consumidos";	
 	}			
 
-	$total_paginas 		= sizeof($_SESSION["lista_credito"]["paginas"]);	
+	$total_paginas 		= sizeof(@$_SESSION["lista_credito"]["paginas"]);	
 
 	$pagina_actual 		= (@$_GET["pagina"] > 1) ? 	$pagina_actual = $_GET["pagina"] : 1;
-	$dataSET			= $_SESSION["lista_credito"]["paginas"][$pagina_actual - 1];
+	$dataSET			= @$_SESSION["lista_credito"]["paginas"][$pagina_actual - 1];
 	
 	// generación de listado de paginación, paginas por pantalla:
 	$pags_pantalla		= $GLOBALS ["pags_pantalla"];
