@@ -8,7 +8,6 @@
     background-size: cover;
 	min-height:100%;
 	overflow:hidden;
-	text-align:center;
 }
 .logo_login{
 	padding: 6px;
@@ -104,7 +103,6 @@ input:-ms-input-placeholder {
 	margin-top:15px;
 	font:13px/11px Tahoma, Verdana;
 	color: #002814;
-	margin-right:-90px;
 	text-decoration:none;
 }
 

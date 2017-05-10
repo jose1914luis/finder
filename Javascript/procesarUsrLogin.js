@@ -1,8 +1,8 @@
 
 	function mostrardiv(division) 	{ 	div = document.getElementById(division);	div.style.display = "";		};
-	function cerrar(division) 		{	div = document.getElementById(division);	div.style.display="none";	document.frmAdminUser.reset(); document.frmForgetPwd.reset();};		
+	function cerrar(division) 		{	div = document.getElementById(division);	div.style.display="none";};		
 	function validarCreacionUsr() {	
-		// validacion del número de documento de la persona:
+		// validacion del nï¿½mero de documento de la persona:
 		var patron = /^(\d){5,15}$/;
 		if (document.frmAdminUser.txtDocumento.value.search(patron)<0) {
 			alert("N\u00FAmero de documento' debe ser num\u00E9rico y no inferior a 5 caracteres");
@@ -18,7 +18,7 @@
 			return 0;
 		}
 		
-		// validacion de correo electrónico:
+		// validacion de correo electrï¿½nico:
 		patron = /^([\da-z_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/;
 		if (document.frmAdminUser.txtEmail.value.search(patron)<0) {
 			alert("'Correo Electr\u00F3nico' no posee caracteres v\u00E1lidos");
@@ -27,34 +27,27 @@
 		}		
 
 		
-		// validacion de contraseñas: longitud de la contraseña
+		// validacion de contraseï¿½as: longitud de la contraseï¿½a
 		if (document.frmAdminUser.txtPassword.value.length < 5) {
 			alert("La Contrase\u00F1a no debe ser inferior a 6 caracteres");
 			document.frmAdminUser.txtPassword.focus();
 			return 0;
 		}			
 				
-		// validacion de contraseñas: igualdad de caracteres entre contraseña1 y contraseña2
+		// validacion de contraseï¿½as: igualdad de caracteres entre contraseï¿½a1 y contraseï¿½a2
 		if (document.frmAdminUser.txtPassword.value != document.frmAdminUser.txtPassword2.value) {
 			alert("Ambas contrase\u00F1as deben coincidir");
 			document.frmAdminUser.txtPassword.focus();
 			return 0;
 		}
-		
-		// validar recaptcha
-		if (document.frmAdminUser.captcha2.value.length < 3) {
-			alert("Debe diligenciar los datos de la imagen");
-			document.frmAdminUser.captcha2.focus();
-			return 0;
-		}			
-		
+			
 		// una vez efectuadas todas las validaciones, se procede a enviar el formulario:
 		document.frmAdminUser.submit();
 		return 1;
 	}
 	
 	function validarRecuperarUsr() {
-		// validacion de correo electrónico:
+		// validacion de correo electrï¿½nico:
 		patron = /^([\da-z_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/;
 		if (document.frmForgetPwd.txtEmail.value.search(patron)<0) {
 			alert("'Correo Electr\u00F3nico' no posee caracteres v\u00E1lidos");
