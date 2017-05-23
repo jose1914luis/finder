@@ -10,7 +10,7 @@ require_once("Validaciones/ValidacionesFormularios.php");
 
 if (!empty($_GET["idPlantilla"])) {
 
-    $codigoExp =  $_GET['codigoExp'];
+    $codigoExp = $_GET['codigoExp'];
     // identificador de empresa tomara este valor como global en el sitio web
 //    $_SESSION["idEmpresa"] = $_GET["idEmpresa"];
 
@@ -25,22 +25,27 @@ if (!empty($_GET["idPlantilla"])) {
     $validador = new ValidacionesFormularios();
     echo $validador->validaIndexamiento($indices);
     ?>
+    <link href="Javascript/jquery-ui-1.12.1.custom/jquery-ui.min.css" rel="stylesheet" type="text/css"/>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="Javascript/calendario.js" type="text/javascript"></script>
     <script>
 
         var ListaRequerimientos = "";
 
         function loadDocRequeridos(placa) {
             if (placa != "") {
-                $.post('viewDocumentosRequieren.php', {Placa: placa.toUpperCase()}, function (resp) {
-                    if (resp != "") {
-                        ListaRequerimientos = resp;
-                    } else
-                        alert("No hay retorno de informaci&oacute;n");
-                });
+                //                $.post('viewDocumentosRequieren.php', {Placa: placa.toUpperCase()}, function (resp) {
+                //                    if (resp != "") {
+                //                        ListaRequerimientos = resp;
+                //                    } else
+                //                        alert("No hay retorno de informaci&oacute;n");
+                //                });
             }
             $('#codigoExpediente').attr('readonly', true);
-        };
-        loadDocRequeridos(<?= "'" . $codigoExp . "'"?>);
+        }
+        ;
+        loadDocRequeridos(<?= "'" . $codigoExp . "'" ?>);
 
         function mostrarRequerimientos() {
             return (ListaRequerimientos);
@@ -90,19 +95,78 @@ if (!empty($_GET["idPlantilla"])) {
     ?>
             tipoRequerimiento += "</select>";
 
-
-            txt = "	<br>&nbsp;<div id='campoReq" + indexReq + "' style='border:solid; border-color:#CCCCCC; border-width:thin;' >" +
-                    "<div style='background:#FFE4E1'>Requerimiento N&uacute;mero " + indexReq + ": &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href='javascript:delDivReq(\"#campoReq" + indexReq + "\");'>[X]</a></div><hr size='0'>" +
-                    "<table border=0>" +
-                    "	<tr><td>Tipo Requerimiento: </td><td>" + tipoRequerimiento + "<br></td><tr>" +
-                    "	<tr><td>Destinatario: </td><td>" + destinoReq + "<br>" +
-                    "	<tr><td>Fecha Requerimiento:</td><td><input type='text' class='form-control' name='fechaReq[" + indexReq + "]' placeholder='dd/mm/yyyy [hh24:mi]'></td></tr>" +
-                    "	<tr><td>Fecha Vence:</td><td><input type='text' class='form-control' name='fechaVence[" + indexReq + "]' placeholder='dd/mm/yyyy [hh24:mi]'></td></tr>" +
-                    "	<tr><td>Detalle Requerimiento:</td>" +
-                    "		<td><textarea rows='5' cols='60' class='form-control' name='detalleReq[" + indexReq + "]'></textarea></td></tr>" +
-                    "</table>" +
+            txt = "<div id='campoReq" + indexReq + "' class='panel panel-danger'>" +
+                    "<div class='panel-heading'>Requerimiento N&uacute;mero " + indexReq + " <a href='javascript:delDivReq(\"#campoReq" + indexReq + "\");'>[X]</a></div>" +
+                    "<div class='panel-body'>" +
+                    "<div class='form-group'>" +
+                    "<label class='control-label col-lg-3' for='email'>Tipo Requerimiento: </label>" +
+                    "<div class='col-lg-4'>                " +
+                    tipoRequerimiento +
+                    "    </div>" +
+                    " </div>" +
+                    "<div class='form-group'>" +
+                    "<label class='control-label col-lg-3' for='email'>Destinatario: </label>" +
+                    "<div class='col-lg-4'>" +
+                    destinoReq +
+                    "      </div>" +
+                    "   </div>" +
+                    "<div class='form-group'>" +
+                    "<label class='control-label col-lg-3' for='email'>Fecha Requerimiento:</label>" +
+                    "<div class='col-lg-3'>" +
+                    "<input id='dateTerm" + indexReq + "' type='text' class='form-control' name='fechaReq[" + indexReq + "]'>" +
+                    "        </div>" +
+                    "     </div>" +
+                    "<div class='form-group'>" +
+                    "<label class='control-label col-lg-3' for='email'>Rango</label>" +
+                    "<div class='col-lg-2'>" +
+                    "           <label class='radio-inline'><input type='radio' onchange='displayMD(" + indexReq + ", \"d\")' name='optradio" + indexReq + "'>Dias</label>" +
+                    "           <label class='radio-inline'><input type='radio' onchange='displayMD(" + indexReq + ", \"m\")' name='optradio" + indexReq + "'>Meses</label>" +
+                    "             <select class='form-control' id='selectMD" + indexReq + "'>" +
+                    "               </select>" +
+                    "           </div>" +
+                    "        </div>" +
+                    "<div class='form-group'>" +
+                    "<label class='control-label col-lg-3' for='email'>Fecha Vence</label>" +
+                    "<div class='col-lg-3'>" +
+                    "<input type='text' class='form-control' name='fechaVence[" + indexReq + "]' readonly id='fechaVence" + indexReq + "'>" +
+                    "            </div>" +
+                    "        </div>" +
+                    "<div class='form-group'>" +
+                    "<label class='control-label col-lg-3' for='email'>Detalle Requerimiento:</label>" +
+                    "<div class='col-lg-3'>" +
+                    "                <textarea rows='5' cols='60' class='form-control' name='detalleReq[" + indexReq + "]'></textarea>" +
+                    "            </div>" +
+                    "        </div>" +
+                    "    </div>" +
                     "</div>";
+            //            txt = "	<br>&nbsp;<div id='campoReq" + indexReq + "' style='border:solid; border-color:#CCCCCC; border-width:thin;' >" +
+            //                    "<div style='background:#FFE4E1'>Requerimiento N&uacute;mero " + indexReq + ": &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href='javascript:delDivReq(\"#campoReq" + indexReq + "\");'>[X]</a></div><hr size='0'>" +
+            //                    "<table border=0>" +
+            //                    "	<tr><td>Tipo Requerimiento: </td><td>" + tipoRequerimiento + "<br></td><tr>" +
+            //                    "	<tr><td>Destinatario: </td><td>" + destinoReq + "<br>" +
+            //                    "	<tr><td>Fecha Requerimiento:</td><td><input id='dateTerm" + indexReq + "' type='text' class='form-control' name='fechaReq[" + indexReq + "]' placeholder='dd/mm/yyyy [hh24:mi]'></td></tr>" +
+            //                    "	<tr><td>Fecha Vence:</td><td><input type='text' class='form-control' name='fechaVence[" + indexReq + "]' placeholder='dd/mm/yyyy [hh24:mi]'></td></tr>" +
+            //                    "	<tr><td>Detalle Requerimiento:</td>" +
+            //                    "		<td><textarea rows='5' cols='60' class='form-control' name='detalleReq[" + indexReq + "]'></textarea></td></tr>" +
+            //                    "</table>" +
+            //                    "</div>";
             $("#div_main").append(txt);
+            $("#dateTerm" + indexReq).datepicker({
+                changeMonth: true,
+                changeYear: true,
+                beforeShowDay: checkHolidays
+            });
+            $("#dateTerm" + indexReq).datepicker("option", "showAnim", "slideDown");
+            $("#dateTerm" + indexReq).datepicker("option", "dateFormat", "yy-mm-dd");
+            $("#selectMD" + indexReq).on('change', function () {
+                var valor = this.value;
+                console.log(opcion);
+                console.log(this.id);
+                var fechar = $("#dateTerm" + indexReq).val();
+                console.log($("#dateTerm" + indexReq));
+                
+            });
+
             indexReq++;
         }
 
@@ -140,52 +204,52 @@ if (!empty($_GET["idPlantilla"])) {
 
 
     </script>
-    
+
     <input type="hidden" name="idEmpresa" value="<?= $_SESSION['id_usuario'] ?>"/>
     <input type="hidden" name="idPlantilla" value="<?php echo $_GET["idPlantilla"] ?>"/>
     <input type="hidden" name="rutaImagen" value="<?php echo $rutaImagen ?>"/>		
 
     <div align="center"><strong><?php echo strtoupper($indices[0]["nombre_plantilla"]); ?></strong> </div>
-   
+
     <hr size="1" />
     <div class="form-group">
-        <label class="control-label col-sm-3" for="email">Código de Expediente :</label>
-        <div class="col-sm-3">
+        <label class="control-label col-lg-3" for="email">Código de Expediente :</label>
+        <div class="col-lg-3">
             <input type="text" class="form-control"  id="codigoExpediente" name="codigoExpediente" size="20" onchange="loadDocRequeridos(this.value)" value="<?= $codigoExp ?>"/>
         </div>
     </div>
 
     <div class="form-group">
-        <label class="control-label col-sm-3" for="email">Número Radicado :</label>
-        <div class="col-sm-3">
+        <label class="control-label col-lg-3" for="email">Número Radicado :</label>
+        <div class="col-lg-3">
             <input type="text" class="form-control"  id="nroRadicado" name="nroRadicado" size="30"/>
         </div>
     </div>
 
     <div class="form-group">
-        <label class="control-label col-sm-3" for="email">Fecha Radicado: </label>
-        <div class="col-sm-3">
+        <label class="control-label col-lg-3" for="email">Fecha Radicado: </label>
+        <div class="col-lg-3">
             <input type="text" class="form-control"  id="fechaRadicado" name="fechaRadicado" size="20" placeholder="dd/mm/yyyy [hh24:mi]"/> 				
         </div>
     </div>
 
     <div class="form-group">
-        <label class="control-label col-sm-3" for="email">Cantidad de Folios : </label>
-        <div class="col-sm-3">
+        <label class="control-label col-lg-3" for="email">Cantidad de Folios : </label>
+        <div class="col-lg-3">
             <input type="text" class="form-control"  id="cantidadImagenes" name="cantidadImagenes" size="10"/>
         </div>
     </div>
 
     <div class="form-group">
-        <label class="control-label col-sm-3" for="email">Referencia del Documento : </label>
-        <div class="col-sm-3">
+        <label class="control-label col-lg-3" for="email">Referencia del Documento : </label>
+        <div class="col-lg-3">
             <textarea name="docReferencia" rows="3" cols="45"/></textarea>
         </div>
     </div>
 
     <div class="form-group">
-        <label class="control-label col-sm-3" for="email">Entidad que Genera Documento: </label>
-        <div class="col-sm-3">
+        <label class="control-label col-lg-3" for="email">Entidad que Genera Documento: </label>
+        <div class="col-lg-3">
             <select name="solRequerimiento" class="form-control"  style='width: 250px'>
                 <?php
                 $solicitaReq = $solRequerimientos->selectAll();
