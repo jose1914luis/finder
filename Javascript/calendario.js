@@ -49,14 +49,11 @@ function checkHolidays(date) {
     return fechasMov.indexOf($.datepicker.formatDate('yy-mm-dd', date)) == -1 && fechas.indexOf($.datepicker.formatDate('mm-dd', date)) == -1 && $.datepicker.noWeekends(date);
 }
 $(function () {
-//    $("#dateTerm").datepicker({
-//        changeMonth: true,
-//        changeYear: true,
-//        beforeShowDay: checkHolidays
-//    });
-//    $("#dateTerm").datepicker("option", "showAnim", "slideDown");
-//    $("#dateTerm").datepicker("option", "dateFormat", "yy-mm-dd");
-//console.log($("#dateTerm"));
+    $("#fechaRadicado").datepicker({
+        changeMonth: true,
+        changeYear: true,
+        beforeShowDay: checkHolidays
+    });
 });
 var opcion;
 function displayMD(id, v) {
