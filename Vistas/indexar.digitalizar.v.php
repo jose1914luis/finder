@@ -10,6 +10,9 @@
     ;
 </script>
 
+<link href="Javascript/jquery-ui-1.12.1.custom/jquery-ui.min.css" rel="stylesheet" type="text/css"/>
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script> 
 
 <form name="frm01" id="frm01" method="POST" enctype="multipart/form-data" class="form-horizontal">
     <input type="hidden" name="operacionForm" value="indexar.digitalizar"/>
@@ -24,7 +27,7 @@
                         <?php
                         foreach ($listaPlantillas as $cadaPlantilla)
                             echo "<option value='" . $cadaPlantilla["id"] . "' title='" . utf8_decode($cadaPlantilla["detalle"]) . "'>" . strtoupper(utf8_decode($cadaPlantilla["nombre"])) . "</option>\n";
-                        ?>	                        
+                        ?>
                 </select>				
             <?php } else { ?>
                 <center><h2>No Existen Plantillas en el Sistema. Primero debe generar plantillas en Keeper</h2></center>
