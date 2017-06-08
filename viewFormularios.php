@@ -24,11 +24,10 @@ if (!empty($_GET["idPlantilla"])) {
 
     $validador = new ValidacionesFormularios();
     echo $validador->validaIndexamiento($indices);
-    ?>
-    <link href="Javascript/jquery-ui-1.12.1.custom/jquery-ui.min.css" rel="stylesheet" type="text/css"/>
-    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    ?>    
+      
     <script src="Javascript/calendario.js" type="text/javascript"></script>
+    
     <script>
 
         var ListaRequerimientos = "";
@@ -113,15 +112,15 @@ if (!empty($_GET["idPlantilla"])) {
                     "<div class='form-group'>" +
                     "<label class='control-label col-lg-3' for='email'>Fecha Requerimiento:</label>" +
                     "<div class='col-lg-3'>" +
-                    "<input id='dateTerm" + indexReq + "' type='text' class='form-control' name='fechaReq[" + indexReq + "]'>" +
+                    "<input id='dateTerm" + indexReq + "' type='text' class='form-control' name='fechaReq[" + indexReq + "]' placeholder='dd/mm/yyyy [hh24:mi]'>" +
                     "        </div>" +
                     "     </div>" +
                     "<div class='form-group'>" +
                     "<label class='control-label col-lg-3' for='email'>Rango</label>" +
                     "<div class='col-lg-2'>" +
-                    "           <label class='radio-inline'><input type='radio' onchange='displayMD(" + indexReq + ", \"d\")' name='optradio" + indexReq + "'>Dias</label>" +
-                    "           <label class='radio-inline'><input type='radio' onchange='displayMD(" + indexReq + ", \"m\")' name='optradio" + indexReq + "'>Meses</label>" +
-                    "             <select class='form-control' id='selectMD" + indexReq + "'>" +
+                    "           <label class='radio-inline'><input type='radio' id='displayD" + indexReq + "' disabled onchange='displayMD(" + indexReq + ", \"d\")' name='optradio" + indexReq + "'>Dias</label>" +
+                    "           <label class='radio-inline'><input type='radio' id='displayM" + indexReq + "' disabled onchange='displayMD(" + indexReq + ", \"m\")' name='optradio" + indexReq + "'>Meses</label>" +
+                    "             <select class='form-control' disabled id='selectMD" + indexReq + "'>" +
                     "               </select>" +
                     "           </div>" +
                     "        </div>" +
@@ -139,17 +138,6 @@ if (!empty($_GET["idPlantilla"])) {
                     "        </div>" +
                     "    </div>" +
                     "</div>";
-            //            txt = "	<br>&nbsp;<div id='campoReq" + indexReq + "' style='border:solid; border-color:#CCCCCC; border-width:thin;' >" +
-            //                    "<div style='background:#FFE4E1'>Requerimiento N&uacute;mero " + indexReq + ": &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href='javascript:delDivReq(\"#campoReq" + indexReq + "\");'>[X]</a></div><hr size='0'>" +
-            //                    "<table border=0>" +
-            //                    "	<tr><td>Tipo Requerimiento: </td><td>" + tipoRequerimiento + "<br></td><tr>" +
-            //                    "	<tr><td>Destinatario: </td><td>" + destinoReq + "<br>" +
-            //                    "	<tr><td>Fecha Requerimiento:</td><td><input id='dateTerm" + indexReq + "' type='text' class='form-control' name='fechaReq[" + indexReq + "]' placeholder='dd/mm/yyyy [hh24:mi]'></td></tr>" +
-            //                    "	<tr><td>Fecha Vence:</td><td><input type='text' class='form-control' name='fechaVence[" + indexReq + "]' placeholder='dd/mm/yyyy [hh24:mi]'></td></tr>" +
-            //                    "	<tr><td>Detalle Requerimiento:</td>" +
-            //                    "		<td><textarea rows='5' cols='60' class='form-control' name='detalleReq[" + indexReq + "]'></textarea></td></tr>" +
-            //                    "</table>" +
-            //                    "</div>";
             $("#div_main").append(txt);
             $("#dateTerm" + indexReq).datepicker({
                 changeMonth: true,
@@ -158,13 +146,42 @@ if (!empty($_GET["idPlantilla"])) {
             });
             $("#dateTerm" + indexReq).datepicker("option", "showAnim", "slideDown");
             $("#dateTerm" + indexReq).datepicker("option", "dateFormat", "yy-mm-dd");
+            $("#dateTerm" + indexReq).on('change', function () {
+
+                var id = this.id.substr(this.id.length - 1);
+
+                $("#displayD" + id).prop('disabled', false);
+                $("#displayM" + id).prop('disabled', false);
+                $("#selectMD" + id).prop('disabled', false);
+
+            });
             $("#selectMD" + indexReq).on('change', function () {
                 var valor = this.value;
-                console.log(opcion);
-                console.log(this.id);
-                var fechar = $("#dateTerm" + indexReq).val();
-                console.log($("#dateTerm" + indexReq));
-                
+                var id = this.id.substr(this.id.length - 1);
+                var from = $("#dateTerm" + id).val().split("-");
+
+                var fechai = new Date(from[0], from[1] - 1, from[2]);
+                var fechaf = fechai;
+                if (opcion == 'd') {
+                    var valor2 = this.value;
+                    for (var l = 1; l <= valor; l++) {
+                        fechaf = new Date(from[0], from[1] - 1, from[2]);
+                        fechaf.setDate(fechai.getDate() + parseInt(l));
+
+                        if (!(checkHolidays(fechaf)[0])) {
+
+                            valor = parseInt(valor) + 1;
+                        }
+                    }
+
+                    $("#fechaVence" + id).val(fechaf.getFullYear() + "-" + fechaf.getMonth() + "-" + fechaf.getDate());
+
+                } else if (opcion == 'm') {
+
+                    fechaf.setMonth(fechai.getMonth() + parseInt(valor));
+                    $("#fechaVence" + id).val(fechaf.getFullYear() + "-" + (fechaf.getMonth() + 1) + "-" + fechaf.getDate());
+                }
+
             });
 
             indexReq++;
@@ -207,7 +224,7 @@ if (!empty($_GET["idPlantilla"])) {
 
     <input type="hidden" name="idEmpresa" value="<?= $_SESSION['id_usuario'] ?>"/>
     <input type="hidden" name="idPlantilla" value="<?php echo $_GET["idPlantilla"] ?>"/>
-    <input type="hidden" name="rutaImagen" value="<?php echo $rutaImagen ?>"/>		
+    <input type="hidden" name="rutaImagen" value="<?php echo $rutaImagen ?>"/>	
 
     <div align="center"><strong><?php echo strtoupper($indices[0]["nombre_plantilla"]); ?></strong> </div>
 
@@ -229,7 +246,8 @@ if (!empty($_GET["idPlantilla"])) {
     <div class="form-group">
         <label class="control-label col-lg-3" for="email">Fecha Radicado: </label>
         <div class="col-lg-3">
-            <input type="text" class="form-control"  id="fechaRadicado" name="fechaRadicado" size="20" placeholder="dd/mm/yyyy [hh24:mi]"/> 				
+            <input type="text" class="form-control"  id="fechaRadicado" name="fechaRadicado" size="20" placeholder="dd/mm/yyyy [hh24:mi]"/> 	
+
         </div>
     </div>
 
