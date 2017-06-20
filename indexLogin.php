@@ -7,7 +7,7 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="Javascript/jquery.placeholder.min.js"></script>   
         <script src="Javascript/procesarUsrLogin.js?v=<?= 1 ?>"></script>   
-        <link rel="stylesheet" href="Javascript/login.css?v=<?= 1 ?>" type="text/css" media="all" />
+        <link rel="stylesheet" href="Javascript/login.css?v=<?= 2 ?>" type="text/css" media="all" />
 
         <!-- Latest compiled and minified CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -100,19 +100,7 @@
                                     <input type="password" class="form-control" name="txtPassword2">
                                 </div>
                             </div>
-                            <center>
-                                <div class="form-group"> 
-                                    <div class="col-sm-4">
-                                        <img src="captcha.php" id="captcha2" /><br/>                                    	                                    
-                                    <a href="javascript:" style="text-decoration:none" onclick="document.getElementById('captcha2').src = 'captcha.php?' + Math.random();
-                                            document.getElementById('captcha-form2').focus();"	id="change-image2"><img width="25" height="17" src="http://www.google.com/recaptcha/api/img/red/refresh.gif" title="Get a new challenge"></a>														
-                                    </div>
-                                    
-                                    <div class="col-sm-8">
-                                        <input type="text" name="captcha2" class="form-control" id="captcha-form2" autocomplete="off" placeholder="Ingrese el texto"/>    
-                                    </div>
-
-                                </div>								
+                           <input type="hidden" name="captcha2" value="captcha2">				
                             </center>
                         </form>                        
 
@@ -149,21 +137,8 @@
                         <tr>
                             <td colspan="2"><hr size="0"></td>
                         </tr>						
-                        <tr>
-                            <td colspan="2">
-                        <center>
-                            <div>
-                                <img src="captcha.php" id="captcha" /><br/>
-                                <input type="text" name="captcha" id="captcha-form" autocomplete="off" placeholder="Type the Text"/> &nbsp;	
-                                <a href="javascript:" style="text-decoration:none" onclick="document.getElementById('captcha').src = 'captcha.php?' + Math.random();
-                                        document.getElementById('captcha-form').focus();"	id="change-image"><img width="25" height="17" src="http://www.google.com/recaptcha/api/img/red/refresh.gif" title="Get a new challenge"></a>														
-                            </div>																	
-                        </center>
-                        </td>
-                        </tr>	
-                        <tr>
-                            <td colspan="2"><hr size="0"></td>
-                        </tr>						
+                        <input type="hidden" name="captcha" value="captcha">
+                        					
                         <tr>
                             <td colspan="2">
                         <center>
