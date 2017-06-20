@@ -29,7 +29,8 @@
     height: 480px;
     width: 360px;
     background: url(images/login_box.png) center fixed;
-    padding: 5px;	
+    padding: 5px;
+    border-radius: 25px;
 }
 
 /*
