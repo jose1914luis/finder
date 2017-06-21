@@ -6,8 +6,8 @@
         <meta name="apple-mobile-web-app-capable" content="yes">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="Javascript/jquery.placeholder.min.js"></script>   
-        <script src="Javascript/procesarUsrLogin.js?v=<?= 1 ?>"></script>   
-        <link rel="stylesheet" href="Javascript/login.css?v=<?= 2 ?>" type="text/css" media="all" />
+        <script src="Javascript/procesarUsrLogin.js?v=<?= time() ?>"></script>   
+        <link rel="stylesheet" href="Javascript/login.css?v=<?= time() ?>" type="text/css" media="all" />
 
         <!-- Latest compiled and minified CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -19,14 +19,64 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
         <title>:: SIGMIN :: Mining Properties</title>
-        <style>
-            html { overflow-y: hidden; }
-            #result { border: 1px solid green; width: 300px; margin: 0 0 35px 0; padding: 10px 20px; font-weight: bold; }
-            #change-image { font-size: 0.8em; }		
-        </style>
+       
     </head>
+
+
+
     <body class="login_bg">
-        <?php include_once("analyticstracking.php") ?>
+        <?php // include_once("analyticstracking.php") ?>
+
+        <div class="wrapper">
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">                    
+
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#">
+                            <img class="logosgm" alt="SIGMIN" src="Javascript/images/logo_login.png" width="80%">
+                        </a>
+                    </div>
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+                        <form class="navbar-form navbar-left">
+                            <div class="input-group input-group-lg buscador">
+                                <input type="text" class="form-control" placeholder="Palabra Clave...">
+                                <span class="input-group-btn">
+                                    <button class="btn btn-primary" type="button"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+                                </span>
+                            </div><!-- /input-group -->
+                        </form>
+
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="#"> Creditos: 1000<span class="glyphicon glyphicon-usd"></span></a></li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Propiedades Mineras <span class="caret"></span></a>
+                                <ul class="dropdown-menu">                                    
+                                    <li><a href="#">Mis Prospectos</a></li>
+                                    <li><a href="#">Mis Expedientes</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="#">Liberaciones</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="#">Shapes</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Ingresar <span class="glyphicon glyphicon-user"></span></a></li>                                                        
+                        </ul>
+                    </div><!-- /.navbar-collapse -->
+                </div><!-- /.container-fluid -->
+            </nav>
+
+        </div>
+        <!--
         <div class="login_box">
             <div>&nbsp;<br/>&nbsp;<br/>&nbsp;<br/></div>
             <center><div class="logo_login">Sigmin</div></center>
@@ -58,7 +108,7 @@
 
         </div>
 
-        <!-- Modal -->
+        
         <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
@@ -107,9 +157,9 @@
                     </div>
                     <div class="modal-footer">
                         <input type="button" class="btn btn-primary" value="Crear Usuario" onclick="validarCreacionUsr();" />                        
-                        <?php if (empty($_GET["register"])) { ?>
+        <?php // if (empty($_GET["register"])) { ?>
                             <input type="button" value="Cancelar" class="btn btn-default" data-dismiss="modal">
-                        <?php } ?>
+        <?php // } ?>
                     </div>
                 </div>
             </div>
@@ -138,7 +188,7 @@
                             <td colspan="2"><hr size="0"></td>
                         </tr>						
                         <input type="hidden" name="captcha" value="captcha">
-                        					
+                                                                
                         <tr>
                             <td colspan="2">
                         <center>
@@ -160,9 +210,11 @@
         <script>
             $('input[placeholder], textarea[placeholder]').placeholder();
         </script>
+        -->
         <?php
-        if (!empty($_GET["register"]) && strlen($_GET["register"]) == 15)
-            echo "<script>mostrardiv('lyAdminUser')</script>";
+//        if (!empty($_GET["register"]) && strlen($_GET["register"]) == 15)
+//            echo "<script>mostrardiv('lyAdminUser')</script>";
         ?>
+
     </body>
 </html>
