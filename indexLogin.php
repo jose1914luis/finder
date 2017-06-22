@@ -9,8 +9,8 @@
     </head>
 
     <body class="login_bg">
-        <?php // include_once("analyticstracking.php") ?>
-
+        <?php echo $msgAcceso; // include_once("analyticstracking.php") ?>
+       
         <div class="wrapper">
             <?php
             include './Plantillas/menu.php';
