@@ -104,38 +104,38 @@ if (isset($_POST["username"]) && isset($_POST["password"])) {
 
         if (!$captcha) {
             $msgAcceso = "<script>alert('C\u00F3digo de verificaci\u00F3n incorrecto')</script>";
-        }
-
-        $response = json_decode(file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=YOUR SECRET KEY&response=" . $captcha . "&remoteip=" . $_SERVER['REMOTE_ADDR']), true);
-        if ($response['success'] == false) {
-            $msgAcceso = "<script>alert('Usuario Spam.')</script>";
         } else {
-
-            //if ($_REQUEST['captcha2'] == "captcha2") {
-            require_once("Modelos/Usuarios_SGM.php");
-            require_once("Utilidades/LibCurl.php");
-
-            $createUsr = new Usuarios_SGM();
-            $msgCreate = $createUsr->insertUsrTmpAll($_POST);
-            if ($msgCreate == 'OK') {
-                $serial = $createUsr->getSerialbyEmail($_POST["txtEmail"]);
-
-                $url = "http://www.sigmin.com.co/EmailServices/sendEmail.php";
-                $params = array(
-                    'email' => $_POST["txtEmail"],
-                    'identificacion' => $_POST["txtDocumento"],
-                    'nombre' => $_POST["txtNombre"],
-                    'codigoVerificacion' => $serial,
-                    'urlActivaUsuario' => "email={$_POST["txtEmail"]}&identificacion={$_POST["txtDocumento"]}&codigo_verificacion=" . $serial
-                );
-
-                $connCurl = new LibCurl;
-                $resultado = $connCurl->curl_download($url, $params);
-                $emailRs = json_decode($resultado, true);
-
-                $msgAcceso = "<script>alert('Usuario creado satisfactoriamente. Verifique en el email {$_POST["txtEmail"]} los pasos para acceder a SIGMIN')</script>";
+            $response = json_decode(file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=YOUR SECRET KEY&response=" . $captcha . "&remoteip=" . $_SERVER['REMOTE_ADDR']), true);
+            if ($response['success'] == false) {
+                $msgAcceso = "<script>alert('Usuario Spam.')</script>";
             } else {
-                $msgAcceso = "<script>alert('Error al crear el usuario: $msgCreate')</script>";
+
+                //if ($_REQUEST['captcha2'] == "captcha2") {
+                require_once("Modelos/Usuarios_SGM.php");
+                require_once("Utilidades/LibCurl.php");
+
+                $createUsr = new Usuarios_SGM();
+                $msgCreate = $createUsr->insertUsrTmpAll($_POST);
+                if ($msgCreate == 'OK') {
+                    $serial = $createUsr->getSerialbyEmail($_POST["txtEmail"]);
+
+                    $url = "http://www.sigmin.com.co/EmailServices/sendEmail.php";
+                    $params = array(
+                        'email' => $_POST["txtEmail"],
+                        'identificacion' => $_POST["txtDocumento"],
+                        'nombre' => $_POST["txtNombre"],
+                        'codigoVerificacion' => $serial,
+                        'urlActivaUsuario' => "email={$_POST["txtEmail"]}&identificacion={$_POST["txtDocumento"]}&codigo_verificacion=" . $serial
+                    );
+
+                    $connCurl = new LibCurl;
+                    $resultado = $connCurl->curl_download($url, $params);
+                    $emailRs = json_decode($resultado, true);
+
+                    $msgAcceso = "<script>alert('Usuario creado satisfactoriamente. Verifique en el email {$_POST["txtEmail"]} los pasos para acceder a SIGMIN')</script>";
+                } else {
+                    $msgAcceso = "<script>alert('Error al crear el usuario: $msgCreate')</script>";
+                }
             }
         }
     } else {
@@ -152,41 +152,46 @@ if (isset($_POST["username"]) && isset($_POST["password"])) {
 
         if (!$captcha) {
             $msgAcceso = "<script>alert('C\u00F3digo de verificaci\u00F3n incorrecto')</script>";
-        }
-        $response = json_decode(file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=YOUR SECRET KEY&response=" . $captcha . "&remoteip=" . $_SERVER['REMOTE_ADDR']), true);
-        if ($response['success'] == false) {
-            $msgAcceso = "<script>alert('Usuario Spam.')</script>";
         } else {
-            // Si el c�digo captcha es correcto
-            require_once("Modelos/Usuarios_SGM.php");
-            require_once("Utilidades/LibCurl.php");
-            require_once("Utilidades/GenerarContrasenia.php");
 
-            $changePwdUsr = new Usuarios_SGM();
-            $usuario["email"] = $_POST["txtEmail"];
-            $usuario["login"] = $changePwdUsr->getLoginByEmail($_POST["txtEmail"]);
-
-            if (!empty($usuario["login"])) {
-                $usuario["claveNew"] = generaPass(8); // Pasword de 8 caracteres. 
-                $changePwdUsr->asignarPwdAleatorio($usuario);
-
-                $url = "http://www.sigmin.com.co/EmailServices/sendEmailChangePwd.php";
-                $params = array(
-                    'login_tmp' => $usuario["login"],
-                    'passwd_tmp' => $usuario["claveNew"],
-                    'email_pwd' => $_POST["txtEmail"]
-                );
-
-                $connCurl = new LibCurl;
-                $resultado = $connCurl->curl_download($url, $params);
-                $emailRs = json_decode($resultado, true);
-
-
-                $msgAcceso = "<script>alert('Nueva clave generada satisfactoriamente. Verifique en el email {$_POST["txtEmail"]} los pasos para acceder a SIGMIN')</script>";
+            $response = json_decode(file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=YOUR SECRET KEY&response=" . $captcha . "&remoteip=" . $_SERVER['REMOTE_ADDR']), true);
+            if ($response['success'] == false) {
+                $msgAcceso = "<script>alert('Usuario Spam.')</script>";
             } else {
-                $msgAcceso = "<script>alert('El correo electronico {$_POST["txtEmail"]} no se encuentra registrado')</script>";
+                // Si el c�digo captcha es correcto
+                require_once("Modelos/Usuarios_SGM.php");
+                require_once("Utilidades/LibCurl.php");
+                require_once("Utilidades/GenerarContrasenia.php");
+
+                $changePwdUsr = new Usuarios_SGM();
+                $usuario["email"] = $_POST["txtEmail"];
+                $usuario["login"] = $changePwdUsr->getLoginByEmail($_POST["txtEmail"]);
+
+                if (!empty($usuario["login"])) {
+                    $usuario["claveNew"] = generaPass(8); // Pasword de 8 caracteres. 
+                    $changePwdUsr->asignarPwdAleatorio($usuario);
+
+                    $url = "http://www.sigmin.com.co/EmailServices/sendEmailChangePwd.php";
+                    $params = array(
+                        'login_tmp' => $usuario["login"],
+                        'passwd_tmp' => $usuario["claveNew"],
+                        'email_pwd' => $_POST["txtEmail"]
+                    );
+
+                    $connCurl = new LibCurl;
+                    $resultado = $connCurl->curl_download($url, $params);
+                    $emailRs = json_decode($resultado, true);
+
+
+                    $msgAcceso = "<script>alert('Nueva clave generada satisfactoriamente. Verifique en el email {$_POST["txtEmail"]} los pasos para acceder a SIGMIN')</script>";
+                } else {
+                    $msgAcceso = "<script>alert('El correo electronico {$_POST["txtEmail"]} no se encuentra registrado')</script>";
+                }
             }
         }
+    } else {
+        # set the error code so that we can display it
+        $msgAcceso = "<script>alert('C\u00F3digo de verificaci\u00F3n incorrecto')</script>";
     }
 
     include("indexLogin.php");
