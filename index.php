@@ -129,7 +129,6 @@ if (isset($_POST["username"]) && isset($_POST["password"])) {
     } else {
         # set the error code so that we can display it
         $msgAcceso = "<script>alert('C\u00F3digo de verificaci\u00F3n incorrecto')</script>";
-        ;
     }
     include("indexLogin.php");
 } else if (@$_POST["captcha"]) {
