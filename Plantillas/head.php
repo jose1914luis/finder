@@ -6,7 +6,7 @@
 <script src='https://www.google.com/recaptcha/api.js'></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="Javascript/jquery.placeholder.min.js"></script>   
-<script src="Javascript/procesarUsrLogin.js?v=<?= 3 ?>"></script>   
+<script src="Javascript/procesarUsrLogin.js?v=<?= 4 ?>"></script>   
 <link rel="stylesheet" href="Javascript/login.css?v=<?= 3 ?>" type="text/css" media="all" />
 
 <!-- Latest compiled and minified CSS -->
