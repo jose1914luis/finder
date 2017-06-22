@@ -98,8 +98,8 @@ if (isset($_POST["username"]) && isset($_POST["password"])) {
             include("indexAccount.php");
     }
 } else if (@$_POST["captcha2"]) {
-    if($_POST["g-recaptcha-response"] == '6Le4hSYUAAAAAHYKUq3xBigpK_Gz7vMlLNymuP2x') {
-    //if ($_REQUEST['captcha2'] == "captcha2") {
+    if ($_POST["g-recaptcha-response"] == '6Le4hSYUAAAAAHYKUq3xBigpK_Gz7vMlLNymuP2x') {
+        //if ($_REQUEST['captcha2'] == "captcha2") {
         require_once("Modelos/Usuarios_SGM.php");
         require_once("Utilidades/LibCurl.php");
 
@@ -132,42 +132,45 @@ if (isset($_POST["username"]) && isset($_POST["password"])) {
     }
     include("indexLogin.php");
 } else if (@$_POST["captcha"]) {
-    
-    
-    if($_POST["g-recaptcha-response"] == '6Le4hSYUAAAAAHYKUq3xBigpK_Gz7vMlLNymuP2x') {
-    //if ($_REQUEST['captcha'] == "captcha") {
 
-        // Si el c�digo captcha es correcto
-        require_once("Modelos/Usuarios_SGM.php");
-        require_once("Utilidades/LibCurl.php");
-        require_once("Utilidades/GenerarContrasenia.php");
 
-        $changePwdUsr = new Usuarios_SGM();
-        $usuario["email"] = $_POST["txtEmail"];
-        $usuario["login"] = $changePwdUsr->getLoginByEmail($_POST["txtEmail"]);
+    if (isset($_POST['g-recaptcha-response'])) {
+        //if ($_REQUEST['captcha'] == "captcha") {
+        $captcha = $_POST['g-recaptcha-response'];
 
-        if (!empty($usuario["login"])) {
-            $usuario["claveNew"] = generaPass(8); // Pasword de 8 caracteres. 
-            $changePwdUsr->asignarPwdAleatorio($usuario);
+        if (!$captcha) {
+            // Si el c�digo captcha es correcto
+            require_once("Modelos/Usuarios_SGM.php");
+            require_once("Utilidades/LibCurl.php");
+            require_once("Utilidades/GenerarContrasenia.php");
 
-            $url = "http://www.sigmin.com.co/EmailServices/sendEmailChangePwd.php";
-            $params = array(
-                'login_tmp' => $usuario["login"],
-                'passwd_tmp' => $usuario["claveNew"],
-                'email_pwd' => $_POST["txtEmail"]
-            );
+            $changePwdUsr = new Usuarios_SGM();
+            $usuario["email"] = $_POST["txtEmail"];
+            $usuario["login"] = $changePwdUsr->getLoginByEmail($_POST["txtEmail"]);
 
-            $connCurl = new LibCurl;
-            $resultado = $connCurl->curl_download($url, $params);
-            $emailRs = json_decode($resultado, true);
-				
+            if (!empty($usuario["login"])) {
+                $usuario["claveNew"] = generaPass(8); // Pasword de 8 caracteres. 
+                $changePwdUsr->asignarPwdAleatorio($usuario);
 
-            $msgAcceso = "<script>alert('Nueva clave generada satisfactoriamente. Verifique en el email {$_POST["txtEmail"]} los pasos para acceder a SIGMIN')</script>";
+                $url = "http://www.sigmin.com.co/EmailServices/sendEmailChangePwd.php";
+                $params = array(
+                    'login_tmp' => $usuario["login"],
+                    'passwd_tmp' => $usuario["claveNew"],
+                    'email_pwd' => $_POST["txtEmail"]
+                );
+
+                $connCurl = new LibCurl;
+                $resultado = $connCurl->curl_download($url, $params);
+                $emailRs = json_decode($resultado, true);
+
+
+                $msgAcceso = "<script>alert('Nueva clave generada satisfactoriamente. Verifique en el email {$_POST["txtEmail"]} los pasos para acceder a SIGMIN')</script>";
+            } else {
+                $msgAcceso = "<script>alert('El correo electronico {$_POST["txtEmail"]} no se encuentra registrado')</script>";
+            }
         } else {
-            $msgAcceso = "<script>alert('El correo electronico {$_POST["txtEmail"]} no se encuentra registrado')</script>";
+            $msgAcceso = "<script>alert('C\u00F3digo de verificaci\u00F3n incorrecto')</script>";
         }
-    }else{
-        $msgAcceso = $_POST["g-recaptcha-response"];
     }
 
     include("indexLogin.php");
