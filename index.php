@@ -134,7 +134,7 @@ if (isset($_POST["username"]) && isset($_POST["password"])) {
     include("indexLogin.php");
 } else if (@$_POST["captcha"]) {
     
-    echo $_POST["g-recaptcha-response"];
+    
     if($_POST["g-recaptcha-response"] == '6Le4hSYUAAAAAHYKUq3xBigpK_Gz7vMlLNymuP2x') {
     //if ($_REQUEST['captcha'] == "captcha") {
 
@@ -167,6 +167,8 @@ if (isset($_POST["username"]) && isset($_POST["password"])) {
         } else {
             $msgAcceso = "<script>alert('El correo electronico {$_POST["txtEmail"]} no se encuentra registrado')</script>";
         }
+    }else{
+        $msgAcceso = $_POST["g-recaptcha-response"];
     }
 
     include("indexLogin.php");
