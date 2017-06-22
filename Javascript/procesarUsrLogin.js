@@ -54,14 +54,6 @@
 			document.frmForgetPwd.txtEmail.focus();
 			return 0;
 		}		
-
-		// validar recaptcha
-		if (document.frmForgetPwd.captcha.value.length < 1) {
-			alert("Debe diligenciar los datos de la imagen");
-			document.frmForgetPwd.captcha.focus();
-			return 0;
-		}			
-		
 		// una vez efectuadas todas las validaciones, se procede a enviar el formulario:		
 		document.frmForgetPwd.submit();
 		
