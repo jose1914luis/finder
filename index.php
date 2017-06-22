@@ -98,7 +98,8 @@ if (isset($_POST["username"]) && isset($_POST["password"])) {
             include("indexAccount.php");
     }
 } else if (@$_POST["captcha2"]) {
-    if ($_REQUEST['captcha2'] == "captcha2") {
+    if($_POST["g-recaptcha-response"] == '6Le4hSYUAAAAAHYKUq3xBigpK_Gz7vMlLNymuP2x') {
+    //if ($_REQUEST['captcha2'] == "captcha2") {
         require_once("Modelos/Usuarios_SGM.php");
         require_once("Utilidades/LibCurl.php");
 
@@ -133,7 +134,8 @@ if (isset($_POST["username"]) && isset($_POST["password"])) {
     include("indexLogin.php");
 } else if (@$_POST["captcha"]) {
 
-    if ($_REQUEST['captcha'] == "captcha") {
+    if($_POST["g-recaptcha-response"] == '6Le4hSYUAAAAAHYKUq3xBigpK_Gz7vMlLNymuP2x') {
+    //if ($_REQUEST['captcha'] == "captcha") {
 
         // Si el c�digo captcha es correcto
         require_once("Modelos/Usuarios_SGM.php");
