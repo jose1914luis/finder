@@ -23,7 +23,7 @@ if ($ope == 'olvide') {
                     <input type="text" class="form-control" name="txtEmail" size="30">
                 </div>
             </div>
-
+            <input type="hidden" name="captcha" value="captcha">
             <center>
                 <div class="g-recaptcha" data-sitekey="6Le4hSYUAAAAAJQNqJHmt4WYAcoceHhJJc9jcuN8"></div><br>
                 <input type="button" class="btn btn-success" value="Recuperar Contraseña" onclick="validarRecuperarUsr()">
