@@ -139,6 +139,12 @@ if (isset($_POST["username"]) && isset($_POST["password"])) {
         $captcha = $_POST['g-recaptcha-response'];
 
         if (!$captcha) {
+            $msgAcceso = "<script>alert('C\u00F3digo de verificaci\u00F3n incorrecto')</script>";
+        }
+        $response = json_decode(file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=YOUR SECRET KEY&response=" . $captcha . "&remoteip=" . $_SERVER['REMOTE_ADDR']), true);
+        if ($response['success'] == false) {
+            $msgAcceso = "<script>alert('Usuario Spam.')</script>";
+        } else {
             // Si el c�digo captcha es correcto
             require_once("Modelos/Usuarios_SGM.php");
             require_once("Utilidades/LibCurl.php");
@@ -168,8 +174,6 @@ if (isset($_POST["username"]) && isset($_POST["password"])) {
             } else {
                 $msgAcceso = "<script>alert('El correo electronico {$_POST["txtEmail"]} no se encuentra registrado')</script>";
             }
-        } else {
-            $msgAcceso = "<script>alert('C\u00F3digo de verificaci\u00F3n incorrecto')</script>";
         }
     }
 
