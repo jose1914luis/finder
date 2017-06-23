@@ -47,7 +47,6 @@ $CKEYfile = fopen("CKEY.txt", "r") or die("Unable to open file!");
 $CKEY = fgets($CKEYfile);
 fclose($CKEYfile);
 
-
 if (isset($_POST["username"]) && isset($_POST["password"])) {
     if ($validate->validaPasswd($_POST["username"], $_POST["password"])) {
         $_SESSION['usuario_sgm'] = $_POST["username"];
@@ -159,6 +158,7 @@ if (isset($_POST["username"]) && isset($_POST["password"])) {
         } else {
 
             $response = json_decode(file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=". $CKEY. "&response=" . $captcha . "&remoteip=" . $_SERVER['REMOTE_ADDR']), true);
+            echo "https://www.google.com/recaptcha/api/siteverify?secret=". $CKEY. "&response=" . $captcha . "&remoteip=" . $_SERVER['REMOTE_ADDR'];
             if ($response['success'] == false) {
                 $msgAcceso = "<script>alert('Usuario Spam.')</script>";
             } else {
