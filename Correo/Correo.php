@@ -5,12 +5,18 @@ include $upOne . '/sendgrid-php/sendgrid-php.php';
 
 class Correo {
 
-    private $foot = '';
     private $apiKey = '';
     private $from;
     private $subject;
     private $to;
     private $content;
+
+    public function __construct() {
+        $AKEYfile = fopen("AKEY.txt", "r") or die("Unable to open file!");
+        $AKEY = fgets($AKEYfile);
+        $this->apiKey = preg_replace('/\s+/', '', $AKEY);
+        fclose($AKEYfile);
+    }
 
     public function enviar_email($emails, $asuntoMsg, $body) {
 
