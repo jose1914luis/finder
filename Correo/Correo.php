@@ -29,7 +29,7 @@ class Correo {
         $mensaje = "
 		<html>
 		<head>
-		  <title> $asunto </title>
+		  <title> $asuntoMsg </title>
 		</head>
 		<body>
 			$body
