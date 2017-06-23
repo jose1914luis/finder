@@ -46,6 +46,8 @@ if (@$_SESSION["usuario_sgm"] != "" && !$validate->validaPasswd($_SESSION["usuar
 $CKEYfile = fopen("CKEY.txt", "r") or die("Unable to open file!");
 $CKEY = fgets($CKEYfile);
 fclose($CKEYfile);
+//echo "https://www.google.com/recaptcha/api/siteverify?secret=". $CKEY. "&response=&remoteip=" . $_SERVER['REMOTE_ADDR'];
+
 
 if (isset($_POST["username"]) && isset($_POST["password"])) {
     if ($validate->validaPasswd($_POST["username"], $_POST["password"])) {
@@ -158,9 +160,9 @@ if (isset($_POST["username"]) && isset($_POST["password"])) {
         } else {
 
             $response = json_decode(file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=". $CKEY. "&response=" . $captcha . "&remoteip=" . $_SERVER['REMOTE_ADDR']), true);
-            echo "https://www.google.com/recaptcha/api/siteverify?secret=". $CKEY. "&response=" . $captcha . "&remoteip=" . $_SERVER['REMOTE_ADDR'];
+
             if ($response['success'] == false) {
-                $msgAcceso = "<script>alert('Usuario Spam.')</script>";
+                $msgAcceso = "<script>alert('Usuario Correo Spam.')</script>";
             } else {
                 // Si el c�digo captcha es correcto
                 require_once("Modelos/Usuarios_SGM.php");
