@@ -43,6 +43,10 @@ if (@$_SESSION["usuario_sgm"] != "" && !$validate->validaPasswd($_SESSION["usuar
 }
 // ------------------------------------------
 
+$CKEYfile = fopen("CKEY.txt", "r") or die("Unable to open file!");
+$CKEY = fgets($CKEYfile);
+fclose($CKEYfile);
+
 
 if (isset($_POST["username"]) && isset($_POST["password"])) {
     if ($validate->validaPasswd($_POST["username"], $_POST["password"])) {
@@ -105,7 +109,7 @@ if (isset($_POST["username"]) && isset($_POST["password"])) {
         if (!$captcha) {
             $msgAcceso = "<script>alert('C\u00F3digo de verificaci\u00F3n incorrecto')</script>";
         } else {
-            $response = json_decode(file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=YOUR SECRET KEY&response=" . $captcha . "&remoteip=" . $_SERVER['REMOTE_ADDR']), true);
+            $response = json_decode(file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=". $CKEY. "&response=" . $captcha . "&remoteip=" . $_SERVER['REMOTE_ADDR']), true);
             if ($response['success'] == false) {
                 $msgAcceso = "<script>alert('Usuario Spam.')</script>";
             } else {
@@ -154,7 +158,7 @@ if (isset($_POST["username"]) && isset($_POST["password"])) {
             $msgAcceso = "<script>alert('C\u00F3digo de verificaci\u00F3n incorrecto')</script>";
         } else {
 
-            $response = json_decode(file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=YOUR SECRET KEY&response=" . $captcha . "&remoteip=" . $_SERVER['REMOTE_ADDR']), true);
+            $response = json_decode(file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=". $CKEY. "&response=" . $captcha . "&remoteip=" . $_SERVER['REMOTE_ADDR']), true);
             if ($response['success'] == false) {
                 $msgAcceso = "<script>alert('Usuario Spam.')</script>";
             } else {
