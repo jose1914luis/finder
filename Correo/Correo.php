@@ -86,7 +86,8 @@ class Correo {
 		</body>
 		</html>';
 
-        enviar_email($email_pwd, "Cambio de Clave :: SIGMIN", $mensaje);
+        //$this->enviar_email($emails, $asuntoMsg, $body)
+        $this->enviar_email($email_pwd, "Cambio de Clave :: SIGMIN", $mensaje);
     }
 
 }
