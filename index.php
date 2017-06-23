@@ -46,8 +46,6 @@ if (@$_SESSION["usuario_sgm"] != "" && !$validate->validaPasswd($_SESSION["usuar
 $CKEYfile = fopen("CKEY.txt", "r") or die("Unable to open file!");
 $CKEY = fgets($CKEYfile);
 fclose($CKEYfile);
-echo "https://www.google.com/recaptcha/api/siteverify?secret=". $CKEY. "&response=&remoteip=" . $_SERVER['REMOTE_ADDR'];
-
 
 if (isset($_POST["username"]) && isset($_POST["password"])) {
     if ($validate->validaPasswd($_POST["username"], $_POST["password"])) {
