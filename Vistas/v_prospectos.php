@@ -47,7 +47,7 @@
 		else					$tfoot = "<h2>No hay prospectos definidos</h2>";
 
 		$tablaProspectos = '
-			<table class="results" align="center" width="95%">
+			<table class="table table-striped" align="center" width="95%">
 				<caption>
 					<div class="titleSite" style="text-align:center">Reporte de Prospectos</div>
 					<div>&nbsp;</div>				
@@ -74,7 +74,7 @@
 		if(!empty($dataSET)) {
 			//foreach( $prospects as $cadaProspecto) {
 			foreach( $dataSET as $cadaProspecto) {				
-				$enlace = "<center><a href='javascript:' onclick=\"loadCreditosProspectos('{$cadaProspecto["placa"]}')\"><img src='Imgs/reportIcon.png' border='0' width='30' height='30' title='Generaci&oacute;n de Reporte para ".$cadaProspecto["placa"]."'></a></center><div id='{$cadaProspecto["placa"]}' class='creditos'></div>";			
+				$enlace = "<center><a href='javascript:' onclick=\"loadCreditosProspectos('{$cadaProspecto["placa"]}')\"><img src='Imgs/reportIcon.png' border='0' width='30' height='30' title='Generaci&oacute;n de Reporte para ".$cadaProspecto["placa"]."'></a></center><div id='{$cadaProspecto["placa"]}' class='creditos' style='display: none;' ></div>";			
 				
 				$tablaProspectos .= "
 					<tr class='results'>
