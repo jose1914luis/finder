@@ -53,7 +53,7 @@
 
 
 	if(!empty($expediente))
-		$existeExpediente = 1; // Si existen resultados al expediente en cuestión
+		$existeExpediente = 1; // Si existen resultados al expediente en cuestiï¿½n
 
 	
 	$info = $consulta->generarViewMap($placa, $clasificacion);
@@ -91,7 +91,7 @@
     <!-- this gmaps key generated for http://openlayers.org/dev/ -->
 	<script src="http://maps.google.com/maps/api/js?v=3.5&key=AIzaSyBXS5guPsMcAdCwrujD-1KsyYkgoE87PUM&amp;sensor=false"></script>
 	<!-- <script src="http://maps.google.com/maps/api/js?v=3.5&amp;sensor=false"></script> -->
-	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+	<!--<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>-->
     <script type="text/javascript">
 		
 		var map, drawControls, polygonFeature, vectorLayer;
@@ -114,7 +114,7 @@
     </script>
   </head>
   <body onLoad="init()">
-<!--  VISUALIZACIÓN DEL REPORTE DE DATOS DE ACUERDO AL TIPO DE EXPEDIENTE -->	
+<!--  VISUALIZACIï¿½N DEL REPORTE DE DATOS DE ACUERDO AL TIPO DE EXPEDIENTE -->	
 
 	<?php 
 		if($tipoExpediente == 'SOLICITUD') {
@@ -199,7 +199,7 @@
 				<td colspan="6"><hr size="1" /></td>
 			  </tr>
 			   
-			  <!-- Definición del área del expediente -->
+			  <!-- Definiciï¿½n del ï¿½rea del expediente -->
 			  <tr>
 				<td colspan="6" bgcolor="#E1E1E1"><div align="center" class="Estilo1">POLIGONO DE LA SOLICITUD </div></td>
 			  </tr>
@@ -209,7 +209,7 @@
 				<hr size=1>
 				</td>
 			  </tr>
-			  <!-- Fin: Definición del área del expediente -->
+			  <!-- Fin: Definiciï¿½n del ï¿½rea del expediente -->
 			  
 		<?php 
 			if(@$_SESSION["usuario_sgm"]=="jmoreno" || @$_SESSION["usuario_sgm"]=="jecardenas") {
@@ -375,7 +375,7 @@
 		<td colspan="6"><hr size="1" /></td>
 	  </tr>
 	  
-	  <!-- Definición del área del expediente -->
+	  <!-- Definiciï¿½n del ï¿½rea del expediente -->
 	  <tr>
 		<td colspan="6" bgcolor="#E1E1E1"><div align="center" class="Estilo1">POLIGONO DEL TITULO MINERO </div></td>
 	  </tr>
@@ -385,7 +385,7 @@
 		<hr size=1>
 		</td>
 	  </tr>
-	  <!-- Fin: Definición del área del expediente --> 	  	
+	  <!-- Fin: Definiciï¿½n del ï¿½rea del expediente --> 	  	
 <?php 
 	if(@$_SESSION["usuario_sgm"]=="jmoreno" || @$_SESSION["usuario_sgm"]=="jecardenas") {
 ?>	  
@@ -500,7 +500,7 @@
 		<td colspan="5"><hr size="1" /></td>
 	  </tr>
 	  
-	  <!-- Definición del área del expediente -->
+	  <!-- Definiciï¿½n del ï¿½rea del expediente -->
 	  <tr>
 		<td colspan="6" bgcolor="#E1E1E1"><div align="center" class="Estilo1">POLIGONO DEL PROSPECTO </div></td>
 	  </tr>
@@ -510,7 +510,7 @@
 		<hr size=1>
 		</td>
 	  </tr>
-	  <!-- Fin: Definición del área del expediente -->
+	  <!-- Fin: Definiciï¿½n del ï¿½rea del expediente -->
 	  
 	  <tr>
 		<td colspan="6" bgcolor="#E1E1E1"><div align="center" class="Estilo1">COORDENADAS DEL POLIGONO </div></td>
@@ -614,7 +614,7 @@
 		<td colspan="6"><hr size="1" /></td>
 	  </tr>
 	  
-	  <!-- Definición del área del expediente -->
+	  <!-- Definiciï¿½n del ï¿½rea del expediente -->
 	  <tr>
 		<td colspan="6" bgcolor="#E1E1E1"><div align="center" class="Estilo1">AREA DEFINITIVA DEL PROSPECTO </div></td>
 	  </tr>
@@ -624,7 +624,7 @@
 		<hr size=1>
 		</td>
 	  </tr>
-	  <!-- Fin: Definición del área del expediente -->
+	  <!-- Fin: Definiciï¿½n del ï¿½rea del expediente -->
 	  
 	  <tr>
 		<td colspan="6" bgcolor="#E1E1E1"><div align="center" class="Estilo1">COORDENADAS ANTES DE ESTUDIO </div></td>
