@@ -174,11 +174,12 @@ if (!empty($_GET["idPlantilla"])) {
                         }
                     }
 
-                    $("#fechaVence" + id).val(fechaf.getFullYear() + "-" + fechaf.getMonth() + "-" + fechaf.getDate());
+                    $("#fechaVence" + id).val(fechaf.getFullYear() + "-" + (fechaf.getMonth() + 1) + "-" + fechaf.getDate());
 
                 } else if (opcion == 'm') {
 
                     fechaf.setMonth(fechai.getMonth() + parseInt(valor));
+                    fechaf.setMonth(fechai.getDate() + 1);
                     $("#fechaVence" + id).val(fechaf.getFullYear() + "-" + (fechaf.getMonth() + 1) + "-" + fechaf.getDate());
                 }
 
