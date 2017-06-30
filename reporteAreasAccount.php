@@ -130,13 +130,13 @@ $codigoExp = $expediente["placa"];
 </style>
 
 <script src="http://dev.openlayers.org/OpenLayers.js"></script>
-<script type="text/javascript" src="Javascript/validarFinder.js"></script>
+<!--<script type="text/javascript" src="Javascript/validarFinder.js"></script>-->
 <!-- this gmaps key generated for http://openlayers.org/dev/ -->
 <script src="http://maps.google.com/maps/api/js?v=3.5&key=AIzaSyBXS5guPsMcAdCwrujD-1KsyYkgoE87PUM&amp;sensor=false"></script>
 <!-- <script src="http://maps.google.com/maps/api/js?v=3.5&amp;sensor=false"></script> -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
 <script type="text/javascript">
 
     var map, drawControls, polygonFeature, vectorLayer;
