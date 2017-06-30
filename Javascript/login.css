@@ -86,6 +86,11 @@ body{
     -o-background-size: cover;
     background-size: cover;
 }
+
+.login_bg2{
+    
+}
+
 .logo_login{
     padding: 6px;
     width:300px;
