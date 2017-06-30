@@ -11,37 +11,53 @@
                 <span class="icon-bar"></span>
             </button>
             <a class="navbar-brand" href=".">
-                <img class="logosgm" alt="SIGMIN" src="Javascript/images/logo_login.png" width="50%">
+                <img class="logosgm" alt="SIGMIN" src="Javascript/images/logo2.png" width="20%">
             </a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
-<!--            
-            <form class="navbar-form navbar-left">
-                <div class="input-group buscador">
-                    <input type="text" class="form-control" placeholder="Palabra Clave...">
-                    <span class="input-group-btn">
-                        <button class="btn btn-primary" type="button"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
-                    </span>
-                </div> /input-group 
-            </form>            -->
-
+            <!--            
+                        <form class="navbar-form navbar-left">
+                            <div class="input-group buscador">
+                                <input type="text" class="form-control" placeholder="Palabra Clave...">
+                                <span class="input-group-btn">
+                                    <button class="btn btn-primary" type="button"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+                                </span>
+                            </div> /input-group 
+                        </form>            -->
             <ul class="nav navbar-nav navbar-right">
-<!--                <li><a href="#"> Creditos: 1000<span class="glyphicon glyphicon-usd"></span></a></li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Propiedades Mineras <span class="caret"></span></a>
-                    <ul class="dropdown-menu">                                    
-                        <li><a href="#">Mis Prospectos</a></li>
-                        <li><a href="#">Mis Expedientes</a></li>
-                        <li role="separator" class="divider"></li>
-                        <li><a href="#">Liberaciones</a></li>
-                        <li role="separator" class="divider"></li>
-                        <li><a href="#">Shapes</a></li>
-                    </ul>
-                </li>-->
-                <li><a href=".?ope=ingresar">Ingresar <span class="glyphicon glyphicon-user"></span></a></li>                                                        
+                <?php if (isset($_SESSION['id_usuario'])) { ?>
+
+                    <li><a href="#"> Creditos: <?= $_SESSION['usr_cred']['credito'] ?>$</a></li>
+                    <li><a href="javascript:confirmaCreditoMapa('?pagina=map')"> Mapa</a></li>
+                    <li role="presentation" class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Propiedades Mineras <span class="caret"></span></a>
+                        <ul class="dropdown-menu">                                    
+                            <li><a href="?mnu=prospectos">Mis Prospectos</a></li>
+                            <li><a href="?mnu=expedientes">Mis Expedientes</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="?mnu=liberaciones">Liberaciones</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Shapes</a></li>
+                        </ul>
+                    </li>
+                    <li role="presentation" class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Cuenta<span class="caret"></span></a>
+                        <ul class="dropdown-menu">                                    
+                            <li><a href="?mnu=creditos">Creditos</a></li>
+                            <li><a href="?mnu=datos_basicos">Datos Personales</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="?mnu=logout">Salir</a></li>
+                        </ul>
+                    </li>
+
+
+                <?php } else { ?>
+                    <li><a href=".?ope=ingresar">Ingresar <span class="glyphicon glyphicon-user"></span></a></li> 
+                        <?php } ?>    
+
             </ul>
         </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
