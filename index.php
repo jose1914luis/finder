@@ -178,18 +178,6 @@ if (isset($_POST["username"]) && isset($_POST["password"])) {
                     $correo = new Correo();
                     $correo->recuperarContra($usuario["claveNew"], $usuario["login"], $_POST["txtEmail"]);
 
-//                    $url = "http://www.sigmin.com.co/EmailServices/sendEmailChangePwd.php";
-//                    $params = array(
-//                        'login_tmp' => $usuario["login"],
-//                        'passwd_tmp' => $usuario["claveNew"],
-//                        'email_pwd' => $_POST["txtEmail"]
-//                    );
-//
-//                    $connCurl = new LibCurl;
-//                    $resultado = $connCurl->curl_download($url, $params);
-//                    $emailRs = json_decode($resultado, true);
-
-
                     $msgAcceso = "<script>alert('Nueva clave generada satisfactoriamente. Verifique en el email {$_POST["txtEmail"]} los pasos para acceder a SIGMIN')</script>";
                 } else {
                     $msgAcceso = "<script>alert('El correo electronico {$_POST["txtEmail"]} no se encuentra registrado')</script>";
