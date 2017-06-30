@@ -8,7 +8,7 @@
         ?>
     </head>
 
-    <body class="login_bg">
+    <body class="<?= (isset($_SESSION['id_usuario']))?'':'login_bg' ?>">
         <?php // echo $msgAcceso; // include_once("analyticstracking.php") ?>
        
         <div class="wrapper">
