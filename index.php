@@ -17,11 +17,12 @@ require_once("Modelos/CreditosUsuarios.php");
 require_once("Modelos/ExpedientesSGM.php");
 require_once("Vistas/v_pie_pagina.php");
 
+include './Correo/Correo.php';
+
 //  Definici�n de las variables globales 		
 $validate = new Usuarios_SGM();
 $prp = new ProspectosBogSGM();
 $cred = new CreditosUsuarios();
-
 
 $msgAcceso = "";
 $msgSistema = "";
@@ -91,7 +92,7 @@ if (isset($_POST["username"]) && isset($_POST["password"])) {
         include("indexAccount.php");
     }
 } else if (@$_SESSION["pagina"] == "map") {
-    if (@$_GET["pagina"] == "account") {
+    if (isset($_GET["mnu"])) {
         $_SESSION["pagina"] = "account";
         include("indexAccount.php");
     } else {
@@ -122,19 +123,9 @@ if (isset($_POST["username"]) && isset($_POST["password"])) {
                 if ($msgCreate == 'OK') {
                     $serial = $createUsr->getSerialbyEmail($_POST["txtEmail"]);
 
-                    $url = "http://www.sigmin.com.co/EmailServices/sendEmail.php";
-                    $params = array(
-                        'email' => $_POST["txtEmail"],
-                        'identificacion' => $_POST["txtDocumento"],
-                        'nombre' => $_POST["txtNombre"],
-                        'codigoVerificacion' => $serial,
-                        'urlActivaUsuario' => "email={$_POST["txtEmail"]}&identificacion={$_POST["txtDocumento"]}&codigo_verificacion=" . $serial
-                    );
-
-                    $connCurl = new LibCurl;
-                    $resultado = $connCurl->curl_download($url, $params);
-                    $emailRs = json_decode($resultado, true);
-
+                    $correo = new Correo();
+                    $correo->usuarioNuevo($_POST["txtNombre"], "email={$_POST["txtEmail"]}&identificacion={$_POST["txtDocumento"]}&codigo_verificacion=" . $serial, $_POST["txtEmail"]);                                      
+                    
                     $msgAcceso = "<script>alert('Usuario creado satisfactoriamente. Verifique en el email {$_POST["txtEmail"]} los pasos para acceder a SIGMIN')</script>";
                 } else {
                     $msgAcceso = "<script>alert('Error al crear el usuario: $msgCreate')</script>";
@@ -173,8 +164,7 @@ if (isset($_POST["username"]) && isset($_POST["password"])) {
 
                 if (!empty($usuario["login"])) {
                     $usuario["claveNew"] = generaPass(8); // Pasword de 8 caracteres. 
-                    $changePwdUsr->asignarPwdAleatorio($usuario);
-                    include './Correo/Correo.php';
+                    $changePwdUsr->asignarPwdAleatorio($usuario);                    
                     $correo = new Correo();
                     $correo->recuperarContra($usuario["claveNew"], $usuario["login"], $_POST["txtEmail"]);
 
