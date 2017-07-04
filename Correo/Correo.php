@@ -83,8 +83,9 @@ class Correo {
 		</td>
 		</tr>
 		</body>
-		</html>	
-	';		
+		</html>';	
+        
+        $this->enviar_email($email, "Creación de Cuenta :: SIGMIN", $mensaje);
     }
     
     public function recuperarContra($passwd_tmp, $login_tmp, $email_pwd) {
