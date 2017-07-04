@@ -51,7 +51,7 @@ class Correo {
 	$mensaje = '	
 		<html>
 		<head>
-		<title>SIGMIN :: Creaci�n de Cuenta </title>
+		<title>SIGMIN :: Creación de Cuenta </title>
 		</head>
 		<body>
 		<table border="0" align="center" width="600">
