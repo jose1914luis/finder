@@ -11,7 +11,7 @@
                 <span class="icon-bar"></span>
             </button>
             <a class="navbar-brand" href=".">
-                <img class="logosgm" alt="SIGMIN" src="Javascript/images/logo2.png">
+                <img class="logosgm" alt="SIGMIN" src="Javascript/images/logo3.png">
             </a>
         </div>
 
