@@ -11,22 +11,21 @@
                 <span class="icon-bar"></span>
             </button>
             <a class="navbar-brand" href=".">
-                <img class="logosgm" alt="SIGMIN" src="Javascript/images/logo2.png" width="20%">
+                <img class="logosgm" alt="SIGMIN" src="Javascript/images/logo2.png">
             </a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-
-            <!--            
-                        <form class="navbar-form navbar-left">
-                            <div class="input-group buscador">
-                                <input type="text" class="form-control" placeholder="Palabra Clave...">
-                                <span class="input-group-btn">
-                                    <button class="btn btn-primary" type="button"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
-                                </span>
-                            </div> /input-group 
-                        </form>            -->
+            
+            <form class="navbar-form navbar-left" name="searchWords">
+                <div class="input-group">
+                    <input id="txtBusqueda" type="text" class="form-control" placeholder="Palabra Clave...">                    
+                    <span class="input-group-btn">
+                        <button class="btn btn-default" onclick="validarBusqueda();" type="button"><span class="glyphicon glyphicon-search"></span><span style="visibility: hidden">.</span></button>
+                    </span>                    
+                </div>  
+            </form>            
             <ul class="nav navbar-nav navbar-right">
                 <?php if (isset($_SESSION['id_usuario'])) { ?>
 
