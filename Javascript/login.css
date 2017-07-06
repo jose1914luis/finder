@@ -51,7 +51,7 @@ body{
     border-radius: 0px !important; 
     border: 0px !important;
     /*margin-bottom: 0px !important;*/
-    z-index: 100000;
+    z-index: 1;
 }
 .navbar-default{
     min-height:80px !important;
