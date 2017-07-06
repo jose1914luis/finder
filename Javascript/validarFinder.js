@@ -152,7 +152,7 @@ function enviar_descarga() {
 
 function valida_placas() {
     document.forms[0].action = '?mnu=descargas';
-    document.forms[0].target = '_top';
+//    document.forms[0].target = '_top';
     document.forms[0].submit();
 }
 
