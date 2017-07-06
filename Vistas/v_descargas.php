@@ -20,7 +20,7 @@
 			<td>
 				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<textarea name="txtPlacas" rows="4" cols="60"><?=@$_POST["txtPlacas"]?></textarea><br>
 				<hr size="1">
-					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="button" name="valida_lista" value="Validar Placas" onclick="valida_placas()"/>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="button" name="valida_lista" value="Validar Placas" class="btn btn-success" onclick="valida_placas()"/>
 				<hr size="1">
 			</td>
 		</tr>				
@@ -60,7 +60,7 @@
 								<br/>
 								N&uacute;mero de cr&eacute;ditos a consumir: <b><?=$contarCreditos*$valorCreditoExpediente?></b>&nbsp;&nbsp;
 								<hr size="0">
-								<input type="button" name="aceptar" value="Descargar Shape(s)" class="btnDownload" onclick="enviar_descarga()"/>
+								<input type="button" name="aceptar" value="Descargar Shape(s)" class="btn btn-success" onclick="enviar_descarga()"/>
 								<input type="hidden" name="nro_creditos" value="<?=$contarCreditos*$valorCreditoExpediente?>"/>
 							</center>	
 						</td>
