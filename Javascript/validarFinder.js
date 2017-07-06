@@ -144,16 +144,18 @@ function loadCreditosProspectos(prospecto) {
 
 function enviar_descarga() {
     if (confirm("Desea consumir Cr\u00E9ditos de Descarga?")) {
-        document.forms[0].action = '?crd=dwn_expedientes&credits=1';
-        document.forms[0].target = '_blank';
-        document.forms[0].submit();
+        document.forms[1].action = '?crd=dwn_expedientes&credits=1';
+        document.forms[1].target = '_blank';
+        document.forms[1].submit();
     }
 }
 
 function valida_placas() {
-    document.forms[0].action = '?mnu=descargas';
+//    console.log('entro');
+//    document.forms[0].action = '?mnu=descargas';
 //    document.forms[0].target = '_top';
-    document.forms[0].submit();
+//    document.forms[0].target = '_blank';
+//    document.forms[0].submit();
 }
 
 function inactivarPlaca(placa) {
