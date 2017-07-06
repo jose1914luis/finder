@@ -40,13 +40,9 @@ if ($verMapa != "OK")
         <link href="Javascript/jquery-ui-1.12.1/jquery-ui.min.css" rel="stylesheet" type="text/css"/>
         <script src="Javascript/jquery-ui-1.12.1/jquery-ui.min.js" type="text/javascript"></script>
         <link href="Javascript/jquery-ui-1.12.1/jquery-ui.theme.min.css" rel="stylesheet" type="text/css"/>
-<!--        <link rel="stylesheet" href="Javascript/jquery-ui.css" type="text/css" media="all" />
-        <link rel="stylesheet" href="Javascript/ui.theme.css" type="text/css" media="all" />-->
-        <script src="Javascript/validarFinder.js"></script>
+        
         <link rel="stylesheet" href="Javascript/css/website.css" type="text/css" media="all"/>
         <script src="Javascript/mapa.js?v=<?= 10 ?>" type="text/javascript"></script>
-        
-        <!--<script type="text/javascript" src="Javascript/jquery-ui-1.8.23.custom.min.js"></script>-->
         <style>
             .navbar{
                 margin-bottom: 0px !important;                
