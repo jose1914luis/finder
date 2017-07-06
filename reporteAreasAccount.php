@@ -128,7 +128,7 @@ $codigoExp = $expediente["placa"];
     }
     -->
 </style>
-
+<!--s-->
 <script src="http://dev.openlayers.org/OpenLayers.js"></script>
 <script type="text/javascript" src="Javascript/validarFinder.js"></script>
 <!-- this gmaps key generated for http://openlayers.org/dev/ -->
