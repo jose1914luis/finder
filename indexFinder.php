@@ -40,7 +40,7 @@ if ($verMapa != "OK")
         <link rel="stylesheet" href="Javascript/ui.theme.css" type="text/css" media="all" />
         <script src="Javascript/validarFinder.js"></script>
         <link rel="stylesheet" href="Javascript/css/website.css" type="text/css" media="all"/>
-        <script src="Javascript/mapa.js?v=<?= 7 ?>" type="text/javascript"></script>
+        <script src="Javascript/mapa.js?v=<?= 10 ?>" type="text/javascript"></script>
         <script type="text/javascript" src="Javascript/jquery-1.7.2.min.js"></script>
         <script type="text/javascript" src="Javascript/jquery-ui-1.8.23.custom.min.js"></script>
         <style>
@@ -56,245 +56,13 @@ if ($verMapa != "OK")
         <script type="text/javascript" src="Javascript/libreriasAjax2/ajaxfileupload.js"></script>
         <script src="Javascript/jquery.placeholder.min.js"></script>        	
         <link href="Javascript/libreriasAjax2/ajaxfileupload.css" type="text/css" rel="stylesheet">	
-        <script type="text/javascript">
-            var winP = null, resultados = null;
-            var map, drawControls, polygonFeature, vectorLayer, pointLayer, lineLayer, polygonLayer, boxLayer;
-            var openSearch = 0, openProspect = 0;
 
-            var measureControls; // 20160309
-            var CONTAR_POLY = 0;
-            var GLOBAL_POLY;
+        <script type="text/javascript">
+           
             var LIMIT_INFERIOR = <?= $_SESSION['rango_inferior'] ?>;
             var LIMIT_SUPERIOR = <?= $_SESSION['rango_superior'] ?>;
-
-            OpenLayers.IMAGE_RELOAD_ATTEMPTS = 3;
-            OpenLayers.DOTS_PER_INCH = 25.4 / 0.28;
-
-
-            // dar color al layer de resultados
-            var styleMap = new OpenLayers.StyleMap({'strokeWidth': 5, 'strokeColor': '#ff0000'});
-
-
-            // Definición de los sistemas de proyección:
-            var projection = new OpenLayers.Projection("EPSG:900913");
-            var displayProjection = new OpenLayers.Projection("EPSG:4326");
-
-            vectorLayer = new OpenLayers.Layer.Vector("Vector Layer",
-                    {
-                        styleMap: styleMap,
-                        projection: projection,
-                        displayProjection: displayProjection
-                    });
-
-            OpenLayers.Control.Click = OpenLayers.Class(OpenLayers.Control, {
-                defaultHandlerOptions: {
-                    'single': true,
-                    'double': false,
-                    'pixelTolerance': 0,
-                    'stopSingle': false,
-                    'stopDouble': false
-                },
-                initialize: function (options) {
-                    this.handlerOptions = OpenLayers.Util.extend(
-                            {}, this.defaultHandlerOptions
-                            );
-                    OpenLayers.Control.prototype.initialize.apply(
-                            this, arguments
-                            );
-                    this.handler = new OpenLayers.Handler.Click(
-                            this, {
-                                'click': this.trigger
-                            }, this.handlerOptions
-                            );
-                },
-                trigger: function (e) {
-                    var lonlat = map.getLonLatFromPixel(e.xy);
-                    lonlat = lonlat.transform(
-                            projection,
-                            displayProjection
-                            );
-                    coordenadas = "POINT(" + lonlat.lon + " " + lonlat.lat + ")";
-
-                              	$.post('?fnd=identify_map', {coordenadasRAC: coordenadas}, function (resp) {
-                        $("#loadingImage").show();
-                                        	if (resp != "") {
-                            if (resultados != null)
-                                resultados.close();
-                            resultados = window.open("", "Ventana", "width=700 height=200 scrollbars=yes");
-                            resultados.document.title = ":: SIGMIN - Identify";
-                            resultados.document.write(resp);
-                            resultados.focus();
-                            $("#loadingImage").hide();
-                        } else
-                                            	alert("No hay retorno de informaci&oacute;n");
-                    });
-                }
-            });
-
-            function init() {
-                $.post('viewServicesSIGMINFull.php', {loadService: true}, function (resp) {
-                    if (resp != "")
-                        eval(resp);
-                    else
-                        alert("falla al cargar los servicios geográficos");
-                });
-            }
-
-            function toggleControl(element) {
-                clearFields();
-                document.calculo_area.infoAL.value = "";
-                $("#infoAL").css("background-color", "#FFF");
-                measureControls["polygon"].deactivate();
-                drawControls["polygon"].deactivate();
-
-                if (element.id == 'poligono')
-                {
-                    document.getElementById("polygonToggle").click();
-                    document.tools.polygonToggle.click();
-                }
-                if (element.id == 'area')
-                {
-                    document.getElementById("pointToggle").click();
-                    document.tools.point.click();
-                }
-                for (key in drawControls) {
-                    var control = drawControls[key];
-                    if (element.value == key && element.checked) {
-                        if (typeof (measureControls[key]) != "undefined")
-                            measureControls[key].activate();
-
-                        control.activate();
-                    } else {
-                        if (typeof (measureControls[key]) != "undefined")
-                            measureControls[key].deactivate();
-
-                        control.deactivate();
-                    }
-                }
-            }
-
-            function allowPan(element) {
-                var stop = !element.checked;
-                for (var key in drawControls) {
-                    drawControls[key].handler.stopDown = stop;
-                    drawControls[key].handler.stopUp = stop;
-                }
-            }
-            function cambiarExpediente(campoPlaca, tipoExp) {
-                            	$.post('viewValidaExpediente.php', {selExpediente: campoPlaca, tipoExpediente: tipoExp}, function (resp) {
-                                    	if (resp != "")
-                                					eval(resp);
-                                        	else
-                                        	alert("No hay retorno de informaci&oacute;n");
-                });
-                       }
-            function showMultiExpedientes(queryPlacas) {
-                vectorLayer.removeAllFeatures();
-                            	$.post('viewShowMultiExpediente.php', {selExpediente: queryPlacas}, function (resp) {
-                                    	if (resp != "")
-                                					eval(resp);
-                                        	else
-                                        	alert("No hay retorno de informaci&oacute;n");
-                });
-                       }
-            function clearFields() {
-                lineLayer.removeAllFeatures();
-                pointLayer.removeAllFeatures();
-                lineLayer.removeAllFeatures();
-                polygonLayer.removeAllFeatures();
-                boxLayer.removeAllFeatures();
-                vectorLayer.removeAllFeatures();
-            }
-            function validarBusqueda() {
-                if (document.forms["searchWords"].txtBusqueda.value == "")
-                    return 0;
-
-                $("#loadingImage").show();
-                $.post('viewServicesSIGMINFullResultados.php', {txtBuscar: document.forms["searchWords"].txtBusqueda.value}, function (resp) {
-                    if (resp != "") {
-                        if (resultados != null)
-                            resultados.close();
-                        resultados = window.open("", "Ventana", "width=700 height=450 scrollbars=yes");
-                        resultados.document.write(resp);
-                        resultados.document.title = ":: SIGMIN - Results";
-                        resultados.focus();
-
-                        $("#loadingImage").hide();
-                    } else
-                        alert("No hay retorno de información");
-                });
-            }
-            $(function () {
-                $("#txtBusqueda").autocomplete({
-                    source: "viewValidaQuery.php"
-                });
-            });
-            function cambiarProspecto(campoPlaca) {
-                $.post('viewValidaPlaca.php', {selProspecto: campoPlaca}, function (resp) {
-                    if (resp != "")
-                        eval(resp);
-                    else
-                        alert("No hay retorno de informacion");
-                });
-            }
-
-            function Busc_Open() {
-                openProspect = 0;
-                visualizar = 'NO';
-                if (openSearch % 2 == 0)
-                    visualizar = 'SI';
-                openSearch++;
-
-                if (visualizar == "SI") {
-                    $('#prospect').css('display', 'none');
-                    $('#prospect').animate({
-                        bottom: "-230px",
-                        left: "550px"
-                    }, 500);
-
-                    $('#buscar').css('display', 'block');
-                    $('#buscar').animate({
-                        bottom: "350px",
-                        left: "170px"
-                    }, 500);
-                } else {
-                    $('#buscar').css('display', 'none');
-                    $('#buscar').animate({
-                        bottom: "20px",
-                        left: "520px"
-                    }, 500);
-                }
-            }
-
-            function Pros_Open() {
-                openSearch = 0;
-                visualizar = 'NO';
-                if (openProspect % 2 == 0)
-                    visualizar = 'SI';
-                openProspect++;
-
-                if (visualizar == "SI") {
-                    $('#buscar').css('display', 'none');
-                    $('#buscar').animate({
-                        bottom: "20px",
-                        left: "520px"
-                    }, 500);
-
-                    $('#prospect').css('display', 'block');
-                    $('#prospect').animate({
-                        bottom: "100px",
-                        left: "170px"
-                    }, 500);
-                } else {
-                    $('#prospect').css('display', 'none');
-                    $('#prospect').animate({
-                        bottom: "-230px",
-                        left: "550px"
-                    }, 500);
-                }
-            }
-
         </script>
+        <script src="Javascript/mapa_control.js?v=<?= 10 ?>" type="text/javascript"></script>      
         <script type="text/javascript" src="Javascript/fisheye-iutil.min.js"></script>
         <script type="text/javascript">
             $(function () {
@@ -502,7 +270,7 @@ if ($verMapa != "OK")
         <div style="position:absolute; bottom:15px; width:100%; z-index:99999;">
             <div id="menu">
                 <div class="dock-container">
-                 
+
                     <?php
 //	if(@$_SESSION["usuario_sgm"]=="jmoreno" || @$_SESSION["usuario_sgm"]=="jecardenas" || @$_SESSION["usuario_sgm"]=="jvelasquez"  || @$_SESSION["usuario_sgm"]=="ahmarino@hotmail.com") {		
                     $funcionProspect = "Pros_Open()";
