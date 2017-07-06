@@ -20,7 +20,7 @@
 			<td>
 				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<textarea name="txtPlacas" rows="4" cols="60"><?=@$_POST["txtPlacas"]?></textarea><br>
 				<hr size="1">
-                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="button" name="valida_lista" value="Validar Placas" class="btn btn-success" onclick="valida_placas()"/>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="submit" name="valida_lista" value="Validar Placas" class="btn btn-success"/>
 				<hr size="1">
 			</td>
 		</tr>				
