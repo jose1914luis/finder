@@ -3,12 +3,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=1">
 <meta name="apple-mobile-web-app-capable" content="yes">
 
-<script src='https://www.google.com/recaptcha/api.js'></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="Javascript/jquery.placeholder.min.js"></script>   
-<script src="Javascript/procesarUsrLogin.js?v=<?= 7 ?>"></script>   
+<script type="text/javascript" src='https://www.google.com/recaptcha/api.js'></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript" src="Javascript/jquery.placeholder.min.js"></script>   
+<script type="text/javascript" src="Javascript/procesarUsrLogin.js?v=<?= 7 ?>"></script>   
 <link rel="stylesheet" href="Javascript/login.css?v=<?= 7 ?>" type="text/css" media="all" />
-<script src="Javascript/validarFinder.js?v=<?= 7 ?>""></script>
+<script type="text/javascript" src="Javascript/validarFinder.js?v=<?= 8 ?>""></script>
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 <!--<link href="Javascript/bootstrap-3.3.7-dist/css/bootstrap.css" rel="stylesheet" type="text/css"/>-->
