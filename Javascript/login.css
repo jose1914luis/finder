@@ -1,3 +1,4 @@
+
 html {
     height: 100%;
 }
@@ -22,9 +23,28 @@ body{
     height: 45px;  
     opacity: 0.9;
     font-size: 12px;
-    padding-top: 5px
+    padding-top: 5px;
 }
 
+.site-footer2{
+    padding-bottom: 5px; 
+    bottom: 0px;
+    text-align: center;
+    background-color: #555555;	color: #ffffff;
+    height: 45px;  
+    opacity: 0.9;
+    font-size: 12px;
+    padding-top: 5px;
+    position: absolute;
+    width: 100%;
+}
+
+.contenedor{
+    position: absolute;
+    top: 80px;
+    margin: 0 auto;
+    width: 100%;
+}
 .bono{
     background-color:#666 !important;
     color: #FFF !important;
@@ -55,7 +75,6 @@ body{
 }
 .navbar-default{
     min-height:80px !important;
-    opacity: 0.9;
     border-radius: 0px !important; 
     /*background: rgba(76, 175, 80, 0.3)  Green background with 30% opacity */
 }
@@ -72,7 +91,7 @@ body{
     .logosgm{        
         display: none  !important;
     }
-    
+
     .navbar-default{
         min-height:50px !important;
     }
@@ -89,7 +108,7 @@ body{
 }
 
 .login_bg2{
-    
+
 }
 
 .logo_login{
@@ -106,27 +125,16 @@ body{
 
     position: relative;
     top: 20px;
-    /*max-width: 1000px;*/
     margin: 0 auto;
     height: auto;
     width: auto;
-    background: url(images/login_box.png) center fixed;
+    background-color: #f8f8f8;
+    border-color: #e7e7e7;
+
     padding: 10px;
     border-radius: 10px;
 }
 
-/*
-.login_box{
-        width:395px;
-        height:530px;
-        background: url(images/login_box.png) no-repeat center center fixed;
-        align:center;
-        margin-left:auto;
-        margin-right:auto;
-        margin-top:150px;
-        padding-top:25px;
-}
-*/
 
 .login_username{
     width:200px;
@@ -262,7 +270,7 @@ input:-ms-input-placeholder {
     font-size:11pt;
     padding: 6px; 
     border-radius: 5px;
-    
+
 }
 
 .tableUser td{
