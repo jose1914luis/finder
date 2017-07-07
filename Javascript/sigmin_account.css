@@ -287,6 +287,13 @@
 		color: white;		
 		font-weight: bold;
 	}
+        
+        .titleSite2 {
+		background-color: #F44336;
+		padding: 10px;
+		color: white;		
+		font-weight: bold;
+	}
 
 	.tableFonts {
 		font: 12px Verdana;
