@@ -19,7 +19,7 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             
             <form class="navbar-form navbar-left" name="searchWords">
-                <div class="input-group">
+                <div class="input-group buscador">
                     <input id="txtBusqueda" type="text" class="form-control" placeholder="Palabra Clave...">                    
                     <span class="input-group-btn">
                         <button class="btn btn-default" onclick="validarBusqueda();" type="button"><span class="glyphicon glyphicon-search"></span><span style="visibility: hidden">.</span></button>
