@@ -208,7 +208,7 @@ function ajaxFileUpload() {
                 secureuri: false,
                 fileElementId: 'fileToUpload',
                 dataType: 'execute',
-                data: {sistemaOrigen: document.forms[1].selGeoSystem.value},
+                data: {sistemaOrigen: document.forms[2].selGeoSystem.value},
                 success: function (data, status) {
                     if (typeof (data.error) != 'undefined') {
                         if (data.error != '') {
