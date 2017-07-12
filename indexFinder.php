@@ -42,7 +42,7 @@ if ($verMapa != "OK")
         <link href="Javascript/jquery-ui-1.12.1/jquery-ui.theme.min.css" rel="stylesheet" type="text/css"/>
         
         <link rel="stylesheet" href="Javascript/css/website.css" type="text/css" media="all"/>
-        <script src="Javascript/mapa.js?v=<?= 10 ?>" type="text/javascript"></script>
+        <script src="Javascript/mapa.js?v=<?= 11 ?>" type="text/javascript"></script>
         <style>
             .navbar{
                 margin-bottom: 0px !important;                
