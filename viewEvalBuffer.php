@@ -1,6 +1,6 @@
 <?php
 	require_once("Modelos/ProspectosBogSGM.php");
-	require_once("Acceso/Config.php"); // Definición de las variables globales	
+	require_once("Acceso/Config.php"); // Definiciï¿½n de las variables globales	
 	require_once("Modelos/ReportGenerator.php");	
 	require_once("Modelos/CreditosUsuarios.php");
 
@@ -14,13 +14,14 @@
 	$pryView 		= new ProspectosBogSGM(); 
 	$coordenadas 	= $pryView->get_CoordsPuntoByBuffer($coordsFinder, $_POST["radioAccion"]);	
 	
-	// calculo del área a evaluar
+	// calculo del ï¿½rea a evaluar
 	$cred 			= new CreditosUsuarios();
 	$areaCalculada	= $cred->getArea($coordenadas);	
 	
 	if($coordenadas != "") {	
 ?>
-		document.calculo_area.infoAL.value = "<?=$areaCalculada?> Hect.";
+		//document.calculo_area.infoAL.value = "<?=$areaCalculada?> Hect.";
+                $('#infoAL').val("<?=$areaCalculada?> Hect.");
 
 		polygonLayer.removeAllFeatures();
 		vectorLayer.removeAllFeatures();
