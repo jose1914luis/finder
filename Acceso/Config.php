@@ -32,7 +32,7 @@
 	}	
 
 	// Variable global del sitio web:
-	$GLOBALS ["sitio"]			= "http://www.sigmin.co/finderaccount/";
+	$GLOBALS ["sitio"]			= "http://www.sigmin.co/";
 	
 	// Variables asociadas al uso de creditos en Account:	
 	$GLOBALS ["SIGCoin_pesos"]			= 1000;	
