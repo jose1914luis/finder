@@ -32,6 +32,15 @@
                     <li><a href="#"> Creditos: <?= $_SESSION['usr_cred']['credito'] ?>$</a></li>
                     <li><a href="javascript:confirmaCreditoMapa('?pagina=map')"> Mapa</a></li>
                     <li role="presentation" class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Análisis <span class="caret"></span></a>
+                        <ul class="dropdown-menu">                                    
+                            <li><a href="javascript:" onclick="Pros_Open('generarArea')">Generar Área Libre</a></li>
+                            <li><a href="javascript:" onclick="Pros_Open('LiberarArea')">Alerta Liberación de Área</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="javascript:" onclick="Pros_Open('Perimetral')">Analisis Perimetral</a></li>
+                        </ul>
+                    </li>
+                    <li role="presentation" class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Propiedades Mineras <span class="caret"></span></a>
                         <ul class="dropdown-menu">                                    
                             <li><a href="?mnu=prospectos">Mis Prospectos</a></li>
