@@ -194,7 +194,7 @@ vectorLayer = new OpenLayers.Layer.Vector("Record", {styleMap: stylemap},{render
 					
 					CONTAR_POLY ++;
 					document.forms["free"].coordenadasPry.value = stringCoords;
-					document.forms["alarm"].coordenadasPry.value = stringCoords;
+					//document.forms["alarm"].coordenadasPry.value = stringCoords;
 					drawControls["polygon"].deactivate();
 
 					measureControls["polygon"].deactivate();	// 20160309		
@@ -209,7 +209,8 @@ vectorLayer = new OpenLayers.Layer.Vector("Record", {styleMap: stylemap},{render
 							else
 								$("#infoAL").css("background-color","#CEFFCE");							
 							
-								document.calculo_area.infoAL.value = calculo + " Hect.";
+                                                                $("#infoAL").val( calculo + " Hect.");
+								//document.calculo_area.infoAL.value = calculo + " Hect.";
 							} else
 								alert("No hay retorno de informaci&oacute;n");
 						});												
@@ -336,7 +337,7 @@ vectorLayer = new OpenLayers.Layer.Vector("Record", {styleMap: stylemap},{render
 				
 			}
 			out += calculo.toFixed(2) + " " + units;
-			document.calculo_area.infoAL.value=out;
+                        $("#infoAL").val(out);
 		}
 		
 		cmqLayerSol.setVisibility(false);
