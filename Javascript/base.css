@@ -2,17 +2,17 @@
 #prospect{
     z-index: 1004;
     position: absolute;
-    bottom: -230px; 
+    bottom: -260px; 
     left: 540px; 
-    width: 280px;
-    max-width:280px; 
+/*    width: auto;
+    max-width:auto; 
     height: 380px; 
     background: transparent url('images/prospect.png') no-repeat top left;
     padding-top: 50px; 
     padding-left: 20px;
     padding-right: 20px;
     display: none;
-    cursor: move;
+    cursor: move;*/
 }
 
 .prospect_tools {
@@ -206,18 +206,23 @@ a.crea_prospect:hover{
 .loadFiles{
     z-index: 1002; 
     position: absolute; 
-    top: 50px; 
-    left: 200px; 
+    top: 0px; 
+    left: 228px; 
     height: 250px; 
     width: 400px; 
     background-color: #ffffff; 
     border: solid 1px; 
     border-color: #000000; 
-    padding: 6px; 
+    padding: 5px; 
+    border-radius: 5px;
+}
+
+.clickable {
+    cursor: pointer;
 }
 
 .titleLoadFiles{
-    background-color: #31334A; 
+    background-color: #337ab7; 
     color: #ffffff; 
     font-size:14px;
     font-family: verdana;
@@ -1070,24 +1075,6 @@ ul.side-menu {
 
 /* Normal
    -------------------------------- */
-
-h2,
-h3,
-h4 {
-    margin: 0;
-    font-weight: normal;
-}
-
-h2, h3 {
-    padding: 0 0 9px;
-}
-
-h4 {
-    padding-bottom: 21px;
-    border-bottom: 1px dashed #999;
-    font-size: 12px;
-    font-weight: bold;
-}
 
 .pull-quote {
     padding: 6px 0;
