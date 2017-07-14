@@ -9,7 +9,7 @@ function init() {
 
 function toggleControl(element) {
     clearFields();
-    document.calculo_area.infoAL.value = "";
+    $("#infoAL").val("");
     $("#infoAL").css("background-color", "#FFF");
     measureControls["polygon"].deactivate();
     drawControls["polygon"].deactivate();
@@ -105,6 +105,17 @@ $(function () {
     $("#txtBusqueda").autocomplete({
         source: "viewValidaQuery.php"
     });
+    $('#generarArea').hide();
+    $('#LiberarArea').hide();
+    $('#Perimetral').hide();
+
+    $('.clickable').on('click', function () {
+        $('#prospect').css('display', 'none');
+        $('#prospect').animate({
+            bottom: "-230px",
+            left: "550px"
+        }, 500);
+    });
 });
 
 function Busc_Open() {
@@ -135,32 +146,37 @@ function Busc_Open() {
     }
 }
 
-function Pros_Open() {
-    openSearch = 0;
-    visualizar = 'NO';
-    if (openProspect % 2 == 0)
-        visualizar = 'SI';
-    openProspect++;
+function Pros_Open(ventana) {
 
-    if (visualizar == "SI") {
-        $('#buscar').css('display', 'none');
-        $('#buscar').animate({
-            bottom: "20px",
-            left: "520px"
-        }, 500);
+    if (ventana == 'LiberarArea') {
 
-        $('#prospect').css('display', 'block');
-        $('#prospect').animate({
-            bottom: "100px",
-            left: "170px"
-        }, 500);
-    } else {
-        $('#prospect').css('display', 'none');
-        $('#prospect').animate({
-            bottom: "-230px",
-            left: "550px"
-        }, 500);
+        $('#titulo_panel').text('Alerta Liberación de Área');
+        $('#generarArea').hide();
+        $('#LiberarArea').show();
+        $('#Perimetral').hide();
+    } else if (ventana == 'generarArea') {
+        $('#titulo_panel').text('Generar Area Libre');
+        $('#generarArea').show();
+        $('#LiberarArea').hide();
+        $('#Perimetral').hide();
+    } else if (ventana == 'Perimetral') {
+        $('#titulo_panel').text('Análisis Perimetral');
+        $('#generarArea').hide();
+        $('#LiberarArea').hide();
+        $('#Perimetral').show();
     }
+    openSearch = 0;
+    $('#buscar').css('display', 'none');
+    $('#buscar').animate({
+        bottom: "20px",
+        left: "520px"
+    }, 500);
+
+    $('#prospect').css('display', 'block');
+    $('#prospect').animate({
+        bottom: "100px",
+        left: "170px"
+    }, 500);
 }
 
 function mover_capas() {
