@@ -1,0 +1,8 @@
+RewriteEngine On
+RewriteBase /
+
+RewriteCond %{HTTP_HOST} ^(www\.)?sigmin\.com\.co$ [NC]
+RewriteRule ^(.*)$ http://www.sigmin.co/$1 [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^(www\.)?sigmin\.com$ [NC]
+RewriteRule ^(.*)$ http://www.sigmin.co/$1 [R=301,L]
