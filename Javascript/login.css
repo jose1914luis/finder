@@ -101,7 +101,7 @@ body{
     /*background: rgba(76, 175, 80, 0.3)  Green background with 30% opacity */
 }
 
-@media screen and (min-width: 0px) and (max-width: 1300px){    
+@media screen and (min-width: 0px) and (max-width: 1400px){    
 
     .buscador{
         width: 300px;    
