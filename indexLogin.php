@@ -25,14 +25,14 @@
         <script src="http://dev.openlayers.org/OpenLayers.js"></script>
 
 
-        <link rel="stylesheet" href="Javascript/base.css?v=<?= 7 ?>" type="text/css" media="all" />        
+        <link rel="stylesheet" href="Javascript/base.css?v=<?= $_VERSION ?>" type="text/css" media="all" />        
         <script type="text/javascript" src="Javascript/jquery-1.7.2.min.js"></script>
         <link href="Javascript/jquery-ui-1.12.1/jquery-ui.min.css" rel="stylesheet" type="text/css"/>
         <script src="Javascript/jquery-ui-1.12.1/jquery-ui.min.js" type="text/javascript"></script>
         <link href="Javascript/jquery-ui-1.12.1/jquery-ui.theme.min.css" rel="stylesheet" type="text/css"/>
 
         <link rel="stylesheet" href="Javascript/css/website.css" type="text/css" media="all"/>
-        <script src="Javascript/mapa2.js?v=<?= 101 ?>" type="text/javascript"></script>
+        <script src="Javascript/mapa2.js?v=<?= $_VERSION ?>" type="text/javascript"></script>
         <style>
             .navbar{
                 margin-bottom: 0px !important; 
