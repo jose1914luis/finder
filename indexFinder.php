@@ -35,7 +35,7 @@ if ($verMapa != "OK")
         <script src="http://dev.openlayers.org/OpenLayers.js"></script>
 
 
-        <link rel="stylesheet" href="Javascript/base.css?v=<?= $_VERSION ?>" type="text/css" media="all" />        
+        
         <script type="text/javascript" src="Javascript/jquery-1.7.2.min.js"></script>
         <link href="Javascript/jquery-ui-1.12.1/jquery-ui.min.css" rel="stylesheet" type="text/css"/>
         <script src="Javascript/jquery-ui-1.12.1/jquery-ui.min.js" type="text/javascript"></script>
@@ -55,7 +55,7 @@ if ($verMapa != "OK")
         <script type="text/javascript" src="Javascript/jquery.tinyscrollbar.min.js"></script>
         <script type="text/javascript" src="Javascript/libreriasAjax2/ajaxfileupload.js"></script>
         <script src="Javascript/jquery.placeholder.min.js"></script>        	
-        <link href="Javascript/libreriasAjax2/ajaxfileupload.css" type="text/css" rel="stylesheet">	
+        <link href="Javascript/libreriasAjax2/ajaxfileupload.css?v=<?= $_VERSION ?>" type="text/css" rel="stylesheet">	
 
         <script type="text/javascript">
 
