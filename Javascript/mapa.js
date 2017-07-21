@@ -108,6 +108,14 @@ $(function () {
     $('#generarArea').hide();
     $('#LiberarArea').hide();
     $('#Perimetral').hide();
+    
+    $('.clickable').on('click', function () {
+        $('#prospect').css('display', 'none');
+        $('#prospect').animate({
+            bottom: "-230px",
+            left: "550px"
+        }, 500);
+    });
 });
 
 function Pros_Open(ventana) {
