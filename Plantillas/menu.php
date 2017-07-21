@@ -29,8 +29,10 @@
             <ul class="nav navbar-nav navbar-right">
                 <?php if (isset($_SESSION['id_usuario'])) { ?>
 
-                    <li><a href="#"> Creditos: <?= $_SESSION['usr_cred']['credito'] ?>$</a></li>
+                    <li><a href="?mnu=creditos"> Creditos: <?= $_SESSION['usr_cred']['credito'] ?>$</a></li>
+                    <?php if($_SESSION["pagina"] != "map"){?>
                     <li><a href="javascript:confirmaCreditoMapa('?pagina=map')"> Mapa</a></li>
+                    <?php } if($_SESSION["pagina"] == "map"){?>
                     <li role="presentation" class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Análisis <span class="caret"></span></a>
                         <ul class="dropdown-menu">                                    
@@ -40,6 +42,7 @@
                             <li><a href="javascript:" onclick="Pros_Open('Perimetral')">Analisis Perimetral</a></li>
                         </ul>
                     </li>
+                    <?php } ?>
                     <li role="presentation" class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Propiedades Mineras <span class="caret"></span></a>
                         <ul class="dropdown-menu">                                    
