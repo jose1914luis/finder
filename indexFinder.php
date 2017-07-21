@@ -35,14 +35,14 @@ if ($verMapa != "OK")
         <script src="http://dev.openlayers.org/OpenLayers.js"></script>
 
 
-        <link rel="stylesheet" href="Javascript/base.css?v=<?= 30 ?>" type="text/css" media="all" />        
+        <link rel="stylesheet" href="Javascript/base.css?v=<?= $_VERSION ?>" type="text/css" media="all" />        
         <script type="text/javascript" src="Javascript/jquery-1.7.2.min.js"></script>
         <link href="Javascript/jquery-ui-1.12.1/jquery-ui.min.css" rel="stylesheet" type="text/css"/>
         <script src="Javascript/jquery-ui-1.12.1/jquery-ui.min.js" type="text/javascript"></script>
         <link href="Javascript/jquery-ui-1.12.1/jquery-ui.theme.min.css" rel="stylesheet" type="text/css"/>
 
         <link rel="stylesheet" href="Javascript/css/website.css" type="text/css" media="all"/>
-        <script src="Javascript/mapa.js?v=<?= 30 ?>" type="text/javascript"></script>
+        <script src="Javascript/mapa.js?v=<?= $_VERSION ?>" type="text/javascript"></script>
         <style>
             .navbar{
                 margin-bottom: 0px !important;                
@@ -133,12 +133,7 @@ if ($verMapa != "OK")
 
                     <input type="hidden" name="coordenadasPry" value="" id="coordenadasPry"/>
                     <input type="hidden" name="tipoOperaPry" value="crear prospecto" id="tipoOperaPry"/>
-                    <div class="btn-group-vertical">
-                        <button type="button" class="btn btn-primary btn-block" id="poligono" onClick="toggleControl(this);">Dibujar <i class="fa fa-pencil-square-o" aria-hidden="true"></i></button>    
-
-
-                        <button type="button" class="btn btn-default btn-block" id="poligono" onClick="mostrardiv('freeGeneratorArea_coordinates')">Coordenadas <i class="fa fa-map-o" aria-hidden="true"></i></button>
-
+                    <div class="btn-group-vertical">                      
 
                         <button type="button" class="btn btn-primary btn-block" class="crea_prospect" onClick="document.free.tipoOperaPry.value = 'crear prospecto';
                                 if (winP != null)
@@ -196,38 +191,12 @@ if ($verMapa != "OK")
                         </div>
                     </div >
                 </form>       
-
-
-                <form method="post" id="LiberarArea" class="form-horizontal" target="pop" action="?fnd=generar_alerta" name="alarm">	
-                    <input type="hidden" name="infoAL" class="selProspecto" value="" readonly>				
-                    <input type="hidden" name="coordenadasPry" value="" id="coordenadasPry"/>
-
-                    <div class="btn-group-vertical">
-                        <button type="button" name="type" class="btn btn-primary btn-block" id="poligono" onClick="toggleControl(this);" class="drawpoly">
-                            Dibujar <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
-                        </button>
-                        <button type="button" class="btn btn-default btn-block" onClick="mostrardiv('freeGeneratorArea_coordinates')">Coordenadas <i class="fa fa-map-o" aria-hidden="true"></i></button>				
-                        <button type="button" class="btn btn-primary btn-block" onClick="if (confirm('Desea consumir 5 cr\u00E9ditos por generaci\u00F3n de alerta de \u00E1rea libre?')) {
-                                    if (winP != null)
-                                        winP.close();
-                                    winP = window.open('', 'pop', 'width=600,height=500, resizable=yes, scrollbars=yes');
-                                    winP.document.title = ':: SIGMIN - Resultados';
-                                    winP.focus();
-                                    document.forms['alarm'].submit();
-                                    return false;
-                                }">Generar Prospecto <i class="fa fa-file-image-o" aria-hidden="true"></i></button>
-                    </div>    
-
-                </form>
-
+          
 
                 <form method="post" id="Perimetral" target="pop2" action="?fnd=analisis_perimetral&credits=1" name="neighbor">
                     <input type="hidden" name="coordenadasRAC" value="" id="coordenadasRAC"/>
 
-                    <div class="btn-group-vertical">                
-                       <button type="button" name="type" class="btn btn-primary btn-block" id="area" value="point" onClick="toggleControl(this);">
-                           Ubicar Punto <i class="fa fa-map-marker" aria-hidden="true"></i></button>
-                        <button type="button" class="btn btn-default btn-block"onClick="mostrardiv('point_coordinates')">Coordenadas <i class="fa fa-map-o" aria-hidden="true"></i></button>
+                    <div class="btn-group-vertical">                                   
                         <p class="txt">Radio(m)</p><input class="form-control" style="width: 90px" type="number" name="txtRadio"  value="2000" min="0" max="15000">
                          <button type="button"  class="btn btn-primary btn-block" onClick="if (confirm('Desea consumir 3 cr\u00E9ditos por generaci\u00F3n de reporte perimetral?')) {
                                     if (winP != null)
