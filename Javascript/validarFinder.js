@@ -1,29 +1,3 @@
-function validarCreacionUsr() {
-    // validacion de contrase�as: longitud de la contrase�a
-    if (document.account.txtClaveOld.value.length < 5) {
-        alert("La Contrase\u00F1a Anterior no debe ser inferior a 6 caracteres");
-        document.account.txtClaveOld.focus();
-        return 0;
-    }
-
-    // validacion de contrase�as: longitud de la contrase�a		
-    if (document.account.txtClaveNew01.value.length < 5) {
-        alert("La Nueva Contrase\u00F1a no debe ser inferior a 6 caracteres");
-        document.account.txtClaveNew01.focus();
-        return 0;
-    }
-
-    // validacion de contrase�as: igualdad de caracteres entre contrase�a1 y contrase�a2
-    if (document.account.txtClaveNew01.value != document.account.txtClaveNew02.value) {
-        alert("Ambas contrase\u00F1as deben coincidir");
-        document.account.txtClaveNew01.focus();
-        return 0;
-    }
-
-    // una vez efectuadas todas las validaciones, se envia resultado afirmativo
-    return 1;
-}
-
 function validarDatosUsuario() {
 
     // Validaci�n de la selecci�n de tipo de documento
