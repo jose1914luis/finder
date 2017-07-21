@@ -304,13 +304,18 @@ a.dock-item { display: block; width: 81px; position: absolute; bottom: 0; text-a
 .dock-item img { border: 0; margin: 5px 10px 0px; width:100%}
 
 
+#capas label{
+    margin-bottom: 0px !important;
+}
+
 #capas{
     display: block;
     width: 290px;
     height: 350px;
     background: transparent url(images/capas.png) no-repeat center;
     top: 100px;
-     right: -250px; 
+    right: -250px; 
+    font-size: 13px;
     position: absolute;
     padding-left: 60px;
     z-index: 999999;
@@ -319,7 +324,6 @@ a.dock-item { display: block; width: 81px; position: absolute; bottom: 0; text-a
 }
 
 #capas2 {
-    padding-left:30px;
     padding-top:60px;
     color:#ffffff;
 }
