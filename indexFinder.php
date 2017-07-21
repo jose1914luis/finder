@@ -35,7 +35,7 @@ if ($verMapa != "OK")
         <script src="http://dev.openlayers.org/OpenLayers.js"></script>
 
 
-        
+
         <script type="text/javascript" src="Javascript/jquery-1.7.2.min.js"></script>
         <link href="Javascript/jquery-ui-1.12.1/jquery-ui.min.css" rel="stylesheet" type="text/css"/>
         <script src="Javascript/jquery-ui-1.12.1/jquery-ui.min.js" type="text/javascript"></script>
@@ -122,133 +122,135 @@ if ($verMapa != "OK")
         ?>
 
 
-        <div id="prospect" class="panel panel-primary">  
-            <div class="panel-heading">
-                <b id="titulo_panel"></b>
-                <span class="pull-right clickable" data-effect="fadeOut">  &nbsp;<i class="fa fa-times"></i></span>
-            </div>
-            <div class="panel-body">
-                <form method="post" id="generarArea" class="form-horizontal" target="pop" action="?fnd=prospectos" name="free">
+        <div id="prospect">  
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <b id="titulo_panel"></b>
+                    <span class="pull-right clickable" data-effect="fadeOut">  &nbsp;<i class="fa fa-times"></i></span>
+                </div>
+                <div class="panel-body">
+                    <form method="post" id="generarArea" class="form-horizontal" target="pop" action="?fnd=prospectos" name="free">
 
 
-                    <input type="hidden" name="coordenadasPry" value="" id="coordenadasPry"/>
-                    <input type="hidden" name="tipoOperaPry" value="crear prospecto" id="tipoOperaPry"/>
-                    <div class="btn-group-vertical">                      
+                        <input type="hidden" name="coordenadasPry" value="" id="coordenadasPry"/>
+                        <input type="hidden" name="tipoOperaPry" value="crear prospecto" id="tipoOperaPry"/>
+                        <div class="btn-group-vertical">                      
 
-                        <button type="button" class="btn btn-primary btn-block" class="crea_prospect" onClick="document.free.tipoOperaPry.value = 'crear prospecto';
-                                if (winP != null)
-                                    winP.close();
-                                winP = window.open('', 'pop', 'width=800,height=600, resizable=yes, scrollbars=yes');
-                                winP.document.title = ':: SIGMIN - Resultados';
-                                winP.focus();
-                                document.forms['free'].submit();
-                                return false;">Crear Prospecto <i class="fa fa-file-image-o" aria-hidden="true"></i></button>
-
-
-                        <button type="button" class="btn btn-default btn-block" id="poligono" onClick="if (confirm('Desea consumir 5 cr\u00E9ditos por reporte de \u00E1rea libre?')) {
-                                    document.free.tipoOperaPry.value = 'superponer';
+                            <button type="button" class="btn btn-primary btn-block" class="crea_prospect" onClick="document.free.tipoOperaPry.value = 'crear prospecto';
                                     if (winP != null)
                                         winP.close();
                                     winP = window.open('', 'pop', 'width=800,height=600, resizable=yes, scrollbars=yes');
                                     winP.document.title = ':: SIGMIN - Resultados';
                                     winP.focus();
                                     document.forms['free'].submit();
-                                    return false;
-                                }">Superponer <i class="fa fa-clone" aria-hidden="true"></i></button>
-                    </div>                    
+                                    return false;">Crear Prospecto <i class="fa fa-file-image-o" aria-hidden="true"></i></button>
 
-                </form>     
 
-                <form name="frmCoordinates" action="?fnd=simular_coordenadas" method="post" enctype="multipart/form-data">
-                    <div id="freeGeneratorArea_coordinates" class="loadFiles" style="display: none;">	
-                        <div class="titleLoadFiles">    
-                            :: Cargue de Coordenadas ::&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="javascript:" onclick="cerrar('freeGeneratorArea_coordinates')" title="Cerrar ventana" style="color: #ffffff; text-decoration: none">[X]</a></center></div>
-                        <div>
-                            <div class="form-group">
-                                <select id="selGeoSystem" name="selGeoSystem" class="form-control">
-                                    <option value="0">Seleccione el Sistema de Coordenadas
-                                    <option value="WGS84">WGS84 Decimal
-                                    <option value="BOGOTA">Colombia Bogota Zone
-                                    <option value="ESTE-CENTRAL">Colombia E Central Zone
-                                    <option value="ESTE-ESTE">Colombia East Zone
-                                    <option value="OESTE">Colombia West Zone
-                                </select>
+                            <button type="button" class="btn btn-default btn-block" id="poligono" onClick="if (confirm('Desea consumir 5 cr\u00E9ditos por reporte de \u00E1rea libre?')) {
+                                        document.free.tipoOperaPry.value = 'superponer';
+                                        if (winP != null)
+                                            winP.close();
+                                        winP = window.open('', 'pop', 'width=800,height=600, resizable=yes, scrollbars=yes');
+                                        winP.document.title = ':: SIGMIN - Resultados';
+                                        winP.focus();
+                                        document.forms['free'].submit();
+                                        return false;
+                                    }">Superponer <i class="fa fa-clone" aria-hidden="true"></i></button>
+                        </div>                    
 
-                            </div>												
-                            <div class="alert alert-warning">
-                                <b><i>Consideraciones:</i></b>
-                                <ul>
-                                    <li>Formato por l&iacute;nea de Coordenada: <i><b>Norte : Este ; </b></i>
-                                    <li>Extensi&oacute;n del archivo: <i><b>TextFile (.txt)</b></i>				
-                                </ul>			
-                            </div>
+                    </form>     
 
-                            <img id="loading" src="Imagenes/loading.gif" style="display:none;">
-                            <input type="file" name="fileToUpload" id="fileToUpload" size="45"  class="form-control">
-                            <center>					
-                                <input type="button" class="btn btn-success" id="buttonUpload" onclick="return ajaxFileUpload();" value="Simular Poligono">
-                            </center>	
-                        </div>
-                    </div >
-                </form>       
-          
-
-                <form method="post" id="Perimetral" target="pop2" action="?fnd=analisis_perimetral&credits=1" name="neighbor">
-                    <input type="hidden" name="coordenadasRAC" value="" id="coordenadasRAC"/>
-
-                    <div class="btn-group-vertical">                                   
-                        <p class="txt">Radio(m)</p><input class="form-control" style="width: 90px" type="number" name="txtRadio"  value="2000" min="0" max="15000">
-                         <button type="button"  class="btn btn-primary btn-block" onClick="if (confirm('Desea consumir 3 cr\u00E9ditos por generaci\u00F3n de reporte perimetral?')) {
-                                    if (winP != null)
-                                        winP.close();
-                                    winP = window.open('', 'pop2', 'width=800,height=600, resizable=yes, scrollbars=yes');
-                                    winP.document.title = ':: SIGMIN - Resultados';
-                                    document.forms['neighbor'].submit();
-                                    return false;
-                                }" class="over_ana2" title="Análisis de Radio">Análisis de Radio <i class="fa fa-circle-thin" aria-hidden="true"></i></button>
-                    </div>
-
-                </form>	
-
-                <form name="frmCoordinatesPoint" action="?fnd=simular_coordenadas" method="post" enctype="multipart/form-data">
-                    <div id="point_coordinates" class="loadFiles" style="display: none;">	
-                        <div class="titleLoadFiles">    
-                            :: Cargue de Coordenadas ::&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="javascript:" onclick="cerrar('point_coordinates')" title="Cerrar ventana" style="color: #ffffff; text-decoration: none">[X]</a></center></div>
-                        <div>
+                    <form name="frmCoordinates" action="?fnd=simular_coordenadas" method="post" enctype="multipart/form-data">
+                        <div id="freeGeneratorArea_coordinates" class="loadFiles" style="display: none;">	
+                            <div class="titleLoadFiles">    
+                                :: Cargue de Coordenadas ::&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="javascript:" onclick="cerrar('freeGeneratorArea_coordinates')" title="Cerrar ventana" style="color: #ffffff; text-decoration: none">[X]</a></center></div>
                             <div>
-                                <select id="selGeoSystem" name="selGeoSystem" class="form-control">
-                                    <option value="0">Seleccione el Sistema de Coordenadas
-                                    <option value="WGS84">WGS84 (GMS o Decimal)
-                                    <option value="BOGOTA">Colombia Bogota Zone
-                                    <option value="ESTE-CENTRAL">Colombia E Central Zone
-                                    <option value="ESTE-ESTE">Colombia East Zone
-                                    <option value="OESTE">Colombia West Zone
-                                </select>
+                                <div class="form-group">
+                                    <select id="selGeoSystem" name="selGeoSystem" class="form-control">
+                                        <option value="0">Seleccione el Sistema de Coordenadas
+                                        <option value="WGS84">WGS84 Decimal
+                                        <option value="BOGOTA">Colombia Bogota Zone
+                                        <option value="ESTE-CENTRAL">Colombia E Central Zone
+                                        <option value="ESTE-ESTE">Colombia East Zone
+                                        <option value="OESTE">Colombia West Zone
+                                    </select>
 
-                            </div>												
-                            <div class="alert alert-warning">
-                                <b><i>Consideraciones:</i></b>
-                                Ingreso de Coordenadas (Considere el Sistema de Origen):<br/>	
-                                <input type="" name="coordX" class="txtRadCoord" placeholder="Este/Longitud" onchange="this.value = procesarGMS(this)"/> &nbsp;&nbsp;,&nbsp;&nbsp;
-                                <input type="" name="coordY" class="txtRadCoord" placeholder="Norte/Latitud" onchange="this.value = procesarGMS(this)"/><br/>
-                                <div>&nbsp; &nbsp;</div>
-                            </div>		
-                            <center>					
-                                <input type="button" class="btn btn-success" id="buttonUpload" onclick="pointAddedCoords()" value="Ubicar Coordenada">
-                            </center>	
+                                </div>												
+                                <div class="alert alert-warning">
+                                    <b><i>Consideraciones:</i></b>
+                                    <ul>
+                                        <li>Formato por l&iacute;nea de Coordenada: <i><b>Norte : Este ; </b></i>
+                                        <li>Extensi&oacute;n del archivo: <i><b>TextFile (.txt)</b></i>				
+                                    </ul>			
+                                </div>
+
+                                <img id="loading" src="Imagenes/loading.gif" style="display:none;">
+                                <input type="file" name="fileToUpload" id="fileToUpload" size="45"  class="form-control">
+                                <center>					
+                                    <input type="button" class="btn btn-success" id="buttonUpload" onclick="return ajaxFileUpload();" value="Simular Poligono">
+                                </center>	
+                            </div>
+                        </div >
+                    </form>       
+
+
+                    <form method="post" id="Perimetral" target="pop2" action="?fnd=analisis_perimetral&credits=1" name="neighbor">
+                        <input type="hidden" name="coordenadasRAC" value="" id="coordenadasRAC"/>
+
+                        <div class="btn-group-vertical">                                   
+                            <p class="txt">Radio(m)</p><input class="form-control" style="width: 90px" type="number" name="txtRadio"  value="2000" min="0" max="15000">
+                            <button type="button"  class="btn btn-primary btn-block" onClick="if (confirm('Desea consumir 3 cr\u00E9ditos por generaci\u00F3n de reporte perimetral?')) {
+                                        if (winP != null)
+                                            winP.close();
+                                        winP = window.open('', 'pop2', 'width=800,height=600, resizable=yes, scrollbars=yes');
+                                        winP.document.title = ':: SIGMIN - Resultados';
+                                        document.forms['neighbor'].submit();
+                                        return false;
+                                    }" class="over_ana2" title="Análisis de Radio">Análisis de Radio <i class="fa fa-circle-thin" aria-hidden="true"></i></button>
                         </div>
-                    </div >
-                </form>		
 
-                <br>
-                <center>
-                    <input type="text" style="width: 142px;" class="form-control" name="infoAL" id="infoAL" value="" readonly placeholder="Cálculo Área">
-                </center>
+                    </form>	
+
+                    <form name="frmCoordinatesPoint" action="?fnd=simular_coordenadas" method="post" enctype="multipart/form-data">
+                        <div id="point_coordinates" class="loadFiles" style="display: none;">	
+                            <div class="titleLoadFiles">    
+                                :: Cargue de Coordenadas ::&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="javascript:" onclick="cerrar('point_coordinates')" title="Cerrar ventana" style="color: #ffffff; text-decoration: none">[X]</a></center></div>
+                            <div>
+                                <div>
+                                    <select id="selGeoSystem" name="selGeoSystem" class="form-control">
+                                        <option value="0">Seleccione el Sistema de Coordenadas
+                                        <option value="WGS84">WGS84 (GMS o Decimal)
+                                        <option value="BOGOTA">Colombia Bogota Zone
+                                        <option value="ESTE-CENTRAL">Colombia E Central Zone
+                                        <option value="ESTE-ESTE">Colombia East Zone
+                                        <option value="OESTE">Colombia West Zone
+                                    </select>
+
+                                </div>												
+                                <div class="alert alert-warning">
+                                    <b><i>Consideraciones:</i></b>
+                                    Ingreso de Coordenadas (Considere el Sistema de Origen):<br/>	
+                                    <input type="" name="coordX" class="txtRadCoord" placeholder="Este/Longitud" onchange="this.value = procesarGMS(this)"/> &nbsp;&nbsp;,&nbsp;&nbsp;
+                                    <input type="" name="coordY" class="txtRadCoord" placeholder="Norte/Latitud" onchange="this.value = procesarGMS(this)"/><br/>
+                                    <div>&nbsp; &nbsp;</div>
+                                </div>		
+                                <center>					
+                                    <input type="button" class="btn btn-success" id="buttonUpload" onclick="pointAddedCoords()" value="Ubicar Coordenada">
+                                </center>	
+                            </div>
+                        </div >
+                    </form>		
+
+                    <br>
+                    <center>
+                        <input type="text" style="width: 142px;" class="form-control" name="infoAL" id="infoAL" value="" readonly placeholder="Cálculo Área">
+                    </center>
+
+
+                </div>
 
 
             </div>
-
-
         </div>
 
         <div id="map" style='width: 100%; height: 100%; border:0;'></div>
@@ -273,8 +275,8 @@ if ($verMapa != "OK")
 
             $(document).ready(function ()
             {
-                $('#buscar').draggable();
                 $('#prospect').draggable();
+
                 $('#ly_acount').draggable();
             });
 
