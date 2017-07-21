@@ -1,6 +1,6 @@
 <?php
 
-	require_once("Acceso/Config.php"); // Definición de las variables globales	
+	require_once("Acceso/Config.php"); // Definiciï¿½n de las variables globales	
 	require_once("Modelos/Usuarios_SGM.php");
 	require_once("/home/sigmin/public_html_services/Modelos/ServiciosSigmin.php");
 
@@ -17,10 +17,10 @@
 		
 		//$promo = new ServiciosSigmin();
 		//$resp = $promo->habilitarPromocion($_GET["email"],1,$fechaInicia,$fechaVence);	
-		header("location: http://www.sigmin.co/finder/");		
+		header("location: http://www.sigmin.co");		
 	}
 
 	else 
-		header("location: http://www.sigmin.co/finder/pageError.php?error=");
+		header("location: http://www.sigmin.co/pageError.php?error=");
 ?>
 
