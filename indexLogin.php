@@ -32,7 +32,7 @@
         <link href="Javascript/jquery-ui-1.12.1/jquery-ui.theme.min.css" rel="stylesheet" type="text/css"/>
 
         <link rel="stylesheet" href="Javascript/css/website.css" type="text/css" media="all"/>
-        <script src="Javascript/mapa2.js?v=<?= time() ?>" type="text/javascript"></script>
+        <script src="Javascript/mapa2.js?v=<?= 101 ?>" type="text/javascript"></script>
         <style>
             .navbar{
                 margin-bottom: 0px !important; 
@@ -52,7 +52,7 @@
             var LIMIT_INFERIOR = 0;
             var LIMIT_SUPERIOR = 500000;
         </script>
-        <script src="Javascript/mapa_control2.js?v=<?= time() ?>" type="text/javascript"></script>      
+        <script src="Javascript/mapa_control2.js?v=<?= 101 ?>" type="text/javascript"></script>      
         <script type="text/javascript" src="Javascript/fisheye-iutil.min.js"></script>
         <script type="text/javascript">
             $(function () {
