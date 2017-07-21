@@ -15,7 +15,7 @@
         <!-- <script src='http://maps.google.com/maps?file=api&amp;v=2&amp;key=AIzaSyBXS5guPsMcAdCwrujD-1KsyYkgoE87PUM'></script> -->
 
         <link rel="stylesheet" href="Javascript/style_theme.css" type="text/css">
-        <link rel="stylesheet" href="Javascript/styleV3.css" type="text/css">
+        <link rel="stylesheet" href="Javascript/styleV3.css?v=<?= $_VERSION ?>" type="text/css">
 
 
         <script src="http://maps.google.com/maps/api/js?v=3.5&key=AIzaSyBXS5guPsMcAdCwrujD-1KsyYkgoE87PUM&amp;sensor=false"></script>
@@ -24,8 +24,7 @@
 
         <script src="http://dev.openlayers.org/OpenLayers.js"></script>
 
-
-        <link rel="stylesheet" href="Javascript/base.css?v=<?= $_VERSION ?>" type="text/css" media="all" />        
+        
         <script type="text/javascript" src="Javascript/jquery-1.7.2.min.js"></script>
         <link href="Javascript/jquery-ui-1.12.1/jquery-ui.min.css" rel="stylesheet" type="text/css"/>
         <script src="Javascript/jquery-ui-1.12.1/jquery-ui.min.js" type="text/javascript"></script>
