@@ -105,7 +105,9 @@ function cambiarProspecto(campoPlaca) {
 $(function () {
     $("#txtBusqueda").autocomplete({
         source: "viewValidaQuery.php"
-    });
+    });    
+    var colors = ["red", "green", "blue"];
+    colors[0];
 });
 
 function Busc_Open() {
@@ -191,43 +193,6 @@ function mover_tools() {
     }
 }
 
-function mostrardiv(division) {
-    div = document.getElementById(division);
-    div.style.display = "";
-}
-;
-function cerrar(division) {
-    div = document.getElementById(division);
-    div.style.display = "none";
-}
-;
-
-function ajaxFileUpload() {
-    $.ajaxFileUpload(
-            {
-                url: 'viewLoadCoordinates.php',
-                secureuri: false,
-                fileElementId: 'fileToUpload',
-                dataType: 'execute',
-                data: {sistemaOrigen: document.forms[1].selGeoSystem.value},
-                success: function (data, status) {
-                    if (typeof (data.error) != 'undefined') {
-                        if (data.error != '') {
-                            alert(data.error);
-                        } else {
-                            alert(data.msg);
-                        }
-                    }
-                },
-                error: function (data, status, e) {
-                    alert(e);
-                }
-            }
-    )
-
-    //cerrar('freeGeneratorArea_coordinates');
-    return false;
-}
 
 function pointAddedCoords() {
     if (document.frmCoordinatesPoint.selGeoSystem.value == "0") {
