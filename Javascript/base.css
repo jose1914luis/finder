@@ -208,7 +208,7 @@ a.crea_prospect:hover{
     position: absolute; 
     top: 0px; 
     left: 228px; 
-    height: 250px; 
+    height: auto; 
     width: 400px; 
     background-color: #ffffff; 
     border: solid 1px; 
