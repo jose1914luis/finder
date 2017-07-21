@@ -108,54 +108,12 @@ $(function () {
     $('#generarArea').hide();
     $('#LiberarArea').hide();
     $('#Perimetral').hide();
-
-    $('.clickable').on('click', function () {
-        $('#prospect').css('display', 'none');
-        $('#prospect').animate({
-            bottom: "-230px",
-            left: "550px"
-        }, 500);
-    });
 });
-
-function Busc_Open() {
-    openProspect = 0;
-    visualizar = 'NO';
-    if (openSearch % 2 == 0)
-        visualizar = 'SI';
-    openSearch++;
-
-    if (visualizar == "SI") {
-        $('#prospect').css('display', 'none');
-        $('#prospect').animate({
-            bottom: "-230px",
-            left: "550px"
-        }, 500);
-
-        $('#buscar').css('display', 'block');
-        $('#buscar').animate({
-            bottom: "350px",
-            left: "170px"
-        }, 500);
-    } else {
-        $('#buscar').css('display', 'none');
-        $('#buscar').animate({
-            bottom: "20px",
-            left: "520px"
-        }, 500);
-    }
-}
 
 function Pros_Open(ventana) {
 
-    if (ventana == 'LiberarArea') {
-
-        $('#titulo_panel').text('Alerta Liberación de Área');
-        $('#generarArea').hide();
-        $('#LiberarArea').show();
-        $('#Perimetral').hide();
-    } else if (ventana == 'generarArea') {
-        $('#titulo_panel').text('Generar Area Libre');
+    if (ventana == 'generarArea') {
+        $('#titulo_panel').text('Generar Area');
         $('#generarArea').show();
         $('#LiberarArea').hide();
         $('#Perimetral').hide();
@@ -165,18 +123,15 @@ function Pros_Open(ventana) {
         $('#LiberarArea').hide();
         $('#Perimetral').show();
     }
-    openSearch = 0;
-    $('#buscar').css('display', 'none');
-    $('#buscar').animate({
-        bottom: "20px",
-        left: "520px"
-    }, 500);
+
 
     $('#prospect').css('display', 'block');
     $('#prospect').animate({
         bottom: "100px",
         left: "170px"
     }, 500);
+
+    $('#prospect').css('bottom', 'auto');
 }
 
 function mover_capas() {
