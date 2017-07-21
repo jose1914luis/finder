@@ -62,7 +62,7 @@ class Correo {
 
 		<p>Apreciado(a) '.strtoupper(utf8_decode($nombre)).',
 		<p>Con una cuenta en SIGMIN usted tendr&aacute; acceso al Catastro Minero Online, donde encontrar&aacute; la informaci&oacute;n actualizada de solicitudes y t&iacute;tulos mineros de Colombia, con la posibilidad de visualizarlos f&aacute;cilmente sobre los mapas de Google.</p>
-		<p>Para activar su <i><b>CUENTA GRATUITA</b></i> haga <b><a href="http://www.sigmin.co/finder/registrese_en_sigmin.php?'.$urlActivaUsuario.'" style="text-decoration:none;" target="_top">CLICK AQU&Iacute;</a></b></p>
+		<p>Para activar su <i><b>CUENTA GRATUITA</b></i> haga <b><a href="http://www.sigmin.co/registrese_en_sigmin.php?'.$urlActivaUsuario.'" style="text-decoration:none;" target="_top">CLICK AQU&Iacute;</a></b></p>
 		<p> RECUERDE: Su usuario (username) de acceso al sistema es: <i><u>'.$email.'</u></i></p>
 		<p>Para nosotros ser&aacute; un placer atenderle, pondremos todo nuestro empe&ntilde;o para garantizarle un buen servicio.</p>
 		<p>Atentamente,</p>
