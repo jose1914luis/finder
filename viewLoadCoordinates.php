@@ -61,7 +61,7 @@ if (@$_POST["sistemaOrigen"]) {
             GLOBAL_POLY.removeAllFeatures();
 
             document.forms["free"].coordenadasPry.value = "<?php echo $coordenadas_js; ?>";
-            document.forms["alarm"].coordenadasPry.value = "<?php echo $coordenadas_js; ?>";
+            //document.forms["alarm"].coordenadasPry.value = "<?php echo $coordenadas_js; ?>";
             vectorLayer.removeAllFeatures();
             polygonFeature = new OpenLayers.Feature.Vector(new OpenLayers.Geometry.fromWKT("<?php echo $coordenadas_js ?>").transform(
             displayProjection,
