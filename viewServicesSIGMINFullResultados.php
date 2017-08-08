@@ -58,7 +58,7 @@
 
 				$URL_Acceso = "?crd=expediente&placa={$listadoRegistros[$i]["placa"]}&clasificacion=$clasificacion";					
 
-				$enlace  = "<a href='javascript:' onclick=\"window.opener.parent.cambiarExpediente('".$listadoRegistros[$i]["placa"]."', '$clasificacion')\"><img src='Imagenes/verEnMapa.jpg' border='0' width='30' height='30' title='Ubicaci&oacute;n Geogr&aacute;fica Expediente  ".$listadoRegistros[$i]["placa"]."'></a>";
+				$enlace  = "<a href='javascript:' onclick=\"cambiarExpediente('".$listadoRegistros[$i]["placa"]."', '$clasificacion')\"><img src='Imagenes/verEnMapa.jpg' border='0' width='30' height='30' title='Ubicaci&oacute;n Geogr&aacute;fica Expediente  ".$listadoRegistros[$i]["placa"]."'></a>";
 				
 				$enlace .= "<a href='javascript:' onclick=\"window.open('$URL_Acceso', 'Ventana', 'width=600,height=500, resizable=yes, scrollbars=yes');\"><img src='Imgs/reportIcon.png' border='0' width='35' height='35' title='Generaci&oacute;n de Reporte para ".$listadoRegistros[$i]["placa"]."'></a>";				
 				
@@ -122,7 +122,7 @@
 		$listaPlacasQuery 	.= " 0=1 ";	
 		echo "
 			<div>&nbsp;</div>
-			<script>window.opener.parent.showMultiExpedientes(\"$listaPlacasQuery\");</script>";
+			<script>showMultiExpedientes(\"$listaPlacasQuery\");</script>";
 		echo "</body>";
 		
 		//$_SESSION["myExcelSolicitudesFile"] 	= $listaSolicitudesResults;
