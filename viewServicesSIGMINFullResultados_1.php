@@ -95,12 +95,9 @@ if (!empty($_POST["txtBuscar"])) {
 
     $listaPlacasQuery = "";
     echo "
-			<html>
-			<head>
-				<link rel='stylesheet' href='Javascript/sigmin_account.css?v=2'>
-			</head>
-			<body>
-				<div>&nbsp;</div>
+			
+			
+				<link rel='stylesheet' href='Javascript/sigmin_account.css?v=2'>			
 		";
     ?>
     <div class='titleSite2' style='text-align:center'>Para acceder a mas información por favor registrese gratis.</div>
@@ -112,9 +109,10 @@ if (!empty($_POST["txtBuscar"])) {
     $listaPlacasQuery .= " 0=1 ";
     echo "
 			<div>&nbsp;</div>
-			<script>window.opener.parent.showMultiExpedientes(\"$listaPlacasQuery\");</script>";
-    echo "</body>";
-
+                        <script>showMultiExpedientes(\"$listaPlacasQuery\");</script>
+			";
+    
+//
     //$_SESSION["myExcelSolicitudesFile"] 	= $listaSolicitudesResults;
     //$_SESSION["myExcelTitulosFile"] 		= $listaTitulosResults;		
 }
