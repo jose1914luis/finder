@@ -1,4 +1,28 @@
 function init() {
+     $("#info").hide();
+    var ocultar = false;
+    $('#div_min').on('click', function () {
+
+        if (ocultar == false) {
+            ocultar = true;
+            $('#ico_min').attr('class', ' fa fa-plus');
+
+            $('#info').animate({
+                left: "-800px"
+            }, 500);
+        } else {
+            $('#ico_min').attr('class', ' fa fa-minus');
+            ocultar = false;
+            $('#info').animate({
+                left: "0px"
+            }, 500);
+        }
+    });
+
+    $('#div_ocultar').on('click', function () {
+
+        $("#info").hide();
+    });
     $.post('viewServicesSIGMINFull.php', {loadService: true}, function (resp) {
         if (resp != "")
             eval(resp);
@@ -77,16 +101,19 @@ function validarBusqueda() {
         return 0;
 
     $("#loadingImage").show();
+    $('#info_sc').empty();
     $.post('viewServicesSIGMINFullResultados.php', {txtBuscar: document.forms["searchWords"].txtBusqueda.value}, function (resp) {
         if (resp != "") {
-            if (resultados != null)
-                resultados.close();
-            resultados = window.open("", "Ventana", "width=700 height=450 scrollbars=yes");
-            resultados.document.write(resp);
-            resultados.document.title = ":: SIGMIN - Results";
-            resultados.focus();
-
+            
+             $('#info_sc').append(resp);
             $("#loadingImage").hide();
+
+            $("#info").show();
+            $('#ico_min').attr('class', ' fa fa-minus');
+            ocultar = false;
+            $('#info').animate({
+                left: "0px"
+            }, 500);
         } else
             alert("No hay retorno de información");
     });
