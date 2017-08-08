@@ -253,6 +253,22 @@ if ($verMapa != "OK")
             </div>
         </div>
 
+         <div id="info" >            
+
+            <div id="infoControl" >
+                
+                <div  id="div_min">
+                    <i id="ico_min" class="fa fa-minus" aria-hidden="true"></i>    
+                </div>
+                <div id="div_ocultar">
+                    <i id="ico_ocultar" class="fa fa-times" aria-hidden="true"></i>      
+                </div>
+            </div>
+            <div id="info_sc">
+
+            </div>
+        </div>
+        
         <div id="map" style='width: 100%; height: 100%; border:0;'></div>
         <div id="capas" onClick="mover_capas();" title="inicio">
             <div id="capas2"></div>
