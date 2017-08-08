@@ -1,4 +1,31 @@
 function init() {
+    $("#info").hide();
+
+    var ocultar = false;
+    $('#div_min').on('click', function () {
+
+        if (ocultar == false) {
+            ocultar = true;
+            $('#ico_min').attr('class', ' fa fa-plus');
+
+            $('#info').animate({
+                left: "-800px"
+            }, 500);
+        } else {
+            $('#ico_min').attr('class', ' fa fa-minus');
+            ocultar = false;
+            $('#info').animate({
+                left: "0px"
+            }, 500);
+        }
+    });
+
+    $('#div_ocultar').on('click', function () {
+
+        $("#info").hide();
+    });
+
+
     $.post('viewServicesSIGMINFull_1.php', {loadService: true}, function (resp) {
         if (resp != "")
             eval(resp);
@@ -72,22 +99,24 @@ function clearFields() {
     boxLayer.removeAllFeatures();
     vectorLayer.removeAllFeatures();
 }
+
 function validarBusqueda() {
     if (document.forms["searchWords"].txtBusqueda.value == "")
         return 0;
 
     $("#loadingImage").show();
-    $.post('viewServicesSIGMINFullResultados_1.php', {txtBuscar: document.forms["searchWords"].txtBusqueda.value}, function (resp) {
+    $('#info_sc').empty();
+    $.post('viewServicesSIGMINFullResultados_1.php', {txtBuscar: $('#txtBusqueda').val()}, function (resp) {
         if (resp != "") {
-            if (resultados != null)
-                resultados.close();
-            resultados = window.open("", "Ventana", "width=700 height=450 scrollbars=yes");
-            resultados.document.write(resp);
-            resultados.document.title = ":: SIGMIN - Results";
-            resultados.focus();
-//            alert("No hay retorno de información");
-
+            $('#info_sc').append(resp);
             $("#loadingImage").hide();
+
+            $("#info").show();
+            $('#ico_min').attr('class', ' fa fa-minus');
+            ocultar = false;
+            $('#info').animate({
+                left: "0px"
+            }, 500);
         } else
             alert("No hay retorno de información");
     });
@@ -105,7 +134,7 @@ function cambiarProspecto(campoPlaca) {
 $(function () {
     $("#txtBusqueda").autocomplete({
         source: "viewValidaQuery.php"
-    });    
+    });
     var colors = ["red", "green", "blue"];
     colors[0];
 });
