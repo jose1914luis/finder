@@ -108,12 +108,8 @@
 		
 		$listaPlacasQuery = "";
 		echo "
-			<html>
-			<head>
 				<link rel='stylesheet' href='Javascript/sigmin_account.css'>
-			</head>
-			<body>
-				<div>&nbsp;</div>
+			
 		";
 		
 		echo createTable($listaSolicitudesResults,"SOLICITUDES","SOLICITUD", $listaPlacasQuery);
@@ -123,7 +119,6 @@
 		echo "
 			<div>&nbsp;</div>
 			<script>showMultiExpedientes(\"$listaPlacasQuery\");</script>";
-		echo "</body>";
 		
 		//$_SESSION["myExcelSolicitudesFile"] 	= $listaSolicitudesResults;
 		//$_SESSION["myExcelTitulosFile"] 		= $listaTitulosResults;		
