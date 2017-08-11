@@ -62,7 +62,7 @@ if ($verMapa != "OK")
             var LIMIT_INFERIOR = <?= $_SESSION['rango_inferior'] ?>;
             var LIMIT_SUPERIOR = <?= $_SESSION['rango_superior'] ?>;
         </script>
-        <script src="Javascript/mapa_control.js?v=<?= 10 ?>" type="text/javascript"></script>      
+        <script src="Javascript/mapa_control.js?v=<?= $_VERSION ?>" type="text/javascript"></script>      
         <script type="text/javascript" src="Javascript/fisheye-iutil.min.js"></script>
         <script type="text/javascript">
             $(function () {
