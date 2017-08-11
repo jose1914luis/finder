@@ -1,6 +1,6 @@
 <?php
 /*
-	Clase encargada de administrar la información relacionada a consultas sobre solicitudes y titulos
+	Clase encargada de administrar la informaciï¿½n relacionada a consultas sobre solicitudes y titulos
 	en el CMQ
 */
 
@@ -12,7 +12,7 @@
 		function __construct() {
 			$this->conn = pg_connect($GLOBALS ["db1"]);			
 			if (!$this->conn) {
-				echo "Error de Conexión con enlaces superiores.\n";
+				echo "Error de Conexiï¿½n con enlaces superiores.\n";
 				return 0;
 			}
 		}
@@ -519,7 +519,7 @@
 			$result = pg_query_params($this->conn, $queryStr, array($placa));
 
 			if (pg_last_error($this->conn)) {
-			  echo "Error al consultar la generación de reportes en $clasificacion: ".pg_last_error($this->conn);
+			  echo "Error al consultar la generaciï¿½n de reportes en $clasificacion: ".pg_last_error($this->conn);
 			  return 0;
 			}						
 			$lista = pg_fetch_all($result);		
@@ -591,6 +591,11 @@
 		}
 
 		function getIdentify($coordsPunto) {
+                    //getLineDataByIdSolicitud(s.id,'SOL_PERSONAS') as personas,
+//					get_num(round(cast(s.area_definitiva/10000 as numeric),4)) as area_hec,
+                    //getLineDataByIdTitulo(s.id,'TIT_PERSONAS') as personas,
+                    
+//					get_num(round(cast(s.area_definitiva/10000 as numeric),4)) as area,
 			$queryStr =  "
 				select 
 					'SOLICITUD' as tipo_expediente,
@@ -598,9 +603,7 @@
 					s.modalidad,
 					s.estado_juridico,
 					s.fecha_radicacion as fecha_radica_inscribe,
-					get_num(round(cast(s.area_definitiva/10000 as numeric),4)) as area_hec,
 					getLineDataByIdSolicitud(s.id,'SOL_MUNICIPIOS') as municipios,
-					getLineDataByIdSolicitud(s.id,'SOL_PERSONAS') as personas,
 					getLineDataByIdSolicitud(s.id,'SOL_MINERALES') as minerales
 				from   (select ST_GeometryFromText($1, get_sistema_origen('WGS84')) as identify) as Idtf
 					inner join solicitudes_cg m on ST_Intersects(Idtf.identify, m.the_geom)
@@ -612,9 +615,7 @@
 					s.modalidad,
 					s.estado_juridico,
 					s.fecha_inscripcion as fecha_radica_inscribe,
-					get_num(round(cast(s.area_definitiva/10000 as numeric),4)) as area,
 					getLineDataByIdTitulo(s.id,'TIT_MUNICIPIOS') as municipios,
-					getLineDataByIdTitulo(s.id,'TIT_PERSONAS') as personas,
 					getLineDataByIdTitulo(s.id,'TIT_MINERALES') as minerales
 				from   (select ST_GeometryFromText($1, get_sistema_origen('WGS84')) as identify) as Idtf
 					inner join titulos_cg m on ST_Intersects(Idtf.identify, m.the_geom)
@@ -666,7 +667,7 @@
 			return  $lista;
 		}
 
-		function getIdentifyMbl($coordsPunto) { // obtención de coordenadas para dispositivos móbiles
+		function getIdentifyMbl($coordsPunto) { // obtenciï¿½n de coordenadas para dispositivos mï¿½biles
 			$queryStr =  "
 				select 
 					'SOLICITUD' as tipo_expediente,
@@ -708,7 +709,7 @@
 			return  $lista;
 		}
 		
-		function getInfoByPlaca($placa) { // obtención de coordenadas para dispositivos móbiles
+		function getInfoByPlaca($placa) { // obtenciï¿½n de coordenadas para dispositivos mï¿½biles
 			$queryStr =  "
 				select 
 					'SOLICITUD' as tipo_expediente,
@@ -752,7 +753,7 @@
 			return  $lista;
 		}
 
-		function getCoordsByOrigen($coordsPunto, $origen) { // obtención de coordenadas para dispositivos móbiles
+		function getCoordsByOrigen($coordsPunto, $origen) { // obtenciï¿½n de coordenadas para dispositivos mï¿½biles
 			$queryStr =  "
 				select 
 					case when 'WGS84'<>$2 then 
