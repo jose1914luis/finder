@@ -591,19 +591,16 @@
 		}
 
 		function getIdentify($coordsPunto) {
-                    //getLineDataByIdSolicitud(s.id,'SOL_PERSONAS') as personas,
-//					get_num(round(cast(s.area_definitiva/10000 as numeric),4)) as area_hec,
-                    //getLineDataByIdTitulo(s.id,'TIT_PERSONAS') as personas,
-                    
-//					get_num(round(cast(s.area_definitiva/10000 as numeric),4)) as area,
 			$queryStr =  "
 				select 
 					'SOLICITUD' as tipo_expediente,
 					s.placa,
 					s.modalidad,
 					s.estado_juridico,
-					s.fecha_radicacion as fecha_radica_inscribe,
+//					s.fecha_radicacion as fecha_radica_inscribe,
+					get_num(round(cast(s.area_definitiva/10000 as numeric),4)) as area_hec,
 					getLineDataByIdSolicitud(s.id,'SOL_MUNICIPIOS') as municipios,
+					getLineDataByIdSolicitud(s.id,'SOL_PERSONAS') as personas,
 					getLineDataByIdSolicitud(s.id,'SOL_MINERALES') as minerales
 				from   (select ST_GeometryFromText($1, get_sistema_origen('WGS84')) as identify) as Idtf
 					inner join solicitudes_cg m on ST_Intersects(Idtf.identify, m.the_geom)
@@ -614,8 +611,10 @@
 					s.placa,
 					s.modalidad,
 					s.estado_juridico,
-					s.fecha_inscripcion as fecha_radica_inscribe,
+//					s.fecha_inscripcion as fecha_radica_inscribe,
+					get_num(round(cast(s.area_definitiva/10000 as numeric),4)) as area,
 					getLineDataByIdTitulo(s.id,'TIT_MUNICIPIOS') as municipios,
+					getLineDataByIdTitulo(s.id,'TIT_PERSONAS') as personas,
 					getLineDataByIdTitulo(s.id,'TIT_MINERALES') as minerales
 				from   (select ST_GeometryFromText($1, get_sistema_origen('WGS84')) as identify) as Idtf
 					inner join titulos_cg m on ST_Intersects(Idtf.identify, m.the_geom)
