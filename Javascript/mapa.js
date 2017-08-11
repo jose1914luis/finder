@@ -100,12 +100,12 @@ function validarBusqueda() {
     if (document.forms["searchWords"].txtBusqueda.value == "")
         return 0;
 
-    $("#loadingImage").show();
-    $('#info_sc').empty();
+    $("#loadingImage").show();    
     $.post('viewServicesSIGMINFullResultados.php', {txtBuscar: document.forms["searchWords"].txtBusqueda.value}, function (resp) {
         if (resp != "") {
             
-             $('#info_sc').append(resp);
+            $('#info_sc').empty();
+            $('#info_sc').append(resp);
             $("#loadingImage").hide();
 
             $("#info").show();
