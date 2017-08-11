@@ -1,5 +1,5 @@
 <?php
-	require_once("Acceso/Config.php"); // Definición de las variables globales	
+	require_once("Acceso/Config.php"); // Definiciï¿½n de las variables globales	
 	require_once("Modelos/ReportGenerator.php");
 	require_once("/home/cmqpru/public_html/CMQ_Pruebas/IDB/Modelos/ControlPopups.php"); 
 	
@@ -20,11 +20,11 @@
 		if(!empty($listadoSuperposiciones)){		
 			$nroSuperposiciones = sizeof($listadoSuperposiciones);
 			$nroColumnas = sizeof($listadoSuperposiciones[0]) + 1;
-			$tabla .= "<table border='1' class='tableResult'><tr><th align='left' colspan='$nroColumnas'  class='tableHead'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>IDENTIFY - </b>N&uacute;mero de Registros:  $nroSuperposiciones</th></tr>";
-			$tabla .= "<tr><th align='center' class='tableResult'><b>REPORT</b></th>";
+			$tabla .= "<table border='1' class='results'><tr><th align='left' colspan='$nroColumnas'  class='titleSite'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>IDENTIFY - </b>N&uacute;mero de Registros:  $nroSuperposiciones</th></tr>";
+			$tabla .= "<tr><th align='center' class='results'><b>REPORT</b></th>";
 		
 			foreach($listadoSuperposiciones[0] as $k=>$v)
-				$tabla .= "<th align='center' class='tableResult'><b>".strtoupper(str_replace("_", " ", $k))."</b></th>";
+				$tabla .= "<th align='center' class='results'><b>".strtoupper(str_replace("_", " ", $k))."</b></th>";
 			$tabla .= "</tr>";	
 			
 			for($i=0;$i<$nroSuperposiciones;$i++) {
@@ -35,8 +35,8 @@
 				$URL_Acceso = "?crd=expediente&placa={$listadoSuperposiciones[$i]["placa"]}&clasificacion={$listadoSuperposiciones[$i]["tipo_expediente"]}";					
 				$enlace = "<a href='javascript:' onclick=\"window.open('$URL_Acceso', '_blank');\"><img src='Imgs/reportIcon.png' border='0' width='35' height='35' title='Generaci&oacute;n de Reporte para ".$listadoSuperposiciones[$i]["placa"]."'></a>";			
 				
-				$enlace = "<a href='javascript:' onclick=\"window.opener.parent.cambiarExpediente('".$listadoSuperposiciones[$i]["placa"]."', '".$listadoSuperposiciones[$i]["tipo_expediente"]."')\"><img src='Imagenes/verEnMapa.jpg' border='0' width='30' height='30' title='Ubicacion Geogr&aacute;fica Expediente  ".$listadoSuperposiciones[$i]["placa"]."'></a>&nbsp;<a href='javascript:' onclick=\"window.open('$URL_Acceso', 'pop3', 'width=600,height=500, resizable=yes, scrollbars=yes');\"><img src='Imgs/reportIcon.png' border='0' width='35' height='35' title='Generaci&oacute;n de Reporte para ".$listadoSuperposiciones[$i]["placa"]."'></a>";
-				$tabla .= "<tr class='tableResult'><td align='center'><b>$enlace</b></td>";
+				$enlace = "<a href='javascript:' onclick=\"cambiarExpediente('".$listadoSuperposiciones[$i]["placa"]."', '".$listadoSuperposiciones[$i]["tipo_expediente"]."')\"><img src='Imagenes/verEnMapa.jpg' border='0' width='30' height='30' title='Ubicacion Geogr&aacute;fica Expediente  ".$listadoSuperposiciones[$i]["placa"]."'></a>&nbsp;<a href='javascript:' onclick=\"window.open('$URL_Acceso', 'pop3', 'width=600,height=500, resizable=yes, scrollbars=yes');\"><img src='Imgs/reportIcon.png' border='0' width='35' height='35' title='Generaci&oacute;n de Reporte para ".$listadoSuperposiciones[$i]["placa"]."'></a>";
+				$tabla .= "<tr class='results'><td align='center'><b>$enlace</b></td>";
 				foreach($listadoSuperposiciones[$i] as $k=>$v)
 					$tabla .= "<td>".($v)."</td>";
 				$tabla .= "</tr>";	
@@ -50,11 +50,11 @@
 			$nroSuperposiciones = sizeof($listadoSuperposiciones);
 			$nroColumnas = sizeof($listadoSuperposiciones[0]) + 1;
 			$tabla .= "<p>&nbsp;</p>";
-			$tabla .= "<table border='1' class='tableResult'><tr><th align='left' colspan='$nroColumnas'  class='tableHead'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>RESTRICCIONES - </b>N&uacute;mero de Registros:  $nroSuperposiciones</th></tr>";
+			$tabla .= "<table border='1' class='results'><tr><th align='left' colspan='$nroColumnas'  class='tableHead'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>RESTRICCIONES - </b>N&uacute;mero de Registros:  $nroSuperposiciones</th></tr>";
 			$tabla .= "<tr>";
 		
 			foreach($listadoSuperposiciones[0] as $k=>$v)
-				$tabla .= "<th align='center' class='tableResult'><b>".strtoupper(str_replace("_", " ", $k))."</b></th>";
+				$tabla .= "<th align='center' class='results'><b>".strtoupper(str_replace("_", " ", $k))."</b></th>";
 			$tabla .= "</tr>";	
 			
 			for($i=0;$i<$nroSuperposiciones;$i++) {			
@@ -76,16 +76,13 @@
 	
 ?>	
 
-<html>
-	<head>
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
-	<link href="Javascript/formatosResultados.css" type="text/css" rel="stylesheet">		
-	<title>:: SIGMIN - Identify</title>
-	</head>
-	<body>	
+	<!--<link href="Javascript/formatosResultados.css" type="text/css" rel="stylesheet">-->		
+	<link rel='stylesheet' href='Javascript/sigmin_account.css'>
+	<!--<body>-->	
 		<?php
 			if($tabla != "") echo $tabla;		
 			echo $msgError;
 		?>
-	</body>
-</html>
+<!--	</body>
+</html>-->
