@@ -57,13 +57,26 @@ OpenLayers.Control.Click = OpenLayers.Class(OpenLayers.Control, {
                   	$.post('?fnd=identify_map', {coordenadasRAC: coordenadas}, function (resp) {
             $("#loadingImage").show();
                             	if (resp != "") {
-                if (resultados != null)
-                    resultados.close();
-                resultados = window.open("", "Ventana", "width=700 height=200 scrollbars=yes");
-                resultados.document.title = ":: SIGMIN - Identify";
-                resultados.document.write(resp);
-                resultados.focus();
+
+
+                $('#info_sc').empty();
+                $('#info_sc').append(resp);
                 $("#loadingImage").hide();
+
+                $("#info").show();
+                $('#ico_min').attr('class', ' fa fa-minus');
+                ocultar = false;
+                $('#info').animate({
+                    left: "0px"
+                }, 500);
+
+//                if (resultados != null)
+//                    resultados.close();
+//                resultados = window.open("", "Ventana", "width=700 height=200 scrollbars=yes");
+//                resultados.document.title = ":: SIGMIN - Identify";
+//                resultados.document.write(resp);
+//                resultados.focus();
+//                $("#loadingImage").hide();
             } else
                                 	alert("No hay retorno de informaci&oacute;n");
         });
