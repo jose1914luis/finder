@@ -60,7 +60,7 @@
 
 				$enlace  = "<a href='javascript:' onclick=\"cambiarExpediente('".$listadoRegistros[$i]["placa"]."', '$clasificacion')\"><img src='Imagenes/verEnMapa.jpg' border='0' width='30' height='30' title='Ubicaci&oacute;n Geogr&aacute;fica Expediente  ".$listadoRegistros[$i]["placa"]."'></a>";
 				
-				$enlace .= "<a href='javascript:' onclick=\"window.open('$URL_Acceso', 'Ventana', 'width=600,height=500, resizable=yes, scrollbars=yes');\"><img src='Imgs/reportIcon.png' border='0' width='35' height='35' title='Generaci&oacute;n de Reporte para ".$listadoRegistros[$i]["placa"]."'></a>";				
+				$enlace .= "<a href='javascript:' onclick=\"window.open('$URL_Acceso', 'Ventana', 'width=1000,height=900, resizable=yes, scrollbars=yes');\"><img src='Imgs/reportIcon.png' border='0' width='35' height='35' title='Generaci&oacute;n de Reporte para ".$listadoRegistros[$i]["placa"]."'></a>";				
 				
 				
 				$tablaSol .= "<tr class='results'><td class='results' align='center'><b>$enlace</b></td>";
