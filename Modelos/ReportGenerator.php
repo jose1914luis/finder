@@ -591,13 +591,14 @@
 		}
 
 		function getIdentify($coordsPunto) {
+                    //s.fecha_radicacion as fecha_radica_inscribe,
+                    //s.fecha_inscripcion as fecha_radica_inscribe,
 			$queryStr =  "
 				select 
 					'SOLICITUD' as tipo_expediente,
 					s.placa,
 					s.modalidad,
 					s.estado_juridico,
-					s.fecha_radicacion as fecha_radica_inscribe,
 					get_num(round(cast(s.area_definitiva/10000 as numeric),4)) as area_hec,
 					getLineDataByIdSolicitud(s.id,'SOL_MUNICIPIOS') as municipios,
 					getLineDataByIdSolicitud(s.id,'SOL_PERSONAS') as personas,
@@ -611,7 +612,6 @@
 					s.placa,
 					s.modalidad,
 					s.estado_juridico,
-					s.fecha_inscripcion as fecha_radica_inscribe,
 					get_num(round(cast(s.area_definitiva/10000 as numeric),4)) as area,
 					getLineDataByIdTitulo(s.id,'TIT_MUNICIPIOS') as municipios,
 					getLineDataByIdTitulo(s.id,'TIT_PERSONAS') as personas,
