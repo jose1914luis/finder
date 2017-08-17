@@ -160,7 +160,7 @@ $codigoExp = $expediente["placa"];
 
 <img src="Javascript/images/loading_sgm.gif" width="140" height="140" id="loadingImage" style="display:none; top:50%; left:50%; z-index:2000; position:fixed !important; opacity: 0.65;" />
 <script>$("#loadingImage").show();</script>  
-<div class="container">
+<div class="container" style="position: absolute; bottom: 50px; top: 90px; overflow: auto;">
     <ul class="nav nav-tabs">
         <li class="active"><a data-toggle="tab" href="#home">Reporte</a></li>
         <li><a data-toggle="tab" href="#menu1">Indexar Documento</a></li>
