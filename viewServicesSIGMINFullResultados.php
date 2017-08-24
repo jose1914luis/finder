@@ -40,7 +40,7 @@
 			
 			foreach($listadoRegistros[0] as $k=>$v) {
 				// if($k != 'direccion_correspondencia' and $k != 'telefono_contacto')
-				if(in_array($k, array('placa', 'modalidad', 'estado_juridico', 'grupo_trabajo', 'fecha_radicacion',  'codigo_rmn', 'codigo_anterior', 'fecha_inscripcion')))
+				if(in_array($k, array('placa', 'modalidad', 'estado_juridico', 'grupo_trabajo',  'codigo_rmn', 'codigo_anterior', 'fecha_inscripcion', 'titulares', 'solicitantes')))
 					$tablaSol .= "<th  class='results' align='center'><b>".strtoupper(str_replace("_"," ",$k))."</b></th>";
 				$tablaAll .= "<th  class='results' align='center'><b>".strtoupper(str_replace("_"," ",$k))."</b></td>";
 			}
@@ -68,7 +68,7 @@
 				
 				foreach($listadoRegistros[$i] as $k=>$v) {
 					//if($k != 'direccion_correspondencia' and $k != 'telefono_contacto')
-					if(in_array($k, array('placa', 'modalidad', 'estado_juridico', 'grupo_trabajo', 'fecha_radicacion',  'codigo_rmn', 'codigo_anterior', 'fecha_inscripcion')))
+					if(in_array($k, array('placa', 'modalidad', 'estado_juridico', 'grupo_trabajo', 'codigo_rmn', 'codigo_anterior', 'fecha_inscripcion', 'titulares', 'solicitantes')))
 						$tablaSol .= "<td class='results'>".($v)."</td>";
 					$tablaAll .= "<td class='results'>".($v)."</td>";
 				}		
