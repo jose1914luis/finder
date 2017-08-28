@@ -75,7 +75,9 @@
 
 
                 <?php } else { ?>
+                    <li><a href=".?ope=directorio">Minerales <span class="glyphicon glyphicon-list-alt"></span></a></li> 
                     <li><a href=".?ope=ingresar">Ingresar <span class="glyphicon glyphicon-user"></span></a></li> 
+                    
                         <?php } ?>    
 
             </ul>
