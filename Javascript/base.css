@@ -1,11 +1,14 @@
 #info{
-    background-color: #f8f8f8; border-color: #e7e7e7; max-height: 400px; height: auto; width: 800px; z-index: 9; position: absolute;
+    top: 150px;
+    background-color: #f8f8f8; border-color: #e7e7e7; max-height: 400px; height: auto; max-width: 800px; z-index: 9; position: absolute;
 }
 #infoControl{
-    background-color: #f8f8f8; position: absolute;right: -20px; padding: 5px; cursor: pointer;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    background-color: #f8f8f8; position: absolute;right: -20px; padding: 6px; cursor: pointer;
 }
 #info_sc{
-    max-height: 400px; height: auto; width: 800px; overflow: auto
+    max-height: 400px; height: auto; max-width: 800px; overflow: auto
 }
 #table-wrapper {
   position:absolute;
