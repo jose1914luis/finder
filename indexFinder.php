@@ -258,11 +258,11 @@ if ($verMapa != "OK")
             <div id="infoControl" >
                 
                 <div  id="div_min">
-                    <i id="ico_min" class="fa fa-minus" aria-hidden="true"></i>    
+                    <i id="ico_min" class="fa fa-angle-double-left" aria-hidden="true"></i>    
                 </div>
-                <div id="div_ocultar">
+<!--                <div id="div_ocultar">
                     <i id="ico_ocultar" class="fa fa-times" aria-hidden="true"></i>      
-                </div>
+                </div>-->
             </div>
             <div id="info_sc">
 
