@@ -5,13 +5,13 @@ function init() {
 
         if (ocultar == false) {
             ocultar = true;
-            $('#ico_min').attr('class', ' fa fa-plus');
+            $('#ico_min').attr('class', 'fa fa-angle-double-right');
 
             $('#info').animate({
                 left: "-800px"
             }, 500);
         } else {
-            $('#ico_min').attr('class', ' fa fa-minus');
+            $('#ico_min').attr('class', ' fa fa-angle-double-left');
             ocultar = false;
             $('#info').animate({
                 left: "0px"
@@ -19,10 +19,10 @@ function init() {
         }
     });
 
-    $('#div_ocultar').on('click', function () {
-
-        $("#info").hide();
-    });
+//    $('#div_ocultar').on('click', function () {
+//
+//        $("#info").hide();
+//    });
     $.post('viewServicesSIGMINFull.php', {loadService: true}, function (resp) {
         if (resp != "")
             eval(resp);
@@ -109,7 +109,7 @@ function validarBusqueda() {
             $("#loadingImage").hide();
 
             $("#info").show();
-            $('#ico_min').attr('class', ' fa fa-minus');
+            $('#ico_min').attr('class', ' fa fa-angle-double-left');
             ocultar = false;
             $('#info').animate({
                 left: "0px"
