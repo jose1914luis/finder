@@ -58,13 +58,13 @@ OpenLayers.Control.Click = OpenLayers.Class(OpenLayers.Control, {
             $("#loadingImage").show();
                             	if (resp != "") {
 
-
+                console.log('resp: ' + resp);
                 $('#info_sc').empty();
                 $('#info_sc').append(resp);
                 $("#loadingImage").hide();
 
                 $("#info").show();
-                $('#ico_min').attr('class', ' fa fa-minus');
+                $('#ico_min').attr('class', ' fa fa-angle-double-left');
                 ocultar = false;
                 $('#info').animate({
                     left: "0px"
