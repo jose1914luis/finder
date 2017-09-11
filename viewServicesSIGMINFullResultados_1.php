@@ -97,7 +97,9 @@ if (!empty($_POST["txtBuscar"])) {
     $listaPlacasQuery .= " 0=1 ";
     echo "
 			<div>&nbsp;</div>
-                        <script>showMultiExpedientes(\"$listaPlacasQuery\");</script>
+                        <script>$( document ).ready(function() {
+    showMultiExpedientes(\"$listaPlacasQuery\");
+});</script>
 			";
     
 //
