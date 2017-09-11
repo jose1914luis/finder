@@ -10,8 +10,8 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href=".">
-                <img class="logosgm" alt="SIGMIN" src="Javascript/images/logo3.png">
+            <a class="navbar-brand" href="/">
+                <img class="logosgm" alt="SIGMIN" src="/Javascript/images/logo3.png">
             </a>
         </div>
 
@@ -75,7 +75,7 @@
 
 
                 <?php } else { ?>
-                    <li><a href=".?ope=directorio">Minerales <span class="glyphicon glyphicon-list-alt"></span></a></li> 
+                    <li><a href="/directorio">Directorio <span class="glyphicon glyphicon-list-alt"></span></a></li> 
                     <li><a href=".?ope=ingresar">Ingresar <span class="glyphicon glyphicon-user"></span></a></li> 
                     
                         <?php } ?>    
