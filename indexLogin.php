@@ -97,7 +97,7 @@ if ($ope != 'directorio') {
                     <?php
                     if ($ope == 'buscar') {
                         
-                        $_POST["txtBuscar"] = str_replace(array("-", "."), ' ', filter_input(INPUT_GET, 'txtBuscar'));                        
+                        $_POST["txtBuscar"] = str_replace(array("+","."), ' ', filter_input(INPUT_GET, 'txtBuscar'));                        
                         include './viewServicesSIGMINFullResultados_1.php';
                     }
                     ?>
