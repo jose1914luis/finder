@@ -54,15 +54,17 @@ OpenLayers.Control.Click = OpenLayers.Class(OpenLayers.Control, {
                 );
         coordenadas = "POINT(" + lonlat.lon + " " + lonlat.lat + ")";
 
-                  	$.post('?fnd=identify_map', {coordenadasRAC: coordenadas}, function (resp) {
+                  	$.post('?fnd=identify_map', {coordenadasRAC: coordenadas}, 
+        function (resp) {
             $("#loadingImage").show();
-                            	if (resp != "") {
+            if (resp != "") {
                 if (resultados != null)
-                    resultados.close();
-                resultados = window.open("", "Ventana", "width=700 height=200 scrollbars=yes");
-                resultados.document.title = ":: SIGMIN - Identify";
-                resultados.document.write(resp);
-                resultados.focus();
+                    $('#info_sc').html(resp);
+//                    resultados.close();
+//                resultados = window.open("", "Ventana", "width=700 height=200 scrollbars=yes");
+//                resultados.document.title = ":: SIGMIN - Identify";
+//                resultados.document.write(resp);
+//                resultados.focus();
                 $("#loadingImage").hide();
             } else
                                 	alert("No hay retorno de informaci&oacute;n");

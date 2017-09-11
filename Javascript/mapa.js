@@ -8,7 +8,7 @@ function init() {
             $('#ico_min').attr('class', 'fa fa-angle-double-right');
 
             $('#info').animate({
-                left: "-800px"
+                left: -$("#info_sc").width()
             }, 500);
         } else {
             $('#ico_min').attr('class', ' fa fa-angle-double-left');

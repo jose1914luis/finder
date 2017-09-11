@@ -1,5 +1,9 @@
+function informacion() {
+    alert('Para obtener mas información debes registrarte como usuario SIGMIN');
+}
 function init() {
-    $("#info").hide();
+
+   
 
     var ocultar = false;
     $('#div_min').on('click', function () {
@@ -9,7 +13,7 @@ function init() {
             $('#ico_min').attr('class', 'fa fa-angle-double-right');
 
             $('#info').animate({
-                left: "-800px"
+                left: -$("#info_sc").width()
             }, 500);
         } else {
             $('#ico_min').attr('class', ' fa fa-angle-double-left');
@@ -20,13 +24,18 @@ function init() {
         }
     });
 
-//    $('#div_ocultar').on('click', function () {
-//
-//        $("#info").hide();
-//    });
+ if (window.location.href.indexOf("/buscar/") > -1) {
+        $("#info").show();
+        var ocultar = false;
+        $('#ico_min').attr('class', ' fa fa-angle-double-left');
+        $('#info').animate({
+            left: "0px"
+        }, 500);
+    } else {
+        $("#info").hide();
+    }
 
-
-    $.post('viewServicesSIGMINFull_1.php', {loadService: true}, function (resp) {
+    $.post('/viewServicesSIGMINFull_1.php', {loadService: true}, function (resp) {
         if (resp != "")
             eval(resp);
         else
@@ -75,7 +84,7 @@ function allowPan(element) {
     }
 }
 function cambiarExpediente(campoPlaca, tipoExp) {
-                	$.post('viewValidaExpediente.php', {selExpediente: campoPlaca, tipoExpediente: tipoExp}, function (resp) {
+                	$.post('/viewValidaExpediente.php', {selExpediente: campoPlaca, tipoExpediente: tipoExp}, function (resp) {
                         	if (resp != "")
                     					eval(resp);
                             	else
@@ -84,7 +93,7 @@ function cambiarExpediente(campoPlaca, tipoExp) {
            }
 function showMultiExpedientes(queryPlacas) {
     vectorLayer.removeAllFeatures();
-                	$.post('viewShowMultiExpediente.php', {selExpediente: queryPlacas}, function (resp) {
+                	$.post('/viewShowMultiExpediente.php', {selExpediente: queryPlacas}, function (resp) {
                         	if (resp != "")
                     					eval(resp);
                             	else
@@ -106,7 +115,7 @@ function validarBusqueda() {
 
     $("#loadingImage").show();
     $('#info_sc').empty();
-    $.post('viewServicesSIGMINFullResultados_1.php', {txtBuscar: $('#txtBusqueda').val()}, function (resp) {
+    $.post('/viewServicesSIGMINFullResultados_1.php', {txtBuscar: $('#txtBusqueda').val()}, function (resp) {
         if (resp != "") {
             $('#info_sc').append(resp);
             $("#loadingImage").hide();
@@ -123,7 +132,7 @@ function validarBusqueda() {
 }
 
 function cambiarProspecto(campoPlaca) {
-    $.post('viewValidaPlaca.php', {selProspecto: campoPlaca}, function (resp) {
+    $.post('/viewValidaPlaca.php', {selProspecto: campoPlaca}, function (resp) {
         if (resp != "")
             eval(resp);
         else
@@ -133,7 +142,7 @@ function cambiarProspecto(campoPlaca) {
 
 $(function () {
     $("#txtBusqueda").autocomplete({
-        source: "viewValidaQuery.php"
+        source: "/viewValidaQuery.php"
     });
     var colors = ["red", "green", "blue"];
     colors[0];
@@ -220,46 +229,4 @@ function mover_tools() {
         }, 500);
         document.getElementById('tools').title = "inicio";
     }
-}
-
-
-function pointAddedCoords() {
-    if (document.frmCoordinatesPoint.selGeoSystem.value == "0") {
-        alert('Seleccione un Sistema de Coordenadas');
-        return 0;
-    }
-
-    stringCoords = "POINT(" + document.frmCoordinatesPoint.coordX.value.trim() + " " + document.frmCoordinatesPoint.coordY.value.trim() + ")";
-
-    drawControls["point"].activate();
-    var coordenadasRAC = "";
-    $.post('viewEvalBuffer.php', {CoordenadasVMC: stringCoords, radioAccion: document.forms["neighbor"].txtRadio.value, sistema_origen: document.frmCoordinatesPoint.selGeoSystem.value}, function (resp) {
-        if (resp != "")
-            eval(resp);
-        else
-            alert("No hay retorno de informacion");
-    });
-    CONTAR_POLY++;
-    drawControls["point"].deactivate();
-}
-;
-
-function ConvertDMSToDD(degrees, minutes, seconds, direction) {
-    var dd = degrees + minutes / 60 + seconds / (60 * 60);
-
-    if (direction == "S" || direction == "W") {
-        dd = dd * -1;
-    } // Don't do anything for N or E
-    return dd;
-}
-
-function procesarGMS(coordenada) {
-    if (coordenada.value.trim() == "")
-        return "";
-    coordenadas = coordenada.value;
-    pos = coordenada.value.split(/[°'"]/);
-    if (pos.length == 4) {
-        coordenadas = ConvertDMSToDD(Number(pos[0].trim()), Number(pos[1].trim()), Number(pos[2].trim()), pos[3].trim());
-    }
-    return coordenadas;
 }
