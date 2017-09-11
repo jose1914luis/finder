@@ -1,29 +1,21 @@
 <?php
-@session_start();
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
 
 require_once("Acceso/Config.php");
 require_once("Modelos/IndexacionesQueries.php");
 require_once("Modelos/EstadisticasUsuarios.php");
-require_once("Modelos/Usuarios_SGM.php");
 require_once("/home/cmqpru/public_html/CMQ_Pruebas/IDB/Modelos/ControlPopups.php");
 
-function createTable($listadoRegistros, $titulo, $clasificacion, &$listaPlacasQuery) {
+function createTable_2($listadoRegistros, $titulo, $clasificacion, &$listaPlacasQuery) {
     $generaURL = new ControlPopups();
 
     if (!empty($listadoRegistros)) {
         $nroRegistros = sizeof($listadoRegistros);
         $nroColumnas = sizeof($listadoRegistros[0]) + 1;
 
-        $validate = new Usuarios_SGM();
-        /*
-          if( $validate->getTipoCuentaSGM($_SESSION["id_usuario"])=='CUENTA CORPORATIVA') 	{
-          echo "<hr size=1><b>Formatos para descarga de archivos:</b>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Solicitudes <a href='prospect.report.consulta.win.solicitudesExcelFormat.c.php' ><img src='Imagenes/excelDownload.jpg' title='Reporte de Solicitudes' height='35' width='35' border='0'></a>
-
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;T&iacute;tulos <a href='prospect.report.consulta.win.titulosExcelFormat.c.php' ><img src='Imagenes/excelDownload.jpg' title='Reporte de T&iacute;tulos' height='35' width='35' border='0'></a>
-          <hr size='1'>";
-          }
-         */
+     
 
         $tablaSol = "
 				<table class='results' align='center' width='95%' border='1'>
@@ -85,10 +77,6 @@ $_SESSION["myExcelTitulosFile"] = "";
 
 if (!empty($_POST["txtBuscar"])) {
 
-    $controlUsuario = new EstadisticasUsuarios();
-    $controlUsuario->setConsultaUsuario($_SESSION['usuario_sgm'], $_POST["txtBuscar"]);
-
-
     $res = new IndexacionesQueries();
     $listaSolicitudesResults = $res->selectSolicitudesByListaCampos($_POST["txtBuscar"]);
     $listaTitulosResults = $res->selectTitulosByListaCampos($_POST["txtBuscar"]);
@@ -97,15 +85,15 @@ if (!empty($_POST["txtBuscar"])) {
     echo "
 			
 			
-				<link rel='stylesheet' href='Javascript/sigmin_account.css?v=2'>			
+				<link rel='stylesheet' href='/Javascript/sigmin_account.css?v=2'>			
 		";
     ?>
     <div class='titleSite2' style='text-align:center'>Para acceder a mas información por favor registrese gratis.</div>
     <div>&nbsp;</div>
     <?php
-    echo createTable($listaSolicitudesResults, "SOLICITUDES", "SOLICITUD", $listaPlacasQuery);
+    echo createTable_2($listaSolicitudesResults, "SOLICITUDES", "SOLICITUD", $listaPlacasQuery);
     echo "<p>&nbsp;</p>";
-    echo createTable($listaTitulosResults, "TITULOS", "TITULO", $listaPlacasQuery);
+    echo createTable_2($listaTitulosResults, "TITULOS", "TITULO", $listaPlacasQuery);
     $listaPlacasQuery .= " 0=1 ";
     echo "
 			<div>&nbsp;</div>
