@@ -21,22 +21,25 @@ function init() {
         }
     });
 
- if (window.location.href.indexOf("/buscar/") > -1) {
-        $("#info").show();
-        var ocultar = false;
-        $('#ico_min').attr('class', ' fa fa-angle-double-left');
-        $('#info').animate({
-            left: "0px"
-        }, 500);
-    } else {
-        $("#info").hide();
-    }
+
 
     $.post('/viewServicesSIGMINFull_1.php', {loadService: true}, function (resp) {
-        if (resp != "")
+        if (resp != "") {
             eval(resp);
-        else
+            if (window.location.href.indexOf("/buscar/") > -1) {
+                $("#info").show();
+                var ocultar = false;
+                $('#ico_min').attr('class', ' fa fa-angle-double-left');
+                $('#info').animate({
+                    left: "0px"
+                }, 500);
+                showMultiExpedientes(" s.placa='CERTIFICA-AREA-02' OR  0=1 ");
+            } else {
+                $("#info").hide();
+            }
+        } else {
             alert("falla al cargar los servicios geográficos");
+        }
     });
 }
 
