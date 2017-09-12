@@ -14,6 +14,7 @@ $( document ).ready(function() {
 	foreach($coords as $cadaPoly) {
 		if( $cadaPoly["coordenadas"]!="MULTIPOLYGON EMPTY") {
 ?>
+                 console.log("<?php echo $cadaPoly["coordenadas"] ?>");
 			polygonFeature = new OpenLayers.Feature.Vector(new OpenLayers.Geometry.fromWKT("<?php echo $cadaPoly["coordenadas"] ?>").transform(
 									displayProjection,
 									projection
