@@ -175,9 +175,9 @@ class MyHTMLParser(HTMLParser):
             # Check if we want to follow the link
             if urlparse.urlsplit(url)[1] <> self.server:
                 return
-            if self.hasBlockedExtension(url) or self.redirects.count(url) > 0:
+            if self.hasBlockedExtension(url) or self.redirects.count(url.encode('utf8')) > 0:
                 return
-            if (self.robotParser <> None) and not(self.robotParser.can_fetch("*", url)):
+            if (self.robotParser <> None) and not(self.robotParser.can_fetch("*", url.encode('utf8'))):
                 print "URL restricted by ROBOTS.TXT: ", url
                 return
             # It's OK to add url to the map and fetch it later
