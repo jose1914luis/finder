@@ -36,8 +36,7 @@ function init() {
     $.post('/viewServicesSIGMINFull_1.php', {loadService: true}, function (resp) {
         if (resp != "") {
             eval(resp);
-            if(cargar_coor != ''){
-                console.log('cargo primero');
+            if (cargar_coor != '') {
                 showMultiExpedientes(cargar_coor);
             }
         } else {
@@ -96,9 +95,8 @@ function cambiarExpediente(campoPlaca, tipoExp) {
            }
 
 function showMultiExpedientes(queryPlacas) {
-    
-    cargar_coor =  queryPlacas;
-    try{
+
+    //cargar_coor = queryPlacas;
     vectorLayer.removeAllFeatures();
                 	$.post('/viewShowMultiExpediente.php', {selExpediente: queryPlacas}, function (resp) {
                         	if (resp != "")
@@ -106,10 +104,7 @@ function showMultiExpedientes(queryPlacas) {
                             	else
                             	alert("No hay retorno de informaci&oacute;n");
     });
-    }catch (ex){
-        cargar_coor =  queryPlacas;
-        console.log(ex);
-    }
+
            }
 function clearFields() {
     lineLayer.removeAllFeatures();
