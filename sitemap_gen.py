@@ -218,7 +218,7 @@ def parsePages(startUrl, maxUrls, blockExtensions):
             pageMap[url] = date
             parser = MyHTMLParser(pageMap, redirects, url, maxUrls, blockExtensions, robotParser)
             try:
-                parser.feed(page)
+                parser.feed(page.encode('utf8'))
                 parser.close()
             except HTMLParseError:
                 print "Error parsing %s, skipping." % (url)
