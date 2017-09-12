@@ -1,6 +1,7 @@
 function informacion() {
     alert('Para obtener mas información debes registrarte como usuario SIGMIN');
 }
+var cargar_coor = '';
 function init() {
     var ocultar = false;
     $('#div_min').on('click', function () {
@@ -21,21 +22,23 @@ function init() {
         }
     });
 
-
+    if (window.location.href.indexOf("/buscar/") > -1) {
+        $("#info").show();
+        var ocultar = false;
+        $('#ico_min').attr('class', ' fa fa-angle-double-left');
+        $('#info').animate({
+            left: "0px"
+        }, 500);
+    } else {
+        $("#info").hide();
+    }
 
     $.post('/viewServicesSIGMINFull_1.php', {loadService: true}, function (resp) {
         if (resp != "") {
             eval(resp);
-            if (window.location.href.indexOf("/buscar/") > -1) {
-                $("#info").show();
-                var ocultar = false;
-                $('#ico_min').attr('class', ' fa fa-angle-double-left');
-                $('#info').animate({
-                    left: "0px"
-                }, 500);
-                showMultiExpedientes(" s.placa='CERTIFICA-AREA-02' OR  0=1 ");
-            } else {
-                $("#info").hide();
+            if(cargar_coor != ''){
+                console.log('cargo primero');
+                showMultiExpedientes(cargar_coor);
             }
         } else {
             alert("falla al cargar los servicios geográficos");
@@ -91,8 +94,10 @@ function cambiarExpediente(campoPlaca, tipoExp) {
                             	alert("No hay retorno de informaci&oacute;n");
     });
            }
+
 function showMultiExpedientes(queryPlacas) {
-    console.log(queryPlacas);
+    
+    try{
     vectorLayer.removeAllFeatures();
                 	$.post('/viewShowMultiExpediente.php', {selExpediente: queryPlacas}, function (resp) {
                         	if (resp != "")
@@ -100,6 +105,10 @@ function showMultiExpedientes(queryPlacas) {
                             	else
                             	alert("No hay retorno de informaci&oacute;n");
     });
+    }catch (ex){
+        cargar_coor =  queryPlacas;
+        console.log(ex);
+    }
            }
 function clearFields() {
     lineLayer.removeAllFeatures();
