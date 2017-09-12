@@ -218,7 +218,7 @@ def parsePages(startUrl, maxUrls, blockExtensions):
             pageMap[url] = date
             parser = MyHTMLParser(pageMap, redirects, url, maxUrls, blockExtensions, robotParser)
             try:
-                print page
+#                print page
                 parser.feed(page)
                 parser.close()
             except HTMLParseError:
