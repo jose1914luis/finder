@@ -202,7 +202,7 @@ def parsePages(startUrl, maxUrls, blockExtensions):
     robotParser = getRobotParser(startUrl.encode('utf8'))
 
     while True:
-        url = getUrlToProcess(pageMap)
+        url = getUrlToProcess(pageMap).encode('utf8')
         if url == None:
             break
         print " ", url
