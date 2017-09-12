@@ -76,7 +76,7 @@
 
                 <?php } else { ?>
                     <li><a href="/directorio">Directorio <span class="glyphicon glyphicon-list-alt"></span></a></li> 
-                    <li><a href=".?ope=ingresar">Ingresar <span class="glyphicon glyphicon-user"></span></a></li> 
+                    <li><a href="/ingresar">Ingresar <span class="glyphicon glyphicon-user"></span></a></li> 
                     
                         <?php } ?>    
 
