@@ -22,7 +22,7 @@ function init() {
         }
     });
 
-    if (window.location.href.indexOf("/buscar/") > -1) {
+    if (window.location.href.indexOf("/buscar/") > -1 || window.location.href.indexOf("/mineral/") > -1) {
         $("#info").show();
         var ocultar = false;
         $('#ico_min').attr('class', ' fa fa-angle-double-left');
