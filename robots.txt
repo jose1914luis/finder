@@ -1,0 +1,2 @@
+Sitemap: http://www.sigmin.co/sitemap.xml
+User-Agent: *
