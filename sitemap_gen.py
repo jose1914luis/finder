@@ -199,14 +199,14 @@ def parsePages(startUrl, maxUrls, blockExtensions):
     pageMap[startUrl] = ()
     redirects = []
 
-    robotParser = getRobotParser(startUrl)
+    robotParser = getRobotParser(startUrl.encode('utf8'))
 
     while True:
         url = getUrlToProcess(pageMap)
         if url == None:
             break
         print " ", url
-        page, date, newUrl = getPage(url.encode('utf8'))
+        page, date, newUrl = getPage(url)
         if page == None:
             del pageMap[url]
 	elif url != newUrl:
@@ -218,7 +218,6 @@ def parsePages(startUrl, maxUrls, blockExtensions):
             pageMap[url] = date
             parser = MyHTMLParser(pageMap, redirects, url, maxUrls, blockExtensions, robotParser)
             try:
-#                print page
                 parser.feed(page)
                 parser.close()
             except HTMLParseError:
