@@ -29,10 +29,10 @@ $( document ).ready(function() {
 	}	
 ?>
                         
-
+                console.log(map);
 		bounds = vectorLayer.getDataExtent();
 		map.zoomToExtent(bounds);
-                console.log(map);
+                
                 
 });
 <?php
