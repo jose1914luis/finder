@@ -108,7 +108,7 @@ $data = $eros->select('v_todas_sol_til', $values, null, $_limite, $offset, null,
                             if($k == 'placa'){
                                 $tablaSol .= "<td class='results'><a  href='/buscar/". $v ."' style='cursor:pointer'>" . ($v) . "</a></td>";
                             }  else if($k == 'minerales'){
-                                $tablaSol .= "<td class='results'><a  href='/mineral/". $v ."' style='cursor:pointer'>" . ($v) . "</a></td>";
+                                $tablaSol .= "<td class='results'><a  href='/mineral/". str_replace(' ', '-', $v) ."' style='cursor:pointer'>" . ($v) . "</a></td>";
                             }else {
                                 $tablaSol .= "<td class='results'>" . ($v) . "</td>";
                             }
