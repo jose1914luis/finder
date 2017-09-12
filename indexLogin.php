@@ -97,7 +97,13 @@ if ($ope != 'directorio') {
                     <?php
                     if ($ope == 'buscar') {
                         $no_mostrar = true;
-                        $_POST["txtBuscar"] = str_replace(array("+","."), ' ', filter_input(INPUT_GET, 'txtBuscar'));                        
+                        $sine = filter_input(INPUT_GET, 'sine');
+                        if(isset($sine) && $sine == 'mineral'){
+                            $_POST["txtBuscar"] = str_replace(array("-","."), ' ', filter_input(INPUT_GET, 'txtBuscar'));
+                        }else{
+                            $_POST["txtBuscar"] = filter_input(INPUT_GET, 'txtBuscar');                        
+                        }
+                        
                         include './viewServicesSIGMINFullResultados_1.php';
                     }
                     ?>
