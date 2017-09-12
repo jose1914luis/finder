@@ -95,11 +95,14 @@ if (!empty($_POST["txtBuscar"])) {
     echo "<p>&nbsp;</p>";
     echo createTable_2($listaTitulosResults, "TITULOS", "TITULO", $listaPlacasQuery);
     $listaPlacasQuery .= " 0=1 ";
+    if(!isset($no_mostrar)){
     echo "
 			<div>&nbsp;</div>
                         <script>showMultiExpedientes(\"$listaPlacasQuery\");</script>
 			";
-    
+    }else{
+        echo "<script>cargar_coor = \"$listaPlacasQuery\";</script>";
+    }
 //
     //$_SESSION["myExcelSolicitudesFile"] 	= $listaSolicitudesResults;
     //$_SESSION["myExcelTitulosFile"] 		= $listaTitulosResults;		
