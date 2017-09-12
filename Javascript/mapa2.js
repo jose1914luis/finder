@@ -2,9 +2,6 @@ function informacion() {
     alert('Para obtener mas información debes registrarte como usuario SIGMIN');
 }
 function init() {
-
-   
-
     var ocultar = false;
     $('#div_min').on('click', function () {
 
@@ -92,6 +89,7 @@ function cambiarExpediente(campoPlaca, tipoExp) {
     });
            }
 function showMultiExpedientes(queryPlacas) {
+    console.log(queryPlacas);
     vectorLayer.removeAllFeatures();
                 	$.post('/viewShowMultiExpediente.php', {selExpediente: queryPlacas}, function (resp) {
                         	if (resp != "")
