@@ -106,13 +106,13 @@ if ($ope == 'olvide') {
                         <input type="password"  name="password" id="password"  placeholder="Clave" class="form-control"  required/>
                     </div>
                     <div class="col-lg-5">                        
-                        <a href=".?ope=olvide" class="forgot">Olvid&oacute; su Contrase&ntilde;a?</a><br/>
+                        <a href="/olvide" class="forgot">Olvid&oacute; su Contrase&ntilde;a?</a><br/>
                     </div>
                 </div>               
 
                 <div class="form-group">                        
                     <div class="col-lg-4"> 
-                        <a href=".?ope=registro" class="forgot" >&nbsp;&nbsp;Reg&iacute;strese Gratis&nbsp;&nbsp;</a>
+                        <a href="/registro" class="forgot" >&nbsp;&nbsp;Reg&iacute;strese Gratis&nbsp;&nbsp;</a>
                     </div>
                     <div class="col-lg-4">                        								                                           
                         <input type="submit" class="btn btn-success" value="Ingresar" /><br>
