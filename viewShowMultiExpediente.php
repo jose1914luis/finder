@@ -1,6 +1,6 @@
 <?php
 	require_once("Modelos/ReportGenerator.php");
-	require_once("Acceso/Config.php"); // Definición de las variables globales	
+	require_once("Acceso/Config.php"); // Definiciï¿½n de las variables globales	
 
 	$pryView = new ReportGenerator(); 
 	
@@ -8,6 +8,7 @@ if(!empty($_POST["selExpediente"])) {
 	$coords = $pryView->generarViewMultiMap($_POST["selExpediente"]);
 
 ?>
+$( document ).ready(function() {
 		vectorLayer.removeAllFeatures();
 <?php
 	foreach($coords as $cadaPoly) {
@@ -27,9 +28,13 @@ if(!empty($_POST["selExpediente"])) {
 		}
 	}	
 ?>
+                        
+
 		bounds = vectorLayer.getDataExtent();
 		map.zoomToExtent(bounds);
-
+                console.log(map);
+                
+});
 <?php
 	}
 ?>
