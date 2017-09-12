@@ -206,7 +206,7 @@ def parsePages(startUrl, maxUrls, blockExtensions):
         if url == None:
             break
         print " ", url
-        page, date, newUrl = getPage(url)
+        page, date, newUrl = getPage(url.decode('utf8'))
         if page == None:
             del pageMap[url.decode('utf8')]
 	elif url != newUrl:
