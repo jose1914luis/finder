@@ -97,6 +97,7 @@ function cambiarExpediente(campoPlaca, tipoExp) {
 
 function showMultiExpedientes(queryPlacas) {
     
+    cargar_coor =  queryPlacas;
     try{
     vectorLayer.removeAllFeatures();
                 	$.post('/viewShowMultiExpediente.php', {selExpediente: queryPlacas}, function (resp) {
