@@ -105,9 +105,11 @@ $data = $eros->select('v_todas_sol_til', $values, null, $_limite, $offset, null,
                         //print_r($listadoRegistros[$i]);
                         //if($k != 'direccion_correspondencia' and $k != 'telefono_contacto')
                         if (in_array($k, array('tipo', 'placa', 'minerales', 'municipios', 'modalidad', 'estado_juridico', 'fecha', 'titulares'), true)) {
-                            if($k == 'placa' || $k == 'minerales'){
+                            if($k == 'placa'){
                                 $tablaSol .= "<td class='results'><a  href='/buscar/". $v ."' style='cursor:pointer'>" . ($v) . "</a></td>";
-                            }  else {
+                            }  else if($k == 'minerales'){
+                                $tablaSol .= "<td class='results'><a  href='/mineral/". $v ."' style='cursor:pointer'>" . ($v) . "</a></td>";
+                            }else {
                                 $tablaSol .= "<td class='results'>" . ($v) . "</td>";
                             }
                             
