@@ -55,21 +55,21 @@
                     <li role="presentation" class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Propiedades Mineras <span class="caret"></span></a>
                         <ul class="dropdown-menu">                                    
-                            <li><a href="?mnu=prospectos">Mis Prospectos</a></li>
-                            <li><a href="?mnu=expedientes">Mis Expedientes</a></li>
+                            <li><a href="/?mnu=prospectos">Mis Prospectos</a></li>
+                            <li><a href="/?mnu=expedientes">Mis Expedientes</a></li>
                             <li role="separator" class="divider"></li>
-                            <li><a href="?mnu=liberaciones">Liberaciones</a></li>
+                            <li><a href="/?mnu=liberaciones">Liberaciones</a></li>
                             <li role="separator" class="divider"></li>
-                            <li><a href="?mnu=descargas">Shapes</a></li>
+                            <li><a href="/?mnu=descargas">Shapes</a></li>
                         </ul>
                     </li>
                     <li role="presentation" class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Cuenta<span class="caret"></span></a>
                         <ul class="dropdown-menu">                                    
-                            <li><a href="?mnu=creditos">Creditos</a></li>
-                            <li><a href="?mnu=datos_basicos">Datos Personales</a></li>
+                            <li><a href="/?mnu=creditos">Creditos</a></li>
+                            <li><a href="/?mnu=datos_basicos">Datos Personales</a></li>
                             <li role="separator" class="divider"></li>
-                            <li><a href="?mnu=logout">Logout <i class="fa fa-power-off padding-left-ten-px red-text"></i></a></li>
+                            <li><a href="/?mnu=logout">Logout <i class="fa fa-power-off padding-left-ten-px red-text"></i></a></li>
                         </ul>
                     </li>
 
