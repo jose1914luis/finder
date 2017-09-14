@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <script src="./Javascript/plantilla.js" type="text/javascript"></script>
-        <link rel="stylesheet" href="Javascript/sigmin_account.css?v=<?= 6?>">
-        <!--<script type="text/javascript" src="Javascript/validarFinder.js?v=3"></script>-->
-        <title>:: SIGMIN :: Mining Properties</title>
-        <?php
+         <?php
         include './Plantillas/head.php';
         ?>
+        <script src="./Javascript/plantilla.js?v=<?=$_VERSION?>" type="text/javascript"></script>
+        <link rel="stylesheet" href="Javascript/sigmin_account.css?v=<?=$_VERSION?>">
+        <!--<script type="text/javascript" src="Javascript/validarFinder.js?v=3"></script>-->
+        <title>:: SIGMIN :: Mining Properties</title>
+       
     </head>
 
     <body class="<?= (isset($_SESSION['id_usuario']))?'':'login_bg' ?>">
