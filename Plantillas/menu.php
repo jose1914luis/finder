@@ -31,7 +31,7 @@
 
                     <li><a href="?mnu=creditos"> Creditos: <?= $_SESSION['usr_cred']['credito'] ?>$</a></li>
                     <?php if ($_SESSION["pagina"] != "map") { ?>
-                        <li><a href="javascript:confirmaCreditoMapa('?pagina=map')"> Mapa</a></li>
+                        <li><a href="javascript:confirmaCreditoMapa('/?pagina=map')"> Mapa</a></li>
                     <?php } if ($_SESSION["pagina"] == "map") { ?>                     
 
                         <li class="menu-item dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Análisis <b class="caret"></b></a>
