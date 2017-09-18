@@ -210,7 +210,7 @@ function cerrar(division) {
 function ajaxFileUpload() {
     $.ajaxFileUpload(
             {
-                url: 'viewLoadCoordinates.php',
+                url: '/viewLoadCoordinates.php',
                 secureuri: false,
                 fileElementId: 'fileToUpload',
                 dataType: 'execute',
