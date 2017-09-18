@@ -68,7 +68,7 @@ if (@$_POST["sistemaOrigen"]) {
             projection
             ));
             polygonFeature.attributes = {
-            placa: "<?php echo utf8_encode("Area de Interés") ?>"
+            placa: "<?php echo "Area de Interés" ?>"
             };		
             vectorLayer.addFeatures([polygonFeature]);
             bounds = vectorLayer.getDataExtent();
