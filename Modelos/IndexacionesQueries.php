@@ -95,9 +95,9 @@
                 
 		function selectSolicitudesByListaCampos($valor) {
 			$listaQuery = "1=1";
-			$valor = str_replace(array(utf8_encode("�"), utf8_encode("�")), "%", $valor);
+                        $valor = str_replace(array('(', ')'), '', htmlentities(strtoupper($valor)));//str_replace(array(utf8_encode("�"), utf8_encode("�")), "%", $valor);
 			$camposView = "
-				placa, modalidad, estado_juridico, grupo_trabajo, fecha_radicacion, fecha_terminacion, area_solicitada_ha, area_definitiva_ha, /* direccion_correspondencia, telefono_contacto, */ municipios, solicitantes, minerales 						
+				placa, modalidad, estado_juridico, grupo_trabajo, fecha_radicacion, fecha_terminacion, area_solicitada_ha, area_definitiva_ha, /* direccion_correspondencia, telefono_contacto, */ municipios, minerales, solicitantes
 			";		
 			
 			if(sizeof($valor)== 0) return 0;
@@ -114,10 +114,10 @@
 						if (!empty($cadaCampo)) 
 							if($nroCampos>1) {
 								$listaQuery .= ' and criterios_consulta like $'.($i++);
-								$campos[$i] =  strtoupper("%|$cadaCampo|%");
+								$campos[$i] =  "%|$cadaCampo|%";
 							} else {
 								$listaQuery .= ' and criterios_consulta like $'.($i++);
-								$campos[$i] =  strtoupper("%|$cadaCampo%|");
+								$campos[$i] =  "%|$cadaCampo%|";
 							}
 						
 					$queryStr =  "select $camposView from v_solicitudes_idx where $listaQuery limit 500";	
@@ -131,7 +131,7 @@
 			}						
 			$lista = pg_fetch_all($result);			
 			pg_free_result($result);
-			return  $lista;			
+			return $lista; //print_r($campos);		
 		}
                 
                 function selectTitulosByListaCampos_mobile($valor) {	
@@ -179,9 +179,9 @@
 
 		function selectTitulosByListaCampos($valor) {	
 			$listaQuery = "1=1";
-			$valor = str_replace(array(utf8_encode("�"), utf8_encode("�")), "%", $valor);
+			$valor = str_replace(array('(', ')'), '', htmlentities(strtoupper($valor)));
 			$camposView = "
-				placa, codigo_rmn, codigo_anterior, modalidad, estado_juridico, grupo_trabajo, fecha_inscripcion, fecha_terminacion, area_otorgada_ha, area_definitiva_ha, /* direccion_correspondencia, telefono_contacto, */ municipios, titulares, minerales
+				placa, codigo_rmn, codigo_anterior, modalidad, estado_juridico, grupo_trabajo, fecha_terminacion, area_otorgada_ha, area_definitiva_ha, /* direccion_correspondencia, telefono_contacto, */municipios, minerales, titulares
 			";		
 			
 			if(sizeof($valor)== 0) return 0;
@@ -199,10 +199,10 @@
 						if (!empty($cadaCampo)) 
 							if($nroCampos>1){
 								$listaQuery .= ' and criterios_consulta like $'.($i++);
-								$campos[$i] =  strtoupper("%|$cadaCampo|%");
+								$campos[$i] =  "%|$cadaCampo|%";
 							} else {
 								$listaQuery .= ' and criterios_consulta like $'.($i++);
-								$campos[$i] =  strtoupper("%|$cadaCampo%|");							
+								$campos[$i] =  "%|$cadaCampo%|";							
 							}
 				
 							
