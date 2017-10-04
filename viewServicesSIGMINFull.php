@@ -348,7 +348,7 @@ vectorLayer = new OpenLayers.Layer.Vector("Record", {styleMap: stylemap},{render
 		cmqLayer3.setVisibility(false);
 		vectorLayer.setVisibility(true);
                 
-		map.addLayers([ghyb, gmap, gphy, osm, cmqLayerSol, cmqLayerTit, vectorLayer, cmqExcluibles, cmqRestricciones, cmqAmbientales, polygonLayer]);
+		map.addLayers([gphy, ghyb, gmap, osm, cmqLayerSol, cmqLayerTit, vectorLayer, cmqExcluibles, cmqRestricciones, cmqAmbientales, polygonLayer]);
 				
 		var click = new OpenLayers.Control.Click();
                 map.addControl(click);
