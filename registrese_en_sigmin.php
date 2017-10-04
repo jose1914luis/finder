@@ -21,6 +21,6 @@
 	}
 
 	else 
-		header("location: http://www.sigmin.co/pageError.php?error=");
+		header("location: http://www.sigmin.co/pageError.php?error=".$resp);
 ?>
 
