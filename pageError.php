@@ -1,3 +1,7 @@
+<?php 
+
+$error = filter_input(INPUT_GET, 'error');
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -14,6 +18,7 @@
 	<div class="logo_login">Sigmin</div>
 	<div class="login_box">
 		<h2>Error en la generaci&oacute;n de usuario en SIGMIN</h2>
+                <h3><?= $error?></h3>
     </div>
 </body>
 </html>
