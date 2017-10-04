@@ -7,7 +7,6 @@ $service = "http://www.sigmin.co:8080/geoserver/CMQ/wms";
 
     var options = {
         projection: projection,
-        controls: [],
         displayProjection: displayProjection,
         units: "meters",
         numZoomLevels: 22
@@ -309,7 +308,7 @@ $service = "http://www.sigmin.co:8080/geoserver/CMQ/wms";
     cmqAmbientales.setVisibility(false);
     cmqLayer3.setVisibility(false);
     vectorLayer.setVisibility(true);
-    map.addLayers([ghyb, gmap, gphy, osm, cmqLayerSol, cmqLayerTit, vectorLayer, cmqExcluibles, cmqRestricciones, cmqAmbientales, polygonLayer]);
+    map.addLayers([gphy, osm, cmqLayerSol, cmqLayerTit, vectorLayer, cmqExcluibles, cmqRestricciones, cmqAmbientales, polygonLayer]);
     var click = new OpenLayers.Control.Click();
     map.addControl(click);
     click.activate();
