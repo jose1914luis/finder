@@ -49,7 +49,7 @@ else
         <center><h4><b>Total de Cr&eacute;ditos disponibles:</b> <?= $_SESSION['usr_cred']['credito'] ?> Cr&eacute;dito(s)</h4></center>
 
         <hr>
-        <form name="frmCreditos" method="post" action="?mnu=creditos_compra" target="_blank" class="form-inline">
+        <form name="frmCreditos" method="post" action="/?mnu=creditos_compra" target="_blank" class="form-inline">
             <div class="form-group">
                 <label for="exampleInputName2">Compra de nuevos cr&eacute;ditos (1 Cr&eacute;dito <=> 1000 COP):</label>
                 <input type="text"  class="form-control" name="txtCompraCreditos" placeholder="Mínimo <?= $GLOBALS ["SIGCoin_minimo"] ?> COP" onchange="this.value = Math.floor(this.value / 1000) * 1000"/>
