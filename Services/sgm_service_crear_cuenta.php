@@ -16,9 +16,9 @@ if ($msgCreate == 'OK') {
     $serial = $createUsr->getSerialbyEmail($_GET["txtEmail"]);
     
     $correo = new Correo();
-    $correo->usuarioNuevo($_GET["txtNombre"], "email={$_GET["txtEmail"]}&identificacion={$_GET["txtDocumento"]}&codigo_verificacion=" . $serial, $_GET["txtEmail"]);                                                         
+    $res = $correo->usuarioNuevo($_GET["txtNombre"], "email={$_GET["txtEmail"]}&identificacion={$_GET["txtDocumento"]}&codigo_verificacion=" . $serial, $_GET["txtEmail"]);                                                         
 
-    echo 1;
+    echo $res;
 } else {
     echo 0;
 }
