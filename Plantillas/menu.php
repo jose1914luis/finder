@@ -48,6 +48,7 @@
                                         <li class="menu-item "><a href="javascript:" onclick="Pros_Open('Perimetral');mostrardiv('point_coordinates')">Coordenadas <i class="fa fa-map-o" aria-hidden="true"></i></a></li>                                       
                                     </ul>
                                 </li>
+                                <li class="menu-item "><a href="javascript:"  id="line" onClick="Pros_Open('generarArea');toggleControl(this)" >Medir <i class="fa fa-expand" aria-hidden="true"></i> </a></li>                                
                             </ul>
                         </li>
 
@@ -76,7 +77,8 @@
 
                 <?php } else { ?>
                     <li><a href="/directorio">Directorio <span class="glyphicon glyphicon-list-alt"></span></a></li> 
-                    <li><a href="/ingresar">Ingresar <span class="glyphicon glyphicon-user"></span></a></li> 
+                    <li><a href="https://www.sigmin.com/" target="_blank">Acerca de Nosotros <span class="glyphicon glyphicon-info-sign"></span></a></li> 
+                    <li><a href="/ingresar">Ingresar <span class="glyphicon glyphicon-user"></span></a></li>
                     
                         <?php } ?>    
 
