@@ -11,21 +11,27 @@
                 <span class="icon-bar"></span>
             </button>
             <a class="navbar-brand" href="/">
-                <img class="logosgm" alt="SIGMIN" src="/Javascript/images/logo3.png">
+                <img class="logosgm" alt="SIGMIN" src="/Javascript/images/logo3.png?v=1">
             </a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
+            
+            
             <form class="navbar-form navbar-left" name="searchWords">
                 <div class="input-group buscador">
                     <input id="txtBusqueda" type="text" class="form-control" placeholder="Palabra Clave...">                    
                     <span class="input-group-btn">
                         <button class="btn btn-default" onclick="validarBusqueda();" type="button"><span class="glyphicon glyphicon-search"></span><span style="visibility: hidden">.</span></button>
-                    </span>                    
-                </div>  
-            </form>            
+                    </span>  
+                    
+                </div> 
+                <div class="form-group">
+                    <b><a href="https://www.sigmin.com/" target="_blank">Acerca de Nosotros <span class="glyphicon glyphicon-info-sign"></span></a></b>
+                </div>
+            </form>
             <ul class="nav navbar-nav navbar-right">
                 <?php if (isset($_SESSION['id_usuario'])) { ?>
 
@@ -76,8 +82,7 @@
 
 
                 <?php } else { ?>
-                    <li><a href="/directorio">Directorio <span class="glyphicon glyphicon-list-alt"></span></a></li> 
-                    <li><a href="https://www.sigmin.com/" target="_blank">Acerca de Nosotros <span class="glyphicon glyphicon-info-sign"></span></a></li> 
+                    <li><a href="/directorio">Directorio <span class="glyphicon glyphicon-list-alt"></span></a></li>                     
                     <li><a href="/ingresar">Ingresar <span class="glyphicon glyphicon-user"></span></a></li>
                     
                         <?php } ?>    
