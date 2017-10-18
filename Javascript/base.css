@@ -6,7 +6,17 @@
 }
 #info{
     top: 150px;
-    background-color: #f8f8f8; border-color: #e7e7e7; max-height: 400px; height: auto; max-width: 800px; z-index: 999; position: absolute;
+    background-color: #f8f8f8; 
+    border-color: #e7e7e7; 
+    max-height: 400px; 
+    height: auto; 
+    max-width: 800px; 
+    z-index: 999; 
+    position: absolute;
+    border: 1px;
+    border-color: #777;
+    border-style: dotted;
+    border-width: 1px;
 }
 #infoControl{
     border-bottom-right-radius: 5px;
