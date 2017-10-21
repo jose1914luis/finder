@@ -54,7 +54,7 @@
                                         <li class="menu-item "><a href="javascript:" onclick="Pros_Open('Perimetral');mostrardiv('point_coordinates')">Coordenadas <i class="fa fa-map-o" aria-hidden="true"></i></a></li>                                       
                                     </ul>
                                 </li>
-                                <li class="menu-item "><a href="javascript:" value="line"  id="line" onClick="toggleControl(this)" >Medir <i class="fa fa-expand" aria-hidden="true"></i> </a></li>                                
+                                <li class="menu-item "><a href="javascript:" value="line"  id="line" onClick="Pros_Open('medir');toggleControl(this)" >Medir <i class="fa fa-expand" aria-hidden="true"></i> </a></li>                                
                             </ul>
                         </li>
 
