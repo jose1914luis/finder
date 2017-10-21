@@ -182,35 +182,39 @@ function init() {
     ;
     function lineAdded(feature) {
 
-        //console.log('hola');
-        var stringCoords = feature.geometry.transform(
-                projection,
-                displayProjection
-                ).toString();
-        CONTAR_POLY++;
-        document.forms["free"].coordenadasPry.value = stringCoords;
-        //document.forms["alarm"].coordenadasPry.value = stringCoords;
-        drawControls["polygon"].deactivate();
 
-        //console.log('se desactiva pero no se borra');
-        measureControls["polygon"].deactivate();	// 20160309		
+        if (ELEMENTO == 'line') {
+            measureControls["line"].deactivate(); // 20160309
+            drawControls["line"].deactivate();
+        } else {
 
-        //measureControls["line"].deactivate();	// 20160309
-        //drawControls["line"].deactivate();
-        $.post('?fnd=valida_area', {coordenadasPry: stringCoords}, function (resp) {
-            if (resp != "") {
-                var calculo = Number(resp.trim());
-                if (calculo < LIMIT_INFERIOR)
-                    $("#infoAL").css("background-color", "#FF0");
-                else if (calculo > LIMIT_SUPERIOR)
-                    $("#infoAL").css("background-color", "#FFD2D2");
-                else
-                    $("#infoAL").css("background-color", "#CEFFCE");
-                $("#infoAL").val(calculo + " Hect.");
-                //document.calculo_area.infoAL.value = calculo + " Hect.";
-            } else
-                alert("No hay retorno de informaci&oacute;n");
-        });
+            var stringCoords = feature.geometry.transform(
+                    projection,
+                    displayProjection
+                    ).toString();
+            CONTAR_POLY++;
+            document.forms["free"].coordenadasPry.value = stringCoords;
+            //document.forms["alarm"].coordenadasPry.value = stringCoords;
+
+            drawControls["polygon"].deactivate();
+            measureControls["polygon"].deactivate(); // 20160309	
+
+            $.post('?fnd=valida_area', {coordenadasPry: stringCoords}, function (resp) {
+                if (resp != "") {
+                    var calculo = Number(resp.trim());
+                    if (calculo < LIMIT_INFERIOR)
+                        $("#infoAL").css("background-color", "#FF0");
+                    else if (calculo > LIMIT_SUPERIOR)
+                        $("#infoAL").css("background-color", "#FFD2D2");
+                    else
+                        $("#infoAL").css("background-color", "#CEFFCE");
+                    $("#infoAL").val(calculo + " Hect.");
+                    //document.calculo_area.infoAL.value = calculo + " Hect.";
+                } else
+                    alert("No hay retorno de informaci&oacute;n");
+            });
+        }
+
     }
 
     drawControls = {
@@ -268,9 +272,8 @@ function init() {
         new OpenLayers.Rule({symbolizer: sketchSymbolizers})
     ]);
     var styleMap2 = new OpenLayers.StyleMap({"default": style2});
-    
     measureControls = {// 20160309			
-        /*line: new OpenLayers.Control.Measure(
+        line: new OpenLayers.Control.Measure(
                 OpenLayers.Handler.Path, {
                     persist: true,
                     handlerOptions: {
@@ -280,7 +283,7 @@ function init() {
                         }
                     }
                 }
-        ),*/
+        ),
         polygon: new OpenLayers.Control.Measure(
                 OpenLayers.Handler.Polygon, {
                     persist: true,
@@ -311,29 +314,50 @@ function init() {
         var measure = event.measure;
         var calculo;
         var out = "";
-        //console.log('entro_medir');
-        /*if(order == 1) {
-         out = measure.toFixed(2) + " " + units;
-         } else {
-         if(units=="km")	{ 
-         calculo = 100*measure;
-         units = "Hects";
-         } else if (units=="m") {
-         calculo = measure/10000;
-         units = "Hect";						
-         } else
-         calculo = measure;
-         
-         if(calculo < LIMIT_INFERIOR)
-         $("#infoAL").css("background-color","#FF0");
-         else if(calculo > LIMIT_SUPERIOR)
-         $("#infoAL").css("background-color","#FFD2D2");
-         else
-         $("#infoAL").css("background-color","#CEFFCE");
-         
-         }
-         out += calculo.toFixed(2) + " " + units;
-         $("#infoAL").val(out);*/
+
+        if (ELEMENTO == 'line') {
+            
+            if(order == 1) {
+                out = measure.toFixed(2) + " " + units;
+            } else {
+                
+                if (units == "km") {
+                    measure = 100 * measure;
+                    units = "Hects";
+                } else if (units == "m") {
+                    measure = measure / 10000;
+                    units = "Hect";
+                }
+                
+                out = measure.toFixed(2) + " " + units + "<sup>2</" + "sup>";
+            }
+            
+        } else {
+            
+            if (order == 1) {
+                
+                out = parseFloat(measure).toFixed(2) + " " + units;
+                
+            } else {
+                
+                if (units == "km") {
+                    calculo = 100 * measure;
+                    units = "Hects";
+                } else if (units == "m") {
+                    calculo = measure / 10000;
+                    units = "Hect";
+                } else
+                    calculo = measure;
+                if (calculo < LIMIT_INFERIOR)
+                    $("#infoAL").css("background-color", "#FF0");
+                else if (calculo > LIMIT_SUPERIOR)
+                    $("#infoAL").css("background-color", "#FFD2D2");
+                else
+                    $("#infoAL").css("background-color", "#CEFFCE");
+            }
+            out += parseFloat(calculo).toFixed(2) + " " + units;            
+        }
+        $("#infoAL").val(out);
     }
 
     cmqLayerSol.setVisibility(false);
@@ -363,6 +387,7 @@ function init() {
     $('.Excludable.Areas').qtip({content: {text: false}, position: {corner: {tooltip: 'bottomRight'}}, style: 'green'});
 }
 
+var ELEMENTO = null;
 function toggleControl(element) {
     clearFields();
     $("#infoAL").val("");
@@ -373,13 +398,12 @@ function toggleControl(element) {
 //    //drawControls["line"].deactivate();
 //    
 //
-
+    ELEMENTO = $(element).attr('value');
     for (key in drawControls) {
         var control = drawControls[key];
-        if ($(element).attr('value') == key) { //&& element.checked
+        if (ELEMENTO == key) { //&& element.checked
             if (typeof (measureControls[key]) != "undefined")
                 measureControls[key].activate();
-
             control.activate();
         } else {
 //            if (typeof (measureControls[key]) != "undefined")
@@ -479,6 +503,8 @@ function Pros_Open(ventana) {
         $('#generarArea').hide();
         $('#LiberarArea').hide();
         $('#Perimetral').show();
+    } else if (ventana == 'medir') {
+        $('#titulo_panel').text('Medir distancia');
     }
 
 
