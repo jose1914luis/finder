@@ -1,5 +1,6 @@
 <?php
-$_VERSION = 5;
+$_VERSION = 6;
+//$_VERSION = time();
 ?>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=1">
@@ -12,6 +13,7 @@ $_VERSION = 5;
 <link rel="stylesheet" href="/Javascript/login.css?v=<?= $_VERSION ?>" type="text/css" media="all" />
 <link rel="stylesheet" href="/Javascript/base.css?v=<?= $_VERSION ?>" type="text/css" media="all" />        
 <script type="text/javascript" src="/Javascript/validarFinder.js?v=<?= $_VERSION ?>"></script>
+
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 <!-- Optional theme -->
