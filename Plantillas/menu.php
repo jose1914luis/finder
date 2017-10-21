@@ -44,17 +44,17 @@
                             <ul class="dropdown-menu">                               
                                 <li class="menu-item dropdown dropdown-submenu"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Polígono <i class="fa fa-square-o" aria-hidden="true"></i></a>
                                     <ul class="dropdown-menu">
-                                        <li class="menu-item "><a href="javascript:"  id="poligono" onClick="Pros_Open('generarArea');toggleControl(this);" >Dibujar <i class="fa fa-pencil" aria-hidden="true"></i></a></li>
+                                        <li class="menu-item "><a href="javascript:"  value="polygon" id="poligono" onClick="Pros_Open('generarArea');toggleControl(this);" >Dibujar <i class="fa fa-pencil" aria-hidden="true"></i></a></li>
                                         <li class="menu-item "><a href="javascript:" onClick="Pros_Open('generarArea');mostrardiv('freeGeneratorArea_coordinates')">Coordenadas <i class="fa fa-map-o" aria-hidden="true"></i></a></li>                                       
                                     </ul>
                                 </li>
                                  <li class="menu-item dropdown dropdown-submenu"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Perímetro <i class="fa fa-dot-circle-o" aria-hidden="true"></i></a>
                                     <ul class="dropdown-menu">
-                                        <li class="menu-item "><a href="javascript:"  id="area" value="point"onclick="Pros_Open('Perimetral');toggleControl(this);">Ubicar Punto <i class="fa fa-location-arrow" aria-hidden="true"></i></a></li>
+                                        <li class="menu-item "><a href="javascript:" value="point" id="area" value="point"onclick="Pros_Open('Perimetral');toggleControl(this);">Ubicar Punto <i class="fa fa-location-arrow" aria-hidden="true"></i></a></li>
                                         <li class="menu-item "><a href="javascript:" onclick="Pros_Open('Perimetral');mostrardiv('point_coordinates')">Coordenadas <i class="fa fa-map-o" aria-hidden="true"></i></a></li>                                       
                                     </ul>
                                 </li>
-                                <li class="menu-item "><a href="javascript:"  id="line" onClick="Pros_Open('generarArea');toggleControl(this)" >Medir <i class="fa fa-expand" aria-hidden="true"></i> </a></li>                                
+                                <li class="menu-item "><a href="javascript:" value="line"  id="line" onClick="toggleControl(this)" >Medir <i class="fa fa-expand" aria-hidden="true"></i> </a></li>                                
                             </ul>
                         </li>
 
