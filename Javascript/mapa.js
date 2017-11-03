@@ -25,24 +25,42 @@ function init() {
     };
     map = new OpenLayers.Map('map', options);
 // map.addControl(new OpenLayers.Control.LayerSwitcher());
+    OpenLayers.Lang[OpenLayers.Lang.getCode()]['Base Layer'] = "Capas de Seleccion";
+    OpenLayers.Lang[OpenLayers.Lang.getCode()]['Overlays'] = "Capas del Castastro";
     map.addControl(new OpenLayers.Control.LayerSwitcher({'div': OpenLayers.Util.getElement('capas2')}));
 // Definici�n de los servicios del Mapa
-    var osm = new OpenLayers.Layer.OSM();
+    var osm = new OpenLayers.Layer.OSM('Relieve');
     var gphy = new OpenLayers.Layer.Google(
-            "Google Physical",
+            "Fisico",
             {type: google.maps.MapTypeId.TERRAIN, visibility: false}
     );
     var gmap = new OpenLayers.Layer.Google(
-            "Google Streets", // the default
+            "Calles", // the default
             {numZoomLevels: 20, visibility: false}
     );
     var ghyb = new OpenLayers.Layer.Google(
-            "Google Satellite",
+            "Satelital",
             {type: google.maps.MapTypeId.HYBRID, numZoomLevels: 22, visibility: false}
     );
     var cmqLayerSol = new OpenLayers.Layer.WMS("Solicitudes",
             'http://www.sigmin.co:8080/geoserver/CMQ/wms', {
                 layers: "solicitudes_col",
+                transparent: true,
+                format: "image/png"
+            },
+//{ minScale : 100000000 },
+            {opacity: 1, singleTile: true},
+            {
+                isBaseLayer: false,
+                buffer: 0,
+                // exclude this layer from layer container nodes
+                displayInLayerSwitcher: false,
+                visibility: true
+            }
+    );
+    var cmqLayerSolTerm = new OpenLayers.Layer.WMS("Solicitudes Archivadas",
+            'http://www.sigmin.co:8080/geoserver/CMQ/wms', {
+                layers: "solicitudes_col_term",
                 transparent: true,
                 format: "image/png"
             },
@@ -73,6 +91,25 @@ function init() {
                 visibility: true
             }
     );
+    
+    var cmqLayerTitTerm = new OpenLayers.Layer.WMS("Titulos Terminados",
+            'http://www.sigmin.co:8080/geoserver/CMQ/wms', {
+                layers: "titulos_col_term",
+                transparent: true,
+                format: "image/png",
+                tiled: true
+            },
+            {opacity: 1},
+            {
+                isBaseLayer: true,
+                buffer: 0,
+                // exclude this layer from layer container nodes
+                displayInLayerSwitcher: false,
+                displayOutsideMaxExtent: true,
+                visibility: true
+            }
+    );
+    
     var cmqLayer3 = new OpenLayers.Layer.WMS("Municipios",
             'http://www.sigmin.co:8080/geoserver/CMQ/wms', {
                 layers: "Municipios",
@@ -362,12 +399,14 @@ function init() {
 
     cmqLayerSol.setVisibility(false);
     cmqLayerTit.setVisibility(false);
+    cmqLayerSolTerm.setVisibility(false);
+    cmqLayerTitTerm.setVisibility(false);
     cmqRestricciones.setVisibility(false);
     cmqExcluibles.setVisibility(false);
     cmqAmbientales.setVisibility(false);
     cmqLayer3.setVisibility(false);
     vectorLayer.setVisibility(true);
-    map.addLayers([gphy, ghyb, gmap, osm, cmqLayerSol, cmqLayerTit, vectorLayer, cmqExcluibles, cmqRestricciones, cmqAmbientales, polygonLayer, lineLayer]);
+    map.addLayers([gphy, ghyb, gmap, osm, cmqLayerSol, cmqLayerSolTerm, cmqLayerTit, cmqLayerTitTerm, vectorLayer, cmqExcluibles, cmqRestricciones, cmqAmbientales, polygonLayer, lineLayer]);
     var click = new OpenLayers.Control.Click();
     map.addControl(click);
     click.activate();
@@ -385,6 +424,7 @@ function init() {
     $('.Titles').qtip({content: {text: false}, position: {corner: {tooltip: 'bottomRight'}}, style: 'magenta'});
     $('.Record').qtip({content: {text: false}, position: {corner: {tooltip: 'bottomRight'}}, style: 'red'});
     $('.Excludable.Areas').qtip({content: {text: false}, position: {corner: {tooltip: 'bottomRight'}}, style: 'green'});
+    mover_capas();
 }
 
 var ELEMENTO = null;
