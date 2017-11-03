@@ -260,9 +260,6 @@ if ($verMapa != "OK")
                 <div  id="div_min">
                     <i id="ico_min" class="fa fa-angle-double-left" aria-hidden="true"></i>    
                 </div>
-<!--                <div id="div_ocultar">
-                    <i id="ico_ocultar" class="fa fa-times" aria-hidden="true"></i>      
-                </div>-->
             </div>
             <div id="info_sc">
 
@@ -270,22 +267,11 @@ if ($verMapa != "OK")
         </div>
         
         <div id="map" style='width: 100%; height: 100%; border:0;'></div>
-        <div id="capas" onClick="mover_capas();" title="inicio">
+        <div id="capas" title="inicio">
+            <div id="capas_button" onClick="mover_capas();"><i class="fa fa-2x fa-bars" aria-hidden="true"></i></div>
             <div id="capas2"></div>
         </div>
-        <div id="tools" onClick="mover_tools();" title="inicio" style="display:none">
-            <input type="radio" name="type" value="none" id="noneToggle" onClick="toggleControl(this);" checked="checked" style="display:none;" />
-            <input type="radio" name="type" value="point" id="pointToggle" onClick="toggleControl(this);" class="point"/>
-            <label for="pointToggle" class="point2" title="Draw Point">draw point</label>
-            <input type="radio" name="type" value="line" id="lineToggle" onClick="toggleControl(this);" class="line" />
-            <label for="lineToggle" class="line2" title="Draw Line">draw line</label>
-            <input type="radio" name="type" value="polygon" id="polygonToggle" onClick="toggleControl(this);" class="polygon" />
-            <label for="polygonToggle" class="polygon2" title="Draw Polygon">draw polygon</label>
-            <input type="radio" name="type" value="box" id="boxToggle" onClick="toggleControl(this);" class="box3"/>
-            <label for="boxToggle" class="box2" title="Draw Box">draw box</label>
-            <input type="checkbox" name="allow-pan" value="allow-pan" id="allowPanCheckbox" checked=false onClick="allowPan(this);" style="display:none;" />
-            <a href="javascript:" onClick="clearFields();" class="clean" title="Clean All">Limpiar</a>
-        </div>
+      
 
         <script type="text/javascript">
 
