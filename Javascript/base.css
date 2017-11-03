@@ -35,7 +35,21 @@
   left: 200px;
 }
 
-
+#capas_button{
+    width: 30px;
+    height: 30px;
+    /* background-color: chocolate; */
+    /* right: 100px; */
+    left: -30px;
+    position: absolute;
+    color: aliceblue;
+    /* background-color: rgba(0, 0, 0, 0.7); */
+    background: rgba(0, 0, 0, 0.7);
+    text-align: center;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    padding-top: 2px;
+}
 #prospect{
     z-index: 1004;
     position: absolute;
@@ -342,26 +356,36 @@ a.dock-item { display: block; width: 81px; position: absolute; bottom: 0; text-a
 
 
 #capas label{
-    margin-bottom: 0px !important;
+    margin-bottom: -0px !important;
 }
 
 #capas{
     display: block;
-    width: 290px;
-    height: 350px;
-    background: transparent url(images/capas.png) no-repeat center;
+    width: 250px;
+    height: 340px;
     top: 100px;
     right: -250px; 
     font-size: 13px;
     position: absolute;
-    padding-left: 60px;
+    padding-left: 15px;
     z-index: 999999;
     cursor: pointer;
-    /* float: right; */
+    border-bottom-left-radius: 5px;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.baseLbl{
+    font-size: 15px !important;
+    font-weight: bold !important;
+}
+
+.dataLbl{
+    font-size: 15px !important;
+    font-weight: bold !important;
 }
 
 #capas2 {
-    padding-top:60px;
+    /*padding-top:10px;*/
     color:#ffffff;
 }
 
