@@ -574,6 +574,11 @@
 										'TITULO' as clasificacion
 							from 		titulos_cg sg inner join titulos s on (s.id=sg.id_titulo)
 							where 	($whereQuery)
+                                                UNION
+                                                select s.placa,  ST_AsText(st_transform(sg.the_geom, 4326)) as coordenadas,  'SOLICITUD' as clasificacion
+							from 	solicitudes_cg_bog_hist sg inner join solicitudes s on (s.id=sg.id_solicitud)
+										left join titulos t on s.placa=t.placa
+							where 	t.placa is null and ($whereQuery)
 						";
 		
 			$result = pg_query($this->conn, $queryStr);
