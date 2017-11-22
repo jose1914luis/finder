@@ -1,5 +1,5 @@
 
-<nav class="navbar navbar-default">
+<nav class="navbar navbar-default" style="z-index: 10000;">
     <div class="container-fluid">                    
 
         <!-- Brand and toggle get grouped for better mobile display -->
