@@ -91,7 +91,7 @@
     <!-- this gmaps key generated for http://openlayers.org/dev/ -->
 	<script src="http://maps.google.com/maps/api/js?v=3.5&key=AIzaSyBXS5guPsMcAdCwrujD-1KsyYkgoE87PUM&amp;sensor=false"></script>
 	<!-- <script src="http://maps.google.com/maps/api/js?v=3.5&amp;sensor=false"></script> -->
-	<!--<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>-->
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
     <script type="text/javascript">
 		
 		var map, drawControls, polygonFeature, vectorLayer;
