@@ -23,6 +23,16 @@ $(function () {
 });
 function validarDatosUsuario() {
 
+    if($('#txtContra2').val() != '' && $('#txtContra3').val() != '' &&  $('#txtContra').val() == ''){
+        
+        alert("Debes ingresar la contraseña actual");
+        return 0;
+    }
+    if($('#txtContra2').val() !=  $('#txtContra3').val()){
+        
+        alert("Las contraseñas deben coincidir");
+        return 0;
+    }
     // Validaci�n de la selecci�n de tipo de documento
     if (document.frmAdminUser.selTipoDocumento.value == 0) {
         alert("'Debe seleccionar un tipo de documento");
