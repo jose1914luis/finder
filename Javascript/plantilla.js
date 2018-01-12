@@ -7,4 +7,20 @@ function confirmaCreditoMapa(url) {
     else
         document.location.href = '/?pagina=account';
 }
-                
+
+function cambiarContra(){
+    
+    if($('#contra').is(":visible")){
+        $('#contra').hide();        
+    }else{
+        $('#contra').show();
+    }
+    
+    
+}
+
+
+$(function() {
+    
+  $('#contra').hide();
+});
