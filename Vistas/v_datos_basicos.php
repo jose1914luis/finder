@@ -29,6 +29,7 @@
 
 
 <div id="table-wrapper">
+    
     <div class="panel panel-primary">
         <!-- Default panel contents -->
         <div class="panel-heading"><h4>Datos de Usuario</h4></div>
@@ -148,21 +149,21 @@
                         <div class="form-group">
                             <label for="inputPassword3" class="col-sm-3 control-label">Contraseña Actual</label>
                             <div class="col-sm-5">
-                                <input class="form-control" type="password" id="txtContra" name="txtContra" size="10"  value="<?= $listaForm["direccion"] ?>">
+                                <input class="form-control" type="password" id="txtContra" name="claveOld" size="10"  >
                             </div>
                         </div>
 
                         <div class="form-group">
                             <label for="inputPassword3" class="col-sm-3 control-label">Nueva contraseña</label>
                             <div class="col-sm-5">
-                                <input class="form-control" type="password" id="txtContra2" name="textContra2" size="10"  value="<?= $listaForm["direccion"] ?>">
+                                <input class="form-control" type="password" id="txtContra2" name="claveNew" size="10" >
                             </div>
                         </div>
 
                         <div class="form-group">
                             <label for="inputPassword3" class="col-sm-3 control-label">Repita la nueva contraseña</label>
                             <div class="col-sm-5">
-                                <input class="form-control" type="password" id="txtContra3" name="textContra3" size="10"  value="<?= $listaForm["direccion"] ?>">
+                                <input class="form-control" type="password" id="txtContra3" name="textContra3" size="10" >
                             </div>
                         </div>
                     </div>
