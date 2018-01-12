@@ -41,12 +41,12 @@ function validarDatosUsuario() {
     }
 
     // validacion del numero de documento
-    patron = /[0-9]{5,}/;
-    if (document.frmAdminUser.txtDocumento.value.search(patron) < 0) {
-        alert("'Documento' debe ser num\u00E9rico superior a 5 d\u00EDgitos");
-        document.frmAdminUser.txtDocumento.focus();
-        return 0;
-    }
+//    patron = /[0-9]{5,}/;
+//    if (document.frmAdminUser.txtDocumento.value.search(patron) < 0) {
+//        alert("'Documento' debe ser num\u00E9rico superior a 5 d\u00EDgitos");
+//        document.frmAdminUser.txtDocumento.focus();
+//        return 0;
+//    }
 
     // validacion del nombre de la persona:
     patron = /[A-Za-z]{3,}/;
@@ -72,12 +72,12 @@ function validarDatosUsuario() {
     }
 
     // validacion de correo electr�nico:
-    patron = /^([\da-z_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/;
-    if (document.frmAdminUser.buyerEmail.value.search(patron) < 0) {
-        alert("'Correo Electr\u00F3nico' no posee caracteres v\u00E1lidos o esta vacio");
-        document.frmAdminUser.buyerEmail.focus();
-        return 0;
-    }
+//    patron = /^([\da-z_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/;
+//    if (document.frmAdminUser.buyerEmail.value.search(patron) < 0) {
+//        alert("'Correo Electr\u00F3nico' no posee caracteres v\u00E1lidos o esta vacio");
+//        document.frmAdminUser.buyerEmail.focus();
+//        return 0;
+//    }
 
     // validar departamento y municipio
     if (document.frmAdminUser.selDepartamento.value == 0) {
