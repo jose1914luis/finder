@@ -1,6 +1,6 @@
 <?php
 /*
-	Clase encargada de la administración y gestión de los usuarios SGM o SIGMIN
+	Clase encargada de la administraciï¿½n y gestiï¿½n de los usuarios SGM o SIGMIN
 */
 
 	class Usuarios_SGM {
@@ -9,7 +9,7 @@
 		function __construct() {
 			$this->conn = pg_connect($GLOBALS ["db1"]);			
 			if (!$this->conn) {
-				echo "Error de Conexión en la clase Usuario.\n";
+				echo "Error de Conexiï¿½n en la clase Usuario.\n";
 				return 0;
 			}
 		}
@@ -136,7 +136,7 @@
 		
 		function saveCaracterizacion($usr) {
 			$razonSocial = $nombre = $apellido = "";
-			// Validación del tipo de documento. 5: juridica con NIT
+			// Validaciï¿½n del tipo de documento. 5: juridica con NIT
 			if($usr["selTipoDocumento"]!=5) 	{
 				$nombre = utf8_encode($usr["txtNombre"]); 
 				$apellido = utf8_encode($usr["txtApellido"]);
@@ -260,7 +260,7 @@
 		function cambiarContraseniaUsuario($usr) {
 			$queryStr =  "select usrUpdatePwd($1, $2, $3) as result";			
 			
-			$params = array($usr["login"], $usr["claveOld"], $usr["claveNew"]);
+			$params = array($_SESSION['id_usuario'], $usr["claveOld"], $usr["claveNew"]);
 			
 			$result = pg_query_params($this->conn, $queryStr, $params);
 			if (pg_last_error($this->conn)) {
@@ -331,7 +331,7 @@
 				if(!empty($lista))
 					return  $lista[0]["id_empresa"];
 			} 
-			return 0;	// Error durante el proceso de validación de usuario
+			return 0;	// Error durante el proceso de validaciï¿½n de usuario
 		}	
 		
 		function validaPasswdMobile($login, $codigo) {
@@ -352,7 +352,7 @@
 			if(!empty($lista))
 				return  $lista[0]["result"];
  
-			return 0;	// Error durante el proceso de validación de usuario
+			return 0;	// Error durante el proceso de validaciï¿½n de usuario
 		}
 		
 		function validaAccesoPagina($login, $pwd, $accion="") {
@@ -370,7 +370,7 @@
 				if(!empty($lista))
 					return  $lista[0]["id_empresa"];
 			} 
-			return 0;	// Error durante el proceso de validación de usuario
+			return 0;	// Error durante el proceso de validaciï¿½n de usuario
 		}	
 	}	
 ?>
