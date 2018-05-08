@@ -74,7 +74,13 @@ if (isset($_POST["username"]) && isset($_POST["password"])) {
             $_SESSION["idEmpresa"] = $Id_Empresa;
             $_SESSION["pagina"] = "account";
             $_SESSION['rango_inferior'] = 0;
-            $_SESSION['rango_superior'] = 500000;
+			
+			// validación de rango máximo permitido en captura de polígonos
+			if($_SESSION['usuario_sgm']!="jecardenas" && $_SESSION['usuario_sgm']!="jmoreno" && $_SESSION['usuario_sgm']!='jvelasquez')
+				$_SESSION['rango_superior'] = 500000;
+			else
+				$_SESSION['rango_superior'] = 99999999;
+			
             // variables del controlador	
             $msgError = "";
             include("indexAccount.php");

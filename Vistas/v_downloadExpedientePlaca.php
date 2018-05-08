@@ -16,7 +16,8 @@
 		} else
 			echo "<script>	window.close();	</script>";			
 		
-		if($msgSistema=="OK")	{		$placas = $_GET["placa"];			
+		if($msgSistema=="OK")	{		
+			$placas = $_GET["placa"];			
 			$idSession = md5(time());
 			$shpFiles = new DescargarShapes;
 			$resultado = $shpFiles->getShapeListaExpedientesBog($placas, $idSession);

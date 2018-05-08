@@ -88,7 +88,7 @@ if (!empty($_POST["txtBuscar"])) {
 				<link rel='stylesheet' href='/Javascript/sigmin_account.css?v=2'>			
 		";
     ?>
-    <div class='titleSite2' style='text-align:center'>Para acceder a mas información por favor registrese gratis.</div>
+    <div class='titleSite2' style='text-align:center'>Para acceder a mas información por favor <a href="http://www.sigmin.co/registro" style="color:#FFFFFF">REGISTRESE GRATIS</a>.</div>
     <div>&nbsp;</div>
     <?php
     echo createTable_2($listaSolicitudesResults, "SOLICITUDES", "SOLICITUD", $listaPlacasQuery);

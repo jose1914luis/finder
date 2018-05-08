@@ -1,3 +1,8 @@
+Options +FollowSymLinks -MultiViews -Indexes
+
+
+ErrorDocument 404 /index.php
+
 RewriteEngine On
 RewriteBase /
 
@@ -6,3 +11,38 @@ RewriteRule ^(.*)$ http://www.sigmin.co/$1 [R=301,L]
 
 RewriteCond %{HTTP_HOST} ^(www\.)?sigmin\.com$ [NC]
 RewriteRule ^(.*)$ http://www.sigmin.co/$1 [R=301,L]
+
+
+# Allow any files or directories that exist to be displayed directly
+RewriteCond %{REQUEST_URI} ^.+$
+RewriteCond %{REQUEST_FILENAME} \.(gif|jpe?g|png|js|css|swf|php|ico|txt|pdf|xml)$ [OR]
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d [OR]
+RewriteCond %{REQUEST_FILENAME} -l
+RewriteRule ^ - [L]
+
+RewriteBase "/"
+
+RewriteRule ^directorio$ index.php?ope=directorio [L]
+RewriteRule ^ingresar$ index.php?ope=ingresar [L]
+RewriteRule ^registro$ index.php?ope=registro [L]
+RewriteRule ^olvide$ index.php?ope=olvide [L]
+
+RewriteRule ^directorio/([0-9]+)$ index.php?ope=directorio&pag=$1 [L]
+
+
+RewriteBase "/"
+
+## replace spaces by - in between
+RewriteRule ^([^\s%20]*)(?:\s|%20)+(.*)$ $1-$2 [L,R]
+
+RewriteRule ^buscar/([a-zA-Z0-9-_.()ñÑ$,]+)$ index.php?ope=buscar&txtBuscar=$1 [L]
+
+RewriteRule ^mineral/([^/]+)$ index.php?ope=buscar&sine=mineral&txtBuscar=$1 [L]
+
+#RewriteRule ^mineral/([a-zA-Z0-9-_.()ñÑ$,]+)$ index.php?ope=buscar&sine=mineral&txtBuscar=$1 [L]
+
+# definición de tiempos de duración de sessiones en PHP
+
+php_value session.gc_maxlifetime 43200
+php_value session.cookie_lifetime 43200

@@ -3,7 +3,7 @@ class Database
 {
     
     private static $dbName = 'cmqpru' ;
-    private static $dbHost = '104.154.186.233' ;
+    private static $dbHost = 'localhost'; //'104.154.186.233' ;
     private static $dbUsername = 'cmqpru';
     private static $dbUserPassword = '2012zygMin';
     private static $port = '5432';

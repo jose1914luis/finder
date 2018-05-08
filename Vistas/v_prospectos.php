@@ -13,7 +13,7 @@ if (!empty($_SESSION["id_usuario"])) {
 
         // Para paginación del resultado
         $max_por_pagina = $GLOBALS ["max_por_pagina"];
-        $_SESSION["lista_prospectos"]["paginas"] = array_chunk($prospects, $max_por_pagina);
+        $_SESSION["lista_prospectos"]["paginas"] = @array_chunk($prospects, $max_por_pagina);
         $_SESSION["lista_prospectos"]["caption"] = "Reporte de Prospectos";
     }
 

@@ -32,7 +32,9 @@ else if (@$_GET["mnu"] == "expedientes") {
     $listaExpedientes = $expediente_por_usr->selectByIdUser($_SESSION['id_usuario']);
     $paginaCargue = "v_expedientes.php";
 } else if (@$_GET["mnu"] == "expedientes_placa") {
-    $paginaCargue = "reporteAreasAccount.php";
+    $IncludeVista = 0;
+    include("reporteAreasAccount.php");	
+	// $paginaCargue = "reporteAreasAccount.php";
 } else if (@$_GET["mnu"] == "prospectos") {
     require_once("Modelos/ProspectosBogSGM.php");
     if (trim(@$_POST["placa"]) != "" && @$_POST["act"] == "delete") {
@@ -145,6 +147,9 @@ else if (@$_GET["crd"] == "prospecto" || @$_GET["crd"] == "expediente" || @$_GET
 } else if (@$_GET["crd"] == "dwn_shapes") { // para descarga de shape de area libre
     $IncludeVista = 0;
     include("Vistas/v_downloadProspecto.php");
+} else if (@$_GET["crd"] == "dwn_prospecto") { // para descarga de shape de prospecto
+    $IncludeVista = 0;
+    include("Vistas/v_downloadProspectoShape.php");
 } else if (@$_GET["crd"] == "dwn_expedientes_placa") { // para descarga de shape de area libre
     $IncludeVista = 0;
     include("Vistas/v_downloadExpedientePlaca.php");

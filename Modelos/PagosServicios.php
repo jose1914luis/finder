@@ -147,8 +147,8 @@
 					d.codigo_dane||m.codigo_dane as mpio_dane,
 					to_char(sc.fecha_proceso ,'YYYY-MM-DD')||'T'||to_char(sc.fecha_proceso ,'HH24:MI:SS')||'-05:00' as fecha_proceso,
 					to_char(sc.fecha_proceso, 'YYYY') as anio,
-					round(valor/1.16) as valor_parcial,
-					valor - round(valor/1.16) as valor_iva,
+					round(valor/1.19) as valor_parcial,
+					valor - round(valor/1.19) as valor_iva,
 					td.id as id_tipo_documento,
 					tp.codigo
 				from servicios.consignaciones sc 

@@ -3,10 +3,10 @@ echo " "
 echo "----------------------------------------------------"
 echo "ID de la Session: $1"
 echo "Generando shape de Solicitudes ...."
-pgsql2shp -f "DwnShapes/SolSIGMIN_Bog_$1" -u cmqpru -P 2012zygMin cmqpru "select * from dwn_solicitudes_bog where id_session='$1'"
+pgsql2shp -f "DwnShapes/SolSIGMIN_Bog_$1" -u cmqpru -P 2012zygMin cmqpru "select id_session, placa, modalidad, estado_juridico, grupo_trabajo, formulario, fecha_radicacion, fecha_terminacion, fecha_otorgamiento, fecha_creacion, area_solicitada_ha, area_definitiva_ha, observacion, justificacion_extemporanea, substring(municipios,1,255) as municipios, substring(solicitantes,1,255) as solicitantes, substring(minerales,1,255) as minerales, plancha_igac, sistema_origen, descripcion_pa, the_geom from dwn_solicitudes_bog s where id_session = '$1'"
 
 echo "Generando shape de titulos ...."
-pgsql2shp -f "DwnShapes/TitSIGMIN_Bog_$1" -u cmqpru -P 2012zygMin cmqpru "select * from dwn_titulos_bog where id_session='$1'"
+pgsql2shp -f "DwnShapes/TitSIGMIN_Bog_$1" -u cmqpru -P 2012zygMin cmqpru "select id_session, placa, codigo_rmn, codigo_anterior, modalidad, estado_juridico, grupo_trabajo, fecha_inscripcion, fecha_contrato, fecha_terminacion, fecha_creacion, area_otorgada_ha, area_definitiva_ha, substring(municipios,1,255) as municipios, substring(titulares,1,255) as titulares, substring(minerales,1,255) as minerales, plancha_igac, sistema_origen, descripcion_pa, the_geom from dwn_titulos_bog where id_session='$1'"
 
 
 echo "Generando shape de prospectos ...."

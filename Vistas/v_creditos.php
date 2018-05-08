@@ -93,7 +93,7 @@ else
                     ?>
                     <tr class="results">
                         <td align="center" class="results"><center>
-                    <a href="<?= $cadaCredito["url_descarga"] ?>&creditos_prod=<?= $cadaCredito["credito_prod"] ?>&placa=<?= $cadaCredito["placa"] ?><?= $cadaClasificacion ?>" title="Descarga del producto" <?= $target ?>><img src='Imgs/reportIcon.png' border='0' width='30' height='30'></center></a>
+                    <a href="<?= $GLOBALS["sitio"].$cadaCredito["url_descarga"] ?>&creditos_prod=<?= $cadaCredito["credito_prod"] ?>&placa=<?= $cadaCredito["placa"] ?><?= $cadaClasificacion ?>" title="Descarga del producto" <?= $target ?>><img src='Imgs/reportIcon.png' border='0' width='30' height='30'></center></a>
                     </td>					
                     <td class="results"><?= $cadaCredito["producto"] ?></td>
                     <td class="results"><?= $cadaCredito["placa"] ?></td>

@@ -9,6 +9,7 @@ require_once("Modelos/ProspectosBogSGM.php");
 
 $cred = new CreditosUsuarios();
 
+
 if (empty($_SESSION['usuario_sgm']) || trim(@$_GET["placa"]) == "" || trim(@$_GET["clasificacion"]) == "")
     header("location: index.php");
 
@@ -68,10 +69,13 @@ if ($clasificacion == 'SOLICITUD') {
     $tituloCobertura = "Prospectos";
     $idProductoCred = 7;
     $urlGetCoords = "?crd=prospecto&placa=$placa&clasificacion=$clasificacion&credits=1";
+	$urlDownloadProspecto = "?crd=dwn_prospecto&placa=$placa&credits=1";
     $urlDownloadShp = "?crd=dwn_shapes&placa=$placa&credits=1";
+	$valorShapeProspecto = 5;
     $valorShapePry = 7;
 } else if ($clasificacion == 'ESTUDIO_TECNICO_PROSPECTO') {
     $cobertura = "areas_superposiciones";
+	$valorShapeProspecto = 5;
     $tituloCobertura = "Estudios_Tecnicos";
     $idProductoCred = 9;
 } else {
@@ -166,17 +170,19 @@ $codigoExp = $expediente["placa"];
 </script>
 
 <img src="Javascript/images/loading_sgm.gif" width="140" height="140" id="loadingImage" style="display:none; top:50%; left:50%; z-index:2000; position:fixed !important; opacity: 0.65;" />
-<script>$("#loadingImage").show();</script>  
+<script>$("#loadingImage").show();</script>
+
+<img src="Imagenes/baner_reportes_sigmin.jpg" />
+  
 <div class="container" style="position: absolute; bottom: 50px; top: 90px; overflow: auto;">
-    <ul class="nav nav-tabs">
+	    
+	<ul class="nav nav-tabs">
         <li class="active"><a data-toggle="tab" href="#home">Reporte</a></li>
         <!--li><a data-toggle="tab" href="#menu1">Indexar Documento</a></li>
-        <li><a data-toggle="tab" href="#menu2">Documentos y Alertas</a></li>
-        <li><a data-toggle="tab" href="#menu3">Anotaciones</a></li-->
+        <li><a data-toggle="tab" href="#menu2">Documentos y Alertas</a></li> -->
+        <li><a data-toggle="tab" href="#menu3">Anotaciones</a></li>  
     </ul>
     <div class="tab-content">
-
-        <br>
         <div id="home" class="tab-pane fade in active">
 
 
@@ -619,8 +625,10 @@ $codigoExp = $expediente["placa"];
                                 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
                                 <?php
                             }
-                            ?>				
-                            <a href="javascript:" title="Reporte de &Aacute;rea Libre - <?= $valorCredET ?> Cr&eacute;dito(s)" onclick="confirmaCredito('<?= $urlEstudioTec ?>')"/><img src="Imgs/icon_rep_area_libre.jpg" width="70" height="70"/></a>
+                            ?>
+                            <a href="javascript:" title="Descarga de Shape de Prospecto - <?= $valorShapeProspecto ?> Cr&eacute;dito(s)" onclick="confirmaCredito('<?= $urlDownloadProspecto ?>')"/><img src="Imgs/icon_dwn_shape.jpg" width="70" height="70"/></a>							
+                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+							<a href="javascript:" title="Reporte de &Aacute;rea Libre - <?= $valorCredET ?> Cr&eacute;dito(s)" onclick="confirmaCredito('<?= $urlEstudioTec ?>')"/><img src="Imgs/icon_rep_area_libre.jpg" width="70" height="70"/></a>
                             &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
                             <a href="javascript:" title="Descarga de Shape de &Aacute;rea Libre - <?= $valorShapePry ?> Cr&eacute;dito(s)" onclick="confirmaCredito('<?= $urlDownloadShp ?>')"/><img src="Imgs/icon_dwn_shape.jpg" width="70" height="70"/></a>
                             &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
@@ -749,7 +757,18 @@ $codigoExp = $expediente["placa"];
                     </td>
                     </tr>
                     <!-- Fin: Definici�n del �rea del expediente -->
-
+                    <tr>
+                        <td colspan="6" align="center">
+                            <a href="javascript:" title="Descarga de Shape de Prospecto - <?= $valorShapeProspecto ?> Cr&eacute;dito(s)" onclick="confirmaCredito('<?= $urlDownloadProspecto ?>')"/><img src="Imgs/icon_dwn_shape.jpg" width="70" height="70"/></a>							
+                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                            <a href="javascript:" title="Descarga de Shape de &Aacute;rea Libre - <?= $valorShapePry ?> Cr&eacute;dito(s)" onclick="confirmaCredito('<?= $urlDownloadShp ?>')"/><img src="Imgs/icon_dwn_shape.jpg" width="70" height="70"/></a>
+                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                            <a href="javascript:" title="Descarga de Reporte de Superposiciones - <?= $valorRepPry ?> Cr&eacute;dito(s)" onclick="confirmaCredito('<?= $urlDwnRepPry ?>')"/><img src="Imgs/icon_reporte_sup.png" width="70" height="70"/></a>				
+                        </td>			
+                    </tr>	
+                    <tr>
+                        <td colspan="6"><hr size="1" /></td>
+                    </tr>
                     <tr>
                         <td colspan="6" bgcolor="#E1E1E1"><div align="center" class="Estilo1">COORDENADAS ANTES DE ESTUDIO </div></td>
                     </tr>
@@ -1022,12 +1041,12 @@ $codigoExp = $expediente["placa"];
             <?php 
                        // include './management.expediente.report.c.php';
             ?>
-        </div>
+        </div> -->
         
          <div id="menu3" class="tab-pane fade">
             <?php 
-                        //include './viewAnotacionesRMN.php';
+                        include './viewAnotacionesRMN.php';
             ?>
-        </div-->
+        </div>
     </div>
 </div>

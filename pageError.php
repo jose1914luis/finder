@@ -1,6 +1,5 @@
 <?php 
-
-$error = filter_input(INPUT_GET, 'error');
+	$error = filter_input(INPUT_GET, 'error');
 ?>
 <!DOCTYPE html>
 <html>

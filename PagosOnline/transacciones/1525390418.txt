@@ -1,0 +1,81 @@
+Array
+(
+    [response_code_pol] => 1
+    [phone] => 
+    [additional_value] => 0.00
+    [test] => 0
+    [transaction_date] => 2018-05-03 18:34:18
+    [cc_number] => ************8139
+    [cc_holder] => JESUS I RODRIGUEZ
+    [error_code_bank] => 00
+    [billing_country] => CO
+    [bank_referenced_name] => 
+    [description] => ADQUISICION SERVICIOS SIGMIN
+    [administrative_fee_tax] => 0.00
+    [value] => 100000.00
+    [administrative_fee] => 0.00
+    [payment_method_type] => 2
+    [office_phone] => 
+    [email_buyer] => javieracj@gmail.com
+    [response_message_pol] => APPROVED
+    [error_message_bank] => 
+    [shipping_city] => 
+    [transaction_id] => bad924ff-fc82-4c7b-b178-ea5871fc7246
+    [sign] => eef6766c570266504e7bd20bca096326
+    [tax] => 19000.00
+    [transaction_bank_id] => 001488
+    [payment_method] => 10
+    [billing_address] => 
+    [payment_method_name] => VISA
+    [pse_bank] => 
+    [state_pol] => 4
+    [date] => 2018.05.03 06:34:18
+    [nickname_buyer] => 
+    [reference_pol] => 1027077116
+    [currency] => COP
+    [risk] => 0.0
+    [shipping_address] => 
+    [bank_id] => 10
+    [payment_request_state] => A
+    [customer_number] => 
+    [administrative_fee_base] => 0.00
+    [attempts] => 1
+    [merchant_id] => 544477
+    [exchange_rate] => 1.00
+    [shipping_country] => CO
+    [installments_number] => 1
+    [franchise] => VISA
+    [payment_method_id] => 2
+    [extra1] => 
+    [extra2] => 
+    [antifraudMerchantId] => 
+    [extra3] => 
+    [commision_pol_currency] => COP
+    [nickname_seller] => 
+    [ip] => 190.242.42.250
+    [commision_pol] => 5224.10
+    [airline_code] => 
+    [billing_city] => 
+    [pse_reference1] => 
+    [cus] => 923952141
+    [reference_sale] => 1525390418
+    [authorization_code] => 001488
+    [pse_reference3] => 
+    [pse_reference2] => 
+)
+OK
+Habilita Consignacion. 
+OK
+Creditos: 
+Array
+(
+    [id_usuario] => 496
+    [precio] => 100000
+)
+
+ estado transaccion: OK 
+ 
+Envia datos a email. 
+
+ infoPago: Array 
+ 

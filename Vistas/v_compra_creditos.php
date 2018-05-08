@@ -23,8 +23,8 @@
 		
 
 		$accountId			= $GLOBALS ["Pais"]; 
-		$tax			 	= $GLOBALS ["tax"];
-		$taxReturnBase		= $GLOBALS ["taxReturnBase"];
+		$tax			 	= round($amount*$GLOBALS ["tax"],2);	// $GLOBALS ["tax"];
+		$taxReturnBase		= $amount - $tax; 						//$GLOBALS ["taxReturnBase"];
 		$test			 	= $GLOBALS ["test"];
 		$buyerEmail			= $GLOBALS ["buyerEmail"];
 		$urlRespuesta		= $GLOBALS ["urlRespuesta"];
@@ -60,7 +60,7 @@
 		<input name="accountId"     type="hidden" value="<?=$accountId?>" >
 		<input name="description"   type="hidden" value="<?=$GLOBALS ["DescripcionServicio"]?>">
 		<input name="referenceCode" type="hidden" value="<?=$referenceCode?>" >
-		<input name="tax"           type="hidden" value="<?=$tax?>"  >
+		<input name="tax"           type="hidden" value="<?=$tax?>">
 		<input name="taxReturnBase" type="hidden" value="<?=$taxReturnBase?>" >
 		<input name="currency"      type="hidden" value="<?=$currency?>" >
 		<input name="signature"     type="hidden" value="<?=@$signature?>"  >

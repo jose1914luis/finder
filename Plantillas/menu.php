@@ -35,7 +35,7 @@
             <ul class="nav navbar-nav navbar-right">
                 <?php if (isset($_SESSION['id_usuario'])) { ?>
 
-                    <li><a href="?mnu=creditos"> Creditos: <?= $_SESSION['usr_cred']['credito'] ?>$</a></li>
+                    <li><a href="?mnu=creditos"><b>Cr&eacute;ditos: <?=$_SESSION['usr_cred']['credito'] ?></b></a></li>
                     <?php if ($_SESSION["pagina"] != "map") { ?>
                         <li><a href="javascript:confirmaCreditoMapa('?pagina=map')"> Mapa</a></li>
                     <?php } if ($_SESSION["pagina"] == "map") { ?>                     
@@ -73,7 +73,7 @@
                     <li role="presentation" class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Cuenta<span class="caret"></span></a>
                         <ul class="dropdown-menu">                                    
-                            <li><a href="/?mnu=creditos">Creditos</a></li>
+                            <li><a href="/?mnu=creditos">Cr&eacute;ditos</a></li>
                             <li><a href="/?mnu=datos_basicos">Datos Personales</a></li>
                             <li role="separator" class="divider"></li>
                             <li><a href="/?mnu=logout">Logout <i class="fa fa-power-off padding-left-ten-px red-text"></i></a></li>
@@ -82,7 +82,7 @@
 
 
                 <?php } else { ?>
-                    <li><a href="/directorio">Directorio <span class="glyphicon glyphicon-list-alt"></span></a></li>                     
+                    <li><!-- <a href="/directorio">Directorio <span class="glyphicon glyphicon-list-alt"></span></a> --></li>                     
                     <li><a href="/ingresar">Ingresar <span class="glyphicon glyphicon-user"></span></a></li>
                     
                         <?php } ?>    

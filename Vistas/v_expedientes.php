@@ -48,7 +48,7 @@
 			else if ($cadaExpediente["tipo_expediente"]=="TITULO")	$img = "folder_tit.png";
 			else													$img = "";
 	?>
-		<td align="center" class="styleExp"><a href="?mnu=expedientes_placa&placa=<?=$cadaExpediente["placa"]?>&clasificacion=<?=$cadaExpediente["tipo_expediente"]?>"><img src="Imgs/<?=$img?>" title="Ver <?=$cadaExpediente["tipo_expediente"]?> <?=$cadaExpediente["placa"]?>"></a><br/><?=($cadaExpediente["proyecto"]!="")?strtoupper($cadaExpediente["proyecto"]):$cadaExpediente["placa"]?>&nbsp;<a href="javascript:" class="styleExp" title="Inactivar Expediente" onclick="inactivarPlaca('<?=$cadaExpediente["placa"]?>')">[X]</a></td>
+		<td align="center" class="styleExp"><a href="?mnu=expedientes_placa&placa=<?=$cadaExpediente["placa"]?>&clasificacion=<?=$cadaExpediente["tipo_expediente"]?>" target="_blank"><img src="Imgs/<?=$img?>" title="Ver <?=$cadaExpediente["tipo_expediente"]?> <?=$cadaExpediente["placa"]?>"></a><br/><?=($cadaExpediente["proyecto"]!="")?strtoupper($cadaExpediente["proyecto"]):$cadaExpediente["placa"]?>&nbsp;<a href="javascript:" class="styleExp" title="Inactivar Expediente" onclick="inactivarPlaca('<?=$cadaExpediente["placa"]?>')">[X]</a></td>
 	<?php
 		$nroExpediente++;
 		}

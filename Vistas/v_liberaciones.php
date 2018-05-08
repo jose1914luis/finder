@@ -138,6 +138,12 @@
 
 
 
+<div id="total" style="    position: absolute;
+    top: 85px;
+    bottom: 90px;
+    overflow: auto;
+    right: 150px;
+    left: 150px;">    
 	<table border='0' align='center' width='95%' class='tableFonts'>
 		<tr>
 			<td colspan='2' class="titleSite" align='center'><b>Notificaciones por Liberaci&oacute;n de &Aacute;rea</b></td>
@@ -165,7 +171,7 @@
 		</tr>
 	</table>
 
-<div>
+
 	<?=utf8_decode($mensaje); ?>
 </div>
 

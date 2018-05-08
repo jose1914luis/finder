@@ -49,7 +49,7 @@
 	$GLOBALS ["Llave_Pub"]		= "PKmo6QiwR45GE5gTzS5KP2EJ2R";		
 	$GLOBALS ["Comercio"]		= "544477";		
 	$GLOBALS ["Pais"]			= "546641";   // Equivalente acountId
-	$GLOBALS ["tax"]			= ""; // definicion del IVA. null=16% 2016<=, 19%:2017;
+	$GLOBALS ["tax"]			= 0.19; // definicion del IVA. null=16% 2016<=, 19%:2017-2018;
 	$GLOBALS ["taxReturnBase"]	= "";
 	$GLOBALS ["currency"]		= "COP";
 	$GLOBALS ["buyerEmail"]		= "pagosonline@sigmin.com.co";
