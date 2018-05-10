@@ -28,6 +28,25 @@
 
 			return  $lista[0]["siguiente_id"];
 		}	
+
+		function insertCreditos($usuario, $creditos){
+
+
+			$queryStr =  "update servicios.creditos_usuarios set credito = $1 where creditos_usuarios.id_usuario_sgm = (SELECT usuarios_sgm.id FROM public.usuarios_sgm WHERE usuarios_sgm.login = $2 OR 
+				usuarios_sgm.correo_electronico = $3) RETURNING *";			
+			
+			$params = array(trim(utf8_encode($creditos)), trim(utf8_encode($usuario)), trim(utf8_encode($usuario)));
+	
+			$result = pg_query_params($this->conn, $queryStr, $params);
+			//return   $result;
+			if (pg_last_error($this->conn)) {
+				return pg_last_error($this->conn);	// proceso con errores de almacenamiento
+			} else {
+				$lista = pg_fetch_all($result);	
+				return $lista;
+			}
+
+		}
 		
 		function selectAll() {
 			$queryStr =  'select id, login, contrasenia, numero_documento, nombre, correo_electronico, telefono_oficina, numero_celular, estado, fecha_inicio, fecha_fin from usuarios_sgm order by login';			
@@ -371,7 +390,24 @@
 					return  $lista[0]["id_empresa"];
 			} 
 			return 0;	// Error durante el proceso de validaci�n de usuario
-		}	
+		}
+
+
+		function getRol($login) {
+			$queryStr =  "
+				
+			select tipo from usuarios_sgm u inner join usuarios_sgm_roles r on (r.login = u.login) where u.login =$1 limit 1
+			";			
+			
+			$result = pg_query_params($this->conn, $queryStr, array($login));
+			if (!$result) {
+			  echo "Error al consultar Usuario por el login $login.\n";
+			  return 0;
+			}						
+			$usr = pg_fetch_all($result);			
+			pg_free_result($result);
+
+			return  $usr[0]["tipo"];
+		}
 	}	
 ?>
-

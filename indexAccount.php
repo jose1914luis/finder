@@ -14,13 +14,15 @@ $clasificacion["Reporte de Superposiciones"]["PROSPECTO"] = "REPORTE SUPERPOSICI
 $clasificacion["Alerta de Liberacion de Area"]["PROSPECTO"] = "PROSPECTO";
 $clasificacion["Analisis Perimetral"]["PERIMETRAL"] = "PERIMETRAL";
 
-if (@$_GET["mnu"] == "propiedades_mineras")
+if (@$_GET["mnu"] == "admin")
+    $paginaCargue = "v_user_admin.php";
+else if (@$_GET["mnu"] == "propiedades_mineras")
     $paginaCargue = "v_propiedades_mineras.php";
 else if (@$_GET["mnu"] == "expedientes") {
     require_once("Modelos/ExpedientesUsuarios.php");
     $expediente_por_usr = new ExpedientesUsuarios();
 
-    //$_POST 				= val_input($_POST);
+    //$_POST                = val_input($_POST);
     if (@$_POST["txtBusqueda"] != "" && @$_POST["txtNombrePry"] != "") {
         $msg = $expediente_por_usr->insert($_SESSION['id_usuario'], $_POST["txtBusqueda"], @$_POST["txtNombrePry"]);
         $msgSistema = ($msg == "OK") ? "Placa asociada correctamente" : $msg;
@@ -33,8 +35,8 @@ else if (@$_GET["mnu"] == "expedientes") {
     $paginaCargue = "v_expedientes.php";
 } else if (@$_GET["mnu"] == "expedientes_placa") {
     $IncludeVista = 0;
-    include("reporteAreasAccount.php");	
-	// $paginaCargue = "reporteAreasAccount.php";
+    include("reporteAreasAccount.php"); 
+    // $paginaCargue = "reporteAreasAccount.php";
 } else if (@$_GET["mnu"] == "prospectos") {
     require_once("Modelos/ProspectosBogSGM.php");
     if (trim(@$_POST["placa"]) != "" && @$_POST["act"] == "delete") {
@@ -61,11 +63,11 @@ else if (@$_GET["mnu"] == "descargas") {
     $paginaCargue = "v_descargas.php";
 } else if (@$_GET["mnu"] == "liberaciones" || @$_GET["crd"] == "liberaciones") {
     //if(@$_POST["compraRelease"] > 0)
-    //	$msgSistema	= $cred->compraCreditosRelease($_SESSION['id_usuario'], $_POST["compraRelease"]);
-    //if($cred->validaLiberacionAreaUsuario($_SESSION['id_usuario']))		
+    //  $msgSistema = $cred->compraCreditosRelease($_SESSION['id_usuario'], $_POST["compraRelease"]);
+    //if($cred->validaLiberacionAreaUsuario($_SESSION['id_usuario']))       
     $paginaCargue = "v_liberaciones.php";
     //else 
-    //$paginaCargue = "v_liberaciones_adquirir.php";	
+    //$paginaCargue = "v_liberaciones_adquirir.php";    
 } else if (@$_GET["mnu"] == "creditos") {
     $_SESSION['usr_cred'] = $cred->getInfoCreditosByIdUsuario($_SESSION['id_usuario']);
     // $listaCreditosHistorial = $cred->getCreditosHistoricosByIdUsuario($_SESSION['id_usuario']);
@@ -76,15 +78,15 @@ else if (@$_GET["mnu"] == "descargas") {
     if (@$_POST["txtCompraCreditos"] < $GLOBALS ["SIGCoin_minimo"]) {
         $msgSistema = "La compra m\u00EDnima permitida es de " . $GLOBALS ["SIGCoin_minimo"] . " COP";
         echo "<script>
-					alert('$msgSistema');
-					window.close();	
-				</script>";
+                    alert('$msgSistema');
+                    window.close(); 
+                </script>";
     } else if (!$validate->validarCaracterizacion($_SESSION['id_usuario'])) {
         $msgSistema = "Antes de comprar cr\u00E9ditos debes diligenciar el siguiente formulario";
         echo "<script>
-					alert('$msgSistema');
-					document.location.href='?mnu=datos_basicos&credits=1';	
-				</script>";
+                    alert('$msgSistema');
+                    document.location.href='?mnu=datos_basicos&credits=1';  
+                </script>";
     } else
         include_once("Vistas/v_compra_creditos.php");
 }

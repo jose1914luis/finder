@@ -1,5 +1,7 @@
 <?php
 
+//phpinfo();
+
 session_start();
 
 error_reporting(E_ALL);
@@ -11,7 +13,7 @@ require_once("Modelos/geoiploc.php");
 require_once("viewValidaQuery.php");
 require_once("viewServicesSIGMINFullResultados.php");
 require_once("Modelos/ProspectosBogSGM.php");
-//require_once("Modelos/SeguimientosUsuarios.php");	
+//require_once("Modelos/SeguimientosUsuarios.php"); 
 require_once("Modelos/Usuarios_SGM.php");
 require_once("Modelos/CreditosUsuarios.php");
 require_once("Modelos/ExpedientesSGM.php");
@@ -19,7 +21,7 @@ require_once("Vistas/v_pie_pagina.php");
 
 include './Correo/Correo.php';
 
-//  Definici�n de las variables globales 		
+//  Definici�n de las variables globales        
 $validate = new Usuarios_SGM();
 $prp = new ProspectosBogSGM();
 $cred = new CreditosUsuarios();
@@ -27,8 +29,8 @@ $cred = new CreditosUsuarios();
 $msgAcceso = "";
 $msgSistema = "";
 
-// --------- validaci�n del tiempo de session ---------	
-$inactivo = 60 * 60; // inactividad de una hora
+// --------- validaci�n del tiempo de session --------- 
+$inactivo = 180 * 60; // inactividad de 3 horas
 if (isset($_SESSION["tiempo"])) {
     $vida_session = time() - $_SESSION["tiempo"];
     if ($vida_session > $inactivo) {
@@ -53,6 +55,7 @@ if (isset($_POST["username"]) && isset($_POST["password"])) {
         $_SESSION['usuario_sgm'] = $_POST["username"];
         $_SESSION['passwd_sgm'] = $_POST["password"];
         $_SESSION['id_usuario'] = $validate->getIDbyLogin($_POST["username"]);
+        $_SESSION['usuario_rol'] = $validate->getRol($_POST["username"]);
 
         $_SESSION['usr_cred'] = $cred->getInfoCreditosByIdUsuario($_SESSION['id_usuario']);
 
@@ -74,14 +77,14 @@ if (isset($_POST["username"]) && isset($_POST["password"])) {
             $_SESSION["idEmpresa"] = $Id_Empresa;
             $_SESSION["pagina"] = "account";
             $_SESSION['rango_inferior'] = 0;
-			
-			// validación de rango máximo permitido en captura de polígonos
-			if($_SESSION['usuario_sgm']!="jecardenas" && $_SESSION['usuario_sgm']!="jmoreno" && $_SESSION['usuario_sgm']!='jvelasquez')
-				$_SESSION['rango_superior'] = 500000;
-			else
-				$_SESSION['rango_superior'] = 99999999;
-			
-            // variables del controlador	
+            
+            // validación de rango máximo permitido en captura de polígonos
+            if($_SESSION['usuario_sgm']!="jecardenas" && $_SESSION['usuario_sgm']!="jmoreno" && $_SESSION['usuario_sgm']!='jvelasquez')
+                $_SESSION['rango_superior'] = 500000;
+            else
+                $_SESSION['rango_superior'] = 99999999;
+            
+            // variables del controlador    
             $msgError = "";
             include("indexAccount.php");
         } else
@@ -191,4 +194,4 @@ if (isset($_POST["username"]) && isset($_POST["password"])) {
 
 if ($msgAcceso)
     echo $msgAcceso;
-
+//*/
