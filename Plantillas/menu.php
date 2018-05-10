@@ -72,8 +72,11 @@
                     </li>
                     <li role="presentation" class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Cuenta<span class="caret"></span></a>
-                        <ul class="dropdown-menu">                                    
-                            <li><a href="/?mnu=creditos">Cr&eacute;ditos</a></li>
+                        <ul class="dropdown-menu">         
+                         <?php if ($_SESSION['usuario_rol'] == 'ADMIN') { ?>
+                            <li><a href="/?mnu=admin">Admin</a></li>     
+                         <?php } ?>                                                  
+                            <li><a href="/?mnu=creditos">Cr&eacute;ditos</a></li>                            
                             <li><a href="/?mnu=datos_basicos">Datos Personales</a></li>
                             <li role="separator" class="divider"></li>
                             <li><a href="/?mnu=logout">Logout <i class="fa fa-power-off padding-left-ten-px red-text"></i></a></li>
